@@ -1,0 +1,162 @@
+# Copyright (C) 2017 NoPayn
+# This file is distributed under the same license as the NoPayn package.
+msgid ""
+msgstr ""
+"Project-Id-Version: NoPayn 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nopayn\n"
+"POT-Creation-Date: 2025-02-19 15:36+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-02-20 13:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: Estonian\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2"
+
+msgid "Allowed currencies"
+msgstr "Lubatud valuutad"
+
+msgid "API key"
+msgstr "API võti"
+
+msgid ""
+"API Key has not permission for some action: %s Please contact technical "
+"support!"
+msgstr ""
+"API võtmel puudub luba mõne toimingu jaoks: %s Palun võtke ühendust "
+"tehnilise toega!"
+
+msgid "API key is empty NoPayn payment methods deactivated"
+msgstr "API võti on tühi. NoPayn maksemeetodid on deaktiveeritud."
+
+msgid "API key is empty. Set API key and try again"
+msgstr "API võti on tühi. Määrake API võti ja proovige uuesti."
+
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
+msgstr "API võti ei kehti: %s NoPayn maksemeetodid on deaktiveeritud."
+
+msgid "API key provided by NoPayn"
+msgstr "NoPayn poolt antud API võti"
+
+msgid "Auto complete orders "
+msgstr "Tellimuste automaatne lõpetamine"
+
+msgid "Checkout Page"
+msgstr "Makseleht"
+
+msgid "Credit Card"
+msgstr "Krediitkaart"
+
+msgid "cURL CA bundle"
+msgstr "cURL CA pakett"
+
+msgid "Current shop currency %s not supported by %s."
+msgstr "Praegune poe valuuta %s ei ole toetatud teenusepakkuja %s poolt."
+
+msgid "Current shop currency %s not supported by NoPayn."
+msgstr "Praegune poe valuuta %s ei ole NoPayn poolt toetatud."
+
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
+msgstr ""
+"Luba poe tellimuste oleku automaatne muutmine „Lõpetatud“ pärast makse "
+"laekumist"
+
+msgid "Enable Credit Card Payments"
+msgstr "Luba krediitkaardimaksed"
+
+msgid "Enable/Disable"
+msgstr "Luba/Keela"
+
+msgid "Failed payment page"
+msgstr "Ebaõnnestunud makseleht"
+
+msgid "Gateway Disabled"
+msgstr "Lüüs on keelatud"
+
+msgid "If set empty - option is ignored."
+msgstr "Kui jäetakse tühjaks, siis valikut eiratakse."
+
+msgid "Library"
+msgstr "Teek"
+
+msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
+msgstr "Mastercard, VISA, Maestro või V PAY – NoPayn"
+
+msgid "NoPayn"
+msgstr "NoPayn"
+
+msgid "NoPayn - Library"
+msgstr "NoPayn – Teek"
+
+msgid "Page where user is redirected after payment has failed."
+msgstr "Leht, kuhu kasutaja suunatakse pärast makse ebaõnnestumist."
+
+msgid "Payment gateway will be available ONLY for selected currencies."
+msgstr "Maksevärav on saadaval AINULT valitud valuutade jaoks."
+
+msgid ""
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
+msgstr ""
+"Pange tähele, et pangatehingute puhul töödeldakse tagasimakseid otse "
+"makseväravasse!"
+
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgstr ""
+"Lahendab probleemi, kui curl.cacert tee ei ole PHP.ini failis määratud."
+
+msgid "Select currencies..."
+msgstr "Valige valuutad..."
+
+msgid "Shopping Cart"
+msgstr "Ostukorv"
+
+msgid "Test API key"
+msgstr "Test API võti"
+
+msgid "The following payment methods are not available for selected currency:"
+msgstr "Järgmised maksemeetodid ei ole valitud valuuta jaoks saadaval:"
+
+msgid "There was a problem processing your transaction."
+msgstr "Teie tehingu töötlemisel tekkis probleem."
+
+msgid "This controls the title which the user sees during checkout."
+msgstr "See määrab pealkirja, mida kasutaja näeb makseprotsessi ajal."
+
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
+msgstr ""
+"See on üldine moodul seadistustega, maksmise ajal kasutaja seda valikut ei "
+"näe."
+
+msgid "Title"
+msgstr "Pealkiri"
+
+msgid ""
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
+msgstr ""
+"Kahjuks ei saa me teie ostu praegu vastu võtta. Palun valige tellimuse "
+"lõpuleviimiseks mõni muu makseviis. Vabandame ebamugavuste pärast."
+
+msgid "Use cURL CA bundle"
+msgstr "Kasuta cURL CA paketti"
+
+msgid "Your order %s at %s"
+msgstr "Teie tellimus %s saidil %s"
+
+msgid ""
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
+msgstr ""
+"Teie tehingut töödeldakse endiselt. Teid teavitatakse, kui olek uuendatakse."

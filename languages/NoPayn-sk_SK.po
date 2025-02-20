@@ -1,0 +1,162 @@
+# Copyright (C) 2017 NoPayn
+# This file is distributed under the same license as the NoPayn package.
+msgid ""
+msgstr ""
+"Project-Id-Version: NoPayn 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nopayn\n"
+"POT-Creation-Date: 2025-02-19 15:36+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-02-20 13:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: Slovak\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"Language: sk_SK\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2;\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2"
+
+msgid "Allowed currencies"
+msgstr "Povolené meny"
+
+msgid "API key"
+msgstr "Kľúč API"
+
+msgid ""
+"API Key has not permission for some action: %s Please contact technical "
+"support!"
+msgstr ""
+"Kľúč API nemá oprávnenie na určitú akciu: %s Prosím, kontaktujte technickú "
+"podporu!"
+
+msgid "API key is empty NoPayn payment methods deactivated"
+msgstr "Kľúč API je prázdny Platobné metódy NoPayn sú deaktivované"
+
+msgid "API key is empty. Set API key and try again"
+msgstr "Kľúč API je prázdny. Nastavte kľúč API a skúste to znova"
+
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
+msgstr "Kľúč API nie je platný: %s Platobné metódy NoPayn sú deaktivované"
+
+msgid "API key provided by NoPayn"
+msgstr "Kľúč API poskytnutý spoločnosťou NoPayn"
+
+msgid "Auto complete orders "
+msgstr "Automatické dokončenie objednávok"
+
+msgid "Checkout Page"
+msgstr "Stránka Pokladňa"
+
+msgid "Credit Card"
+msgstr "Kreditná karta"
+
+msgid "cURL CA bundle"
+msgstr "zväzok cURL CA"
+
+msgid "Current shop currency %s not supported by %s."
+msgstr "Aktuálna mena obchodu %s nie je podporovaná %s."
+
+msgid "Current shop currency %s not supported by NoPayn."
+msgstr "Aktuálna mena obchodu %s nie je podporovaná systémom NoPayn."
+
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
+msgstr ""
+"Povoliť automatickú zmenu stavu objednávok na „Dokončené“ po prijatí platby"
+
+msgid "Enable Credit Card Payments"
+msgstr "Povolenie platieb kreditnou kartou"
+
+msgid "Enable/Disable"
+msgstr "Povolenie/zakázanie"
+
+msgid "Failed payment page"
+msgstr "Stránka s neúspešnou platbou"
+
+msgid "Gateway Disabled"
+msgstr "Brána je vypnutá"
+
+msgid "If set empty - option is ignored."
+msgstr "Ak je nastavená prázdna - možnosť sa ignoruje."
+
+msgid "Library"
+msgstr "Knižnica"
+
+msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
+msgstr "Mastercard, VISA, Maestro alebo V PAY - NoPayn"
+
+msgid "NoPayn"
+msgstr "NoPayn"
+
+msgid "NoPayn - Library"
+msgstr "NoPayn - Knižnica"
+
+msgid "Page where user is redirected after payment has failed."
+msgstr "Stránka, na ktorú je používateľ presmerovaný po neúspešnej platbe."
+
+msgid "Payment gateway will be available ONLY for selected currencies."
+msgstr "Platobná brána bude k dispozícii len pre vybrané meny."
+
+msgid ""
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
+msgstr ""
+"Dajte si pozor, že v prípade bankových transakcií sa refundácie spracujú "
+"priamo na bránu!"
+
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgstr "Rieši problém, keď v súbore PHP.ini nie je nastavená cesta curl.cacert"
+
+msgid "Select currencies..."
+msgstr "Vyberte meny..."
+
+msgid "Shopping Cart"
+msgstr "Nákupný košík"
+
+msgid "Test API key"
+msgstr "Testovací kľúč API"
+
+msgid "The following payment methods are not available for selected currency:"
+msgstr "Nasledujúce spôsoby platby nie sú pre vybranú menu k dispozícii:"
+
+msgid "There was a problem processing your transaction."
+msgstr "Pri spracovaní vašej transakcie došlo k problému."
+
+msgid "This controls the title which the user sees during checkout."
+msgstr "Týmto sa riadi názov, ktorý používateľ vidí pri pokladni."
+
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
+msgstr ""
+"Toto je všeobecný modul s nastaveniami, počas platby používateľ túto možnosť "
+"neuvidí."
+
+msgid "Title"
+msgstr "Názov"
+
+msgid ""
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
+msgstr ""
+"Žiaľ, v súčasnosti nemôžeme prijať váš nákup. Na dokončenie objednávky si "
+"prosím vyberte inú možnosť platby. Ospravedlňujeme sa za nepríjemnosti."
+
+msgid "Use cURL CA bundle"
+msgstr "Používanie zväzku cURL CA"
+
+msgid "Your order %s at %s"
+msgstr "Vaša objednávka %s na %s"
+
+msgid ""
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
+msgstr ""
+"Vaša transakcia sa stále spracováva. Po aktualizácii stavu budete "
+"informovaní."

@@ -1,0 +1,165 @@
+# Copyright (C) 2017 NoPayn
+# This file is distributed under the same license as the NoPayn package.
+msgid ""
+msgstr ""
+"Project-Id-Version: NoPayn 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nopayn\n"
+"POT-Creation-Date: 2025-02-19 15:36+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-02-20 13:34+0000\n"
+"Last-Translator: \n"
+"Language-Team: Dutch\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2"
+
+msgid "Allowed currencies"
+msgstr "Toegestane valuta"
+
+msgid "API key"
+msgstr "API-sleutel"
+
+msgid ""
+"API Key has not permission for some action: %s Please contact technical "
+"support!"
+msgstr ""
+"API Key heeft geen toestemming voor bepaalde actie: %s Neem contact op met "
+"de technische ondersteuning!"
+
+msgid "API key is empty NoPayn payment methods deactivated"
+msgstr "API sleutel is leeg NoPayn betaalmethoden gedeactiveerd"
+
+msgid "API key is empty. Set API key and try again"
+msgstr "API-sleutel is leeg. Stel de API-sleutel in en probeer het opnieuw"
+
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
+msgstr "API sleutel is niet geldig: %s NoPayn betaalmethoden gedeactiveerd"
+
+msgid "API key provided by NoPayn"
+msgstr "API-sleutel geleverd door NoPayn"
+
+msgid "Auto complete orders "
+msgstr "Automatisch voltooien van bestellingen"
+
+msgid "Checkout Page"
+msgstr "Afrekenpagina"
+
+msgid "Credit Card"
+msgstr "Creditcard"
+
+msgid "cURL CA bundle"
+msgstr "cURL CA bundel"
+
+msgid "Current shop currency %s not supported by %s."
+msgstr "Huidige winkelvaluta %s wordt niet ondersteund door %s."
+
+msgid "Current shop currency %s not supported by NoPayn."
+msgstr "Huidige winkelvaluta %s wordt niet ondersteund door NoPayn."
+
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
+msgstr ""
+"Sta toe dat de bestelstatus van de winkel automatisch wordt gewijzigd naar "
+"\"Voltooid\" na ontvangst van betaling"
+
+msgid "Enable Credit Card Payments"
+msgstr "Creditcardbetalingen inschakelen"
+
+msgid "Enable/Disable"
+msgstr "Inschakelen/uitschakelen"
+
+msgid "Failed payment page"
+msgstr "Pagina voor mislukte betaling"
+
+msgid "Gateway Disabled"
+msgstr "Gateway uitgeschakeld"
+
+msgid "If set empty - option is ignored."
+msgstr "Indien leeg ingesteld - optie wordt genegeerd."
+
+msgid "Library"
+msgstr "Bibliotheek"
+
+msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
+msgstr "Mastercard, VISA, Maestro of V PAY - NoPayn"
+
+msgid "NoPayn"
+msgstr "NoPayn"
+
+msgid "NoPayn - Library"
+msgstr "NoPayn - Bibliotheek"
+
+msgid "Page where user is redirected after payment has failed."
+msgstr ""
+"Pagina waar de gebruiker naartoe wordt geleid nadat de betaling is mislukt."
+
+msgid "Payment gateway will be available ONLY for selected currencies."
+msgstr "De betalingsgateway is ALLEEN beschikbaar voor geselecteerde valuta."
+
+msgid ""
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
+msgstr ""
+"Houd er rekening mee dat voor banktransacties de terugbetalingen direct naar "
+"de gateway gaan!"
+
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgstr "Lost probleem op wanneer curl.cacert path niet is ingesteld in PHP.ini"
+
+msgid "Select currencies..."
+msgstr "Selecteer valuta..."
+
+msgid "Shopping Cart"
+msgstr "Winkelwagen"
+
+msgid "Test API key"
+msgstr "Test API-sleutel"
+
+msgid "The following payment methods are not available for selected currency:"
+msgstr ""
+"De volgende betalingsmethoden zijn niet beschikbaar voor de geselecteerde "
+"valuta:"
+
+msgid "There was a problem processing your transaction."
+msgstr "Er is een probleem opgetreden bij het verwerken van uw transactie."
+
+msgid "This controls the title which the user sees during checkout."
+msgstr "Dit bepaalt de titel die de gebruiker ziet tijdens het afrekenen."
+
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
+msgstr ""
+"Dit is de algemene module met instellingen, tijdens het afrekenen zal de "
+"gebruiker deze optie niet zien."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid ""
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
+msgstr ""
+"Helaas kunnen we je aankoop op dit moment niet accepteren. Kies een andere "
+"betalingsoptie om je bestelling af te ronden. Onze excuses voor het ongemak."
+
+msgid "Use cURL CA bundle"
+msgstr "Gebruik cURL CA-bundel"
+
+msgid "Your order %s at %s"
+msgstr "Uw bestelling %s bij %s"
+
+msgid ""
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
+msgstr ""
+"Je transactie wordt nog verwerkt. Je ontvangt een bericht wanneer de status "
+"wordt bijgewerkt."

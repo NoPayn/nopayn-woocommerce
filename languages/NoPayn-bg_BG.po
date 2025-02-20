@@ -1,0 +1,165 @@
+# Copyright (C) 2017 NoPayn
+# This file is distributed under the same license as the NoPayn package.
+msgid ""
+msgstr ""
+"Project-Id-Version: NoPayn 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nopayn\n"
+"POT-Creation-Date: 2025-02-19 15:36+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-02-20 13:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: Bulgarian\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2"
+
+msgid "Allowed currencies"
+msgstr "Позволени валути"
+
+msgid "API key"
+msgstr "Ключ за API"
+
+msgid ""
+"API Key has not permission for some action: %s Please contact technical "
+"support!"
+msgstr ""
+"API ключът няма разрешение за някакво действие: %s Моля, свържете се с "
+"техническата поддръжка!"
+
+msgid "API key is empty NoPayn payment methods deactivated"
+msgstr "Ключът на API е празен Методите за плащане на NoPayn са деактивирани"
+
+msgid "API key is empty. Set API key and try again"
+msgstr "API ключът е празен. Задайте API ключ и опитайте отново"
+
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
+msgstr "API ключът не е валиден: %s Методите за плащане NoPayn са деактивирани"
+
+msgid "API key provided by NoPayn"
+msgstr "API ключ, предоставен от NoPayn"
+
+msgid "Auto complete orders "
+msgstr "Автоматично завършване на поръчки"
+
+msgid "Checkout Page"
+msgstr "Страница за поръчка"
+
+msgid "Credit Card"
+msgstr "Кредитна карта"
+
+msgid "cURL CA bundle"
+msgstr "Пакет cURL CA"
+
+msgid "Current shop currency %s not supported by %s."
+msgstr "Текущата валута на магазина %s не се поддържа от %s."
+
+msgid "Current shop currency %s not supported by NoPayn."
+msgstr "Текущата валута на магазина %s не се поддържа от NoPayn."
+
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
+msgstr ""
+"Разрешаване на автоматична промяна на статуса на поръчките в магазина на "
+"„Завършена“ след получаване на плащане"
+
+msgid "Enable Credit Card Payments"
+msgstr "Разрешаване на плащания с кредитни карти"
+
+msgid "Enable/Disable"
+msgstr "Активиране/деактивиране"
+
+msgid "Failed payment page"
+msgstr "Неуспешна страница за плащане"
+
+msgid "Gateway Disabled"
+msgstr "Шлюзът е изключен"
+
+msgid "If set empty - option is ignored."
+msgstr "Ако е зададен празен - опцията се игнорира."
+
+msgid "Library"
+msgstr "Библиотека"
+
+msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
+msgstr "Mastercard, VISA, Maestro или V PAY - NoPayn"
+
+msgid "NoPayn"
+msgstr "NoPayn"
+
+msgid "NoPayn - Library"
+msgstr "NoPayn - Библиотека"
+
+msgid "Page where user is redirected after payment has failed."
+msgstr "Страница, към която потребителят се пренасочва след неуспешно плащане."
+
+msgid "Payment gateway will be available ONLY for selected currencies."
+msgstr "Порталът за плащане ще бъде достъпен САМО за избраните валути."
+
+msgid ""
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
+msgstr ""
+"Моля, имайте предвид, че при банкови транзакции възстановяванията се "
+"извършват директно към портала!"
+
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgstr "Решен е проблемът, когато пътят curl.cacert не е зададен в PHP.ini"
+
+msgid "Select currencies..."
+msgstr "Изберете валути..."
+
+msgid "Shopping Cart"
+msgstr "Количка за пазаруване"
+
+msgid "Test API key"
+msgstr "Тестов API ключ"
+
+msgid "The following payment methods are not available for selected currency:"
+msgstr "Следните методи на плащане не са налични за избраната валута:"
+
+msgid "There was a problem processing your transaction."
+msgstr "Имаше проблем при обработката на транзакцията ви."
+
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+"По този начин се контролира заглавието, което потребителят вижда по време на "
+"поръчката."
+
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
+msgstr ""
+"Това е общият модул с настройки, по време на плащане потребителят няма да "
+"вижда тази опция."
+
+msgid "Title"
+msgstr "Заглавие"
+
+msgid ""
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
+msgstr ""
+"За съжаление в момента не можем да приемем вашата покупка. Моля, изберете "
+"друга опция за плащане, за да завършите поръчката си. Извиняваме се за "
+"причиненото неудобство."
+
+msgid "Use cURL CA bundle"
+msgstr "Използване на пакета cURL CA"
+
+msgid "Your order %s at %s"
+msgstr "Вашата поръчка %s в %s"
+
+msgid ""
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
+msgstr ""
+"Вашата транзакция все още се обработва. Ще бъдете уведомени, когато статусът "
+"бъде актуализиран."

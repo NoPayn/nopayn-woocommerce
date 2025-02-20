@@ -1,0 +1,168 @@
+# Copyright (C) 2017 NoPayn
+# This file is distributed under the same license as the NoPayn package.
+msgid ""
+msgstr ""
+"Project-Id-Version: NoPayn 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nopayn\n"
+"POT-Creation-Date: 2025-02-19 15:36+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-02-20 13:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: Romanian\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 :(((n%100>19)||(( n%100==0)&&(n!"
+"=0)))? 2 : 1));\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2"
+
+msgid "Allowed currencies"
+msgstr "Valute permise"
+
+msgid "API key"
+msgstr "Cheie API"
+
+msgid ""
+"API Key has not permission for some action: %s Please contact technical "
+"support!"
+msgstr ""
+"Cheia API nu are permisiune pentru o anumită acțiune: %s Vă rugăm să "
+"contactați asistența tehnică!"
+
+msgid "API key is empty NoPayn payment methods deactivated"
+msgstr "Cheia API este goală Metode de plată NoPayn dezactivate"
+
+msgid "API key is empty. Set API key and try again"
+msgstr "Cheia API este goală. Setați cheia API și încercați din nou"
+
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
+msgstr "Cheia API nu este valabilă: %s Metode de plată NoPayn dezactivate"
+
+msgid "API key provided by NoPayn"
+msgstr "Cheie API furnizată de NoPayn"
+
+msgid "Auto complete orders "
+msgstr "Finalizare automată a comenzilor"
+
+msgid "Checkout Page"
+msgstr "Pagina de checkout"
+
+msgid "Credit Card"
+msgstr "Card de credit"
+
+msgid "cURL CA bundle"
+msgstr "Pachet cURL CA"
+
+msgid "Current shop currency %s not supported by %s."
+msgstr "Moneda curentă a magazinului %s nu este acceptată de %s."
+
+msgid "Current shop currency %s not supported by NoPayn."
+msgstr "Moneda curentă a magazinului %s nu este acceptată de NoPayn."
+
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
+msgstr ""
+"Permite modificarea automată a stării comenzilor magazinului la „Finalizat” "
+"după primirea plății"
+
+msgid "Enable Credit Card Payments"
+msgstr "Activați plățile cu cardul de credit"
+
+msgid "Enable/Disable"
+msgstr "Activare/Dezactivare"
+
+msgid "Failed payment page"
+msgstr "Pagina de plată eșuată"
+
+msgid "Gateway Disabled"
+msgstr "Gateway dezactivat"
+
+msgid "If set empty - option is ignored."
+msgstr "Dacă este setat gol - opțiunea este ignorată."
+
+msgid "Library"
+msgstr "Bibliotecă"
+
+msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
+msgstr "Mastercard, VISA, Maestro sau V PAY - NoPayn"
+
+msgid "NoPayn"
+msgstr "NoPayn"
+
+msgid "NoPayn - Library"
+msgstr "NoPayn - Bibliotecă"
+
+msgid "Page where user is redirected after payment has failed."
+msgstr "Pagina în care utilizatorul este redirecționat după ce plata a eșuat."
+
+msgid "Payment gateway will be available ONLY for selected currencies."
+msgstr "Poarta de plată va fi disponibilă NUMAI pentru monedele selectate."
+
+msgid ""
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
+msgstr ""
+"Vă rugăm să fiți atenți la faptul că pentru tranzacțiile bancare "
+"rambursările vor fi procesate direct la gateway!"
+
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgstr ""
+"Rezolvă problema atunci când calea curl.cacert nu este setată în PHP.ini"
+
+msgid "Select currencies..."
+msgstr "Selectați monedele..."
+
+msgid "Shopping Cart"
+msgstr "Coș de cumpărături"
+
+msgid "Test API key"
+msgstr "Test cheie API"
+
+msgid "The following payment methods are not available for selected currency:"
+msgstr ""
+"Următoarele metode de plată nu sunt disponibile pentru moneda selectată:"
+
+msgid "There was a problem processing your transaction."
+msgstr "A existat o problemă în procesarea tranzacției dvs."
+
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+"Acesta controlează titlul pe care îl vede utilizatorul în timpul procesului "
+"de plată."
+
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
+msgstr ""
+"Acesta este modulul general cu setări, iar în timpul procesului de plată "
+"utilizatorul nu va vedea această opțiune."
+
+msgid "Title"
+msgstr "Titlu"
+
+msgid ""
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
+msgstr ""
+"Din păcate, nu putem accepta achiziția dvs. în acest moment. Vă rugăm să "
+"alegeți o altă opțiune de plată pentru a vă finaliza comanda. Ne cerem scuze "
+"pentru acest inconvenient."
+
+msgid "Use cURL CA bundle"
+msgstr "Utilizați pachetul cURL CA"
+
+msgid "Your order %s at %s"
+msgstr "Comanda dvs. %s la %s"
+
+msgid ""
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
+msgstr ""
+"Tranzacția dvs. este încă în curs de procesare. Veți fi notificat atunci "
+"când statutul este actualizat."

@@ -1,0 +1,173 @@
+# Copyright (C) 2017 NoPayn
+# This file is distributed under the same license as the NoPayn package.
+msgid ""
+msgstr ""
+"Project-Id-Version: NoPayn 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nopayn\n"
+"POT-Creation-Date: 2025-02-19 13:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-02-20 13:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: French (France)\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2"
+
+msgid "Allowed currencies"
+msgstr "Devises autorisées"
+
+msgid "API key"
+msgstr "Clé API"
+
+msgid ""
+"API Key has not permission for some action: %s Please contact technical "
+"support!"
+msgstr ""
+"La clé API n'est pas autorisée pour une action : %s Veuillez contacter le "
+"support technique !"
+
+msgid "API key is empty NoPayn payment methods deactivated"
+msgstr "La clé API est vide Méthodes de paiement NoPayn désactivées"
+
+msgid "API key is empty. Set API key and try again"
+msgstr "La clé API est vide. Définissez la clé API et réessayez"
+
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
+msgstr ""
+"La clé API n'est pas valide : %s Méthodes de paiement NoPayn désactivées"
+
+msgid "API key provided by NoPayn"
+msgstr "Clé API fournie par NoPayn"
+
+msgid "Auto complete orders "
+msgstr "Finalisation automatique des commandes"
+
+msgid "Checkout Page"
+msgstr "Page de paiement"
+
+msgid "Credit Card"
+msgstr "Carte de crédit"
+
+msgid "cURL CA bundle"
+msgstr "Paquet cURL CA"
+
+msgid "Current shop currency %s not supported by %s."
+msgstr "La devise actuelle de la boutique %s n'est pas prise en charge par %s."
+
+#| msgid "Current shop currency %s not supported by NoPayn Online."
+msgid "Current shop currency %s not supported by NoPayn."
+msgstr ""
+"La devise actuelle de la boutique %s n'est pas prise en charge par NoPayn."
+
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
+msgstr ""
+"Activer le changement automatique du statut des commandes en « Terminée » "
+"après réception du paiement"
+
+msgid "Enable Credit Card Payments"
+msgstr "Autoriser les paiements par carte de crédit"
+
+msgid "Enable/Disable"
+msgstr "Activer/Désactiver"
+
+msgid "Failed payment page"
+msgstr "Échec de la page de paiement"
+
+msgid "Gateway Disabled"
+msgstr "Passerelle désactivée"
+
+msgid "If set empty - option is ignored."
+msgstr "Si elle est vide, l'option est ignorée."
+
+msgid "Library"
+msgstr "Bibliothèque"
+
+#| msgid "Mastercard, VISA, Maestro or V PAY - NoPayn Online"
+msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
+msgstr "Mastercard, VISA, Maestro ou V PAY - NoPayn"
+
+msgid "NoPayn"
+msgstr "NoPayn"
+
+msgid "NoPayn - Library"
+msgstr "NoPaynNoPayn - Bibliothèque"
+
+msgid "Page where user is redirected after payment has failed."
+msgstr "Page où l'utilisateur est redirigé après l'échec du paiement."
+
+msgid "Payment gateway will be available ONLY for selected currencies."
+msgstr ""
+"La passerelle de paiement sera disponible UNIQUEMENT pour les devises "
+"sélectionnées."
+
+msgid ""
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
+msgstr ""
+"Veuillez noter que pour les transactions bancaires, les remboursements "
+"seront effectués directement à la passerelle !"
+
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgstr ""
+"Résout le problème lorsque le chemin curl.cacert n'est pas défini dans PHP."
+"ini"
+
+msgid "Select currencies..."
+msgstr "Sélectionner les devises..."
+
+msgid "Shopping Cart"
+msgstr "Panier d'achat"
+
+msgid "Test API key"
+msgstr "Clé API de test"
+
+msgid "The following payment methods are not available for selected currency:"
+msgstr ""
+"Les méthodes de paiement suivantes ne sont pas disponibles pour la devise "
+"sélectionnée :"
+
+msgid "There was a problem processing your transaction."
+msgstr "Il y a eu un problème dans le traitement de votre transaction."
+
+msgid "This controls the title which the user sees during checkout."
+msgstr "Ceci contrôle le titre que l'utilisateur voit lors du paiement."
+
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
+msgstr ""
+"Ceci est le module général avec des paramètres, lors du paiement, "
+"l'utilisateur ne verra pas cette option."
+
+msgid "Title"
+msgstr "Titre"
+
+msgid ""
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
+msgstr ""
+"Malheureusement, nous ne pouvons pas accepter votre achat pour le moment. "
+"Veuillez choisir une autre option de paiement pour compléter votre commande. "
+"Nous vous prions de nous excuser pour ce désagrément."
+
+msgid "Use cURL CA bundle"
+msgstr "Utiliser le paquet CA cURL"
+
+msgid "Your order %s at %s"
+msgstr "Votre commande %s à %s"
+
+msgid ""
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
+msgstr ""
+"Votre transaction est en cours de traitement. Vous serez averti lorsque le "
+"statut sera mis à jour."

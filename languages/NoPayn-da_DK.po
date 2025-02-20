@@ -1,0 +1,163 @@
+# Copyright (C) 2017 NoPayn
+# This file is distributed under the same license as the NoPayn package.
+msgid ""
+msgstr ""
+"Project-Id-Version: NoPayn 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nopayn\n"
+"POT-Creation-Date: 2025-02-19 15:36+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-02-20 13:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: Danish\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"Language: da_DK\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2"
+
+msgid "Allowed currencies"
+msgstr "Tilladte valutaer"
+
+msgid "API key"
+msgstr "API-nøgle"
+
+msgid ""
+"API Key has not permission for some action: %s Please contact technical "
+"support!"
+msgstr ""
+"API-nøgle har ikke tilladelse til en handling: %s Kontakt venligst teknisk "
+"support!"
+
+msgid "API key is empty NoPayn payment methods deactivated"
+msgstr "API-nøglen er tom NoPayn-betalingsmetoder deaktiveret"
+
+msgid "API key is empty. Set API key and try again"
+msgstr "API-nøglen er tom. Indstil API-nøglen, og prøv igen"
+
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
+msgstr "API-nøglen er ikke gyldig: %s NoPayn-betalingsmetoder deaktiveret"
+
+msgid "API key provided by NoPayn"
+msgstr "API-nøgle leveret af NoPayn"
+
+msgid "Auto complete orders "
+msgstr "Automatisk fuldførelse af ordrer"
+
+msgid "Checkout Page"
+msgstr "Checkout-side"
+
+msgid "Credit Card"
+msgstr "Kreditkort"
+
+msgid "cURL CA bundle"
+msgstr "cURL CA-pakke"
+
+msgid "Current shop currency %s not supported by %s."
+msgstr "Den aktuelle butiksvaluta %s understøttes ikke af %s."
+
+msgid "Current shop currency %s not supported by NoPayn."
+msgstr "Den aktuelle butiksvaluta %s understøttes ikke af NoPayn."
+
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
+msgstr ""
+"Aktivér automatisk ændring af ordrestatus til \"Fuldført\" efter modtagelse "
+"af betaling"
+
+msgid "Enable Credit Card Payments"
+msgstr "Gør det muligt at betale med kreditkort"
+
+msgid "Enable/Disable"
+msgstr "Aktiver/Deaktiver"
+
+msgid "Failed payment page"
+msgstr "Mislykket betalingsside"
+
+msgid "Gateway Disabled"
+msgstr "Gateway deaktiveret"
+
+msgid "If set empty - option is ignored."
+msgstr "Hvis indstillingen er tom, ignoreres den."
+
+msgid "Library"
+msgstr "Bibliotek"
+
+msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
+msgstr "Mastercard, VISA, Maestro eller V PAY - NoPayn"
+
+msgid "NoPayn"
+msgstr "NoPayn"
+
+msgid "NoPayn - Library"
+msgstr "NoPayn - Bibliotek"
+
+msgid "Page where user is redirected after payment has failed."
+msgstr "Side, hvor brugeren omdirigeres efter mislykket betaling."
+
+msgid "Payment gateway will be available ONLY for selected currencies."
+msgstr "Betalingsgatewayen vil KUN være tilgængelig for udvalgte valutaer."
+
+msgid ""
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
+msgstr ""
+"Vær opmærksom på, at for banktransaktioner vil refusionerne blive behandlet "
+"direkte til gatewayen!"
+
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgstr "Løser et problem, når curl.cacert-stien ikke er angivet i PHP.ini"
+
+msgid "Select currencies..."
+msgstr "Vælg valutaer..."
+
+msgid "Shopping Cart"
+msgstr "Indkøbskurv"
+
+msgid "Test API key"
+msgstr "Test API-nøgle"
+
+msgid "The following payment methods are not available for selected currency:"
+msgstr "Følgende betalingsmetoder er ikke tilgængelige for den valgte valuta:"
+
+msgid "There was a problem processing your transaction."
+msgstr "Der opstod et problem med at behandle din transaktion."
+
+msgid "This controls the title which the user sees during checkout."
+msgstr "Dette styrer den titel, som brugeren ser under checkout."
+
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
+msgstr ""
+"Dette er den generelle modul med indstillinger, under betalingen vil "
+"brugeren ikke se denne mulighed."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid ""
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
+msgstr ""
+"Vi kan desværre ikke acceptere dit køb i øjeblikket. Vælg venligst en anden "
+"betalingsmulighed for at gennemføre din ordre. Vi undskylder for "
+"ulejligheden."
+
+msgid "Use cURL CA bundle"
+msgstr "Brug cURL CA-bundle"
+
+msgid "Your order %s at %s"
+msgstr "Din ordre %s på %s"
+
+msgid ""
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
+msgstr ""
+"Din transaktion er stadig ved at blive behandlet. Du får besked, når status "
+"er opdateret."
