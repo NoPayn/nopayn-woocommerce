@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-02-20 13:37+0000\n"
+"PO-Revision-Date: 2025-03-31 12:07+0000\n"
 "Last-Translator: \n"
 "Language-Team: Finnish\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -19,70 +19,100 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.7.1; wp-6.7.2"
 
-msgid "Allowed currencies"
-msgstr "Sallitut valuutat"
+msgid "Accept Apple Pay Payments"
+msgstr ""
+"Hyväksy Apple Pay -maksut\n"
+
+msgid "Accept Credit/Debit Card Payments"
+msgstr ""
+"Hyväksy luotto-/pankkikorttimaksut\n"
+
+msgid "Accept Google Pay Payments"
+msgstr "Hyväksy Google Pay -maksut"
+
+msgid "Accept MobilePay Payments"
+msgstr ""
+"Hyväksy MobilePay-maksut\n"
+
+msgid "Accept Swish Payments"
+msgstr ""
+"Hyväksy Swish-maksut\n"
+
+msgid "Accepted Currencies"
+msgstr ""
+"Hyväksytyt valuutat\n"
+
+msgid "Activate NoPayn Gateway & Configure Settings"
+msgstr ""
+"Aktivoi NoPayn yhdyskäytävä & määritä asetukset\n"
 
 msgid "API key"
 msgstr "API-avain"
 
-msgid ""
-"API Key has not permission for some action: %s Please contact technical "
-"support!"
+msgid "Apple Pay"
+msgstr "Apple Pay"
+
+msgid "Automatically Complete Orders"
+msgstr "Suorita tilaukset automaattisesti"
+
+msgid "Automatically mark orders as 'Completed' once payment is received."
 msgstr ""
-"API-avaimella ei ole lupaa johonkin toimintoon: %s Ota yhteyttä tekniseen "
-"tukeen!"
+"Merkitse tilaukset automaattisesti 'Valmiiksi', kun maksu on vastaanotettu."
 
-msgid "API key is empty NoPayn payment methods deactivated"
-msgstr "API-avain on tyhjä NoPayn maksutavat poistettu käytöstä"
+msgid "Capture on complete"
+msgstr "Capture on complete"
 
-msgid "API key is empty. Set API key and try again"
-msgstr "API-avain on tyhjä. Aseta API-avain ja yritä uudelleen"
-
-msgid "API Key is not valid: %s NoPayn payment methods deactivated"
-msgstr "API-avain ei ole kelvollinen: %s NoPayn maksutavat poistettu käytöstä."
-
-msgid "API key provided by NoPayn"
-msgstr "NoPaynin toimittama API-avain"
-
-msgid "Auto complete orders "
-msgstr "Tilausten automaattinen viimeistely"
+msgid "Captures payment when an order is marked as complete"
+msgstr "Tallentaa maksun, kun tilaus on merkitty valmiiksi."
 
 msgid "Checkout Page"
 msgstr "Kassan sivu"
 
-msgid "Credit Card"
-msgstr "Luottokortti"
+msgid "Credit Card/Debit Card"
+msgstr "Luottokortti / pankkikortti"
 
-msgid "cURL CA bundle"
-msgstr "cURL CA -paketti"
+msgid "Displayed name of the payment method at checkout."
+msgstr "Näytetään maksutavan nimi kassalla."
 
-msgid "Current shop currency %s not supported by %s."
-msgstr "Kaupan nykyinen valuutta %s ei tue %s."
-
-msgid "Current shop currency %s not supported by NoPayn."
-msgstr "NoPayn ei tue myymälän nykyistä valuuttaa %s."
-
-msgid ""
-"Enable automatically change store orders status to Completed after receiving "
-"payment"
-msgstr ""
-"Salli tilausten tilan automaattinen muuttaminen \"Valmiiksi\" maksun "
-"vastaanottamisen jälkeen"
+msgid "Enable Apple Pay Payments"
+msgstr "Ota käyttöön Apple Pay -maksut"
 
 msgid "Enable Credit Card Payments"
 msgstr "Ota luottokorttimaksut käyttöön"
 
-msgid "Enable/Disable"
-msgstr "Ota käyttöön/poista käytöstä"
+#| msgid "Use cURL CA bundle"
+msgid "Enable cURL CA Bundle"
+msgstr ""
+"Ota cURL CA Bundle käyttöön\n"
 
-msgid "Failed payment page"
-msgstr "Epäonnistunut maksusivu"
+msgid "Enable Google Pay Payments"
+msgstr "Ota käyttöön Google Pay -maksut"
 
-msgid "Gateway Disabled"
-msgstr "Yhdyskäytävä pois käytöstä"
+msgid "Enable MobilePay Payments"
+msgstr "Ota käyttöön MobilePay -maksut"
 
-msgid "If set empty - option is ignored."
-msgstr "Jos asetetaan tyhjäksi - vaihtoehtoa ei oteta huomioon."
+msgid "Enable NoPayn Payments"
+msgstr ""
+"Ota NoPayn-maksut käyttöön\n"
+
+msgid "Enable Swish Payments"
+msgstr "Ota käyttöön Swish-maksut"
+
+msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
+msgstr "Korjaa ongelmat, kun curl.cacert-polku puuttuu PHP.ini-tiedostosta."
+
+msgid "Google Pay"
+msgstr "Google Pay"
+
+msgid "Google Pay - NoPayn"
+msgstr "Google Pay - NoPayn"
+
+msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
+msgstr ""
+"Virheellinen API-avain: %s. NoPayn-maksutavat on poistettu käytöstä.\n"
+
+msgid "Leave blank to allow all supported currencies."
+msgstr "Jätä tyhjäksi salliaksesi kaikki tuetut valuutat."
 
 msgid "Library"
 msgstr "Kirjasto"
@@ -90,73 +120,129 @@ msgstr "Kirjasto"
 msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
 msgstr "Mastercard, VISA, Maestro tai V PAY - NoPayn maksutapa"
 
+msgid "MobilePay"
+msgstr "MobilePay"
+
+msgid "MobilePay - NoPayn"
+msgstr "MobilePay - NoPayn"
+
+msgid "No API key detected. Please enter your NoPayn API key and try again."
+msgstr "API-avainta ei havaittu. Anna NoPayn API-avaimesi ja yritä uudelleen."
+
 msgid "NoPayn"
 msgstr "NoPayn"
 
-msgid "NoPayn - Library"
-msgstr "NoPayn - Kirjasto"
+msgid "NoPayn - Apple Pay Payments"
+msgstr "NoPayn - Apple Pay -maksut"
 
-msgid "Page where user is redirected after payment has failed."
-msgstr "Sivu, jolle käyttäjä ohjataan maksun epäonnistumisen jälkeen."
+msgid "NoPayn Payment Library"
+msgstr "NoPayn-maksukirjasto"
 
-msgid "Payment gateway will be available ONLY for selected currencies."
-msgstr "Maksuportti on käytettävissä VAIN valituille valuutoille."
+msgid "NoPayn payment methods have been disabled due to a missing API key."
+msgstr "NoPayn-maksutavat on poistettu käytöstä puuttuvan API-avaimen vuoksi."
 
 msgid ""
-"Please beware that for bank transactions the refunds will process directly "
-"to the gateway!"
+"Note: Refunds for bank transactions are processed directly through the "
+"gateway."
 msgstr ""
-"Huomioithan, että pankkitapahtumien osalta palautukset käsitellään suoraan "
-"yhdyskäytävälle!"
+"Huomautus: Pankkitapahtumien palautukset käsitellään suoraan yhdyskäytävän "
+"kautta.\n"
 
-msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgid "Only completed orders can be refunded"
+msgstr "Vain valmiit tilaukset voidaan palauttaa"
+
+msgid "Order Confirmation: %s at %s"
 msgstr ""
-"Ratkaisee ongelman, kun curl.cacert-polkua ei ole asetettu PHP.ini:ssä."
+"Tilausvahvistus: %s osoitteessa %s\n"
+
+msgid "Payment Failed Redirect Page"
+msgstr "Maksu epäonnistui uudelleenohjaussivu"
+
+msgid "Payment Gateway Disabled"
+msgstr "Payment Gateway Disabled"
+
+msgid "Payment Method Title"
+msgstr "Maksutavan nimi"
+
+msgid "Refund order is not completed"
+msgstr "Palautustilausta ei ole täytetty"
+
+msgid "Refund order is not completed: %s"
+msgstr "Palautustilaus ei ole valmis: %s"
+
+msgid "Refunds only possible when captured"
+msgstr "Palautukset ovat mahdollisia vain silloin, kun ne on otettu talteen"
 
 msgid "Select currencies..."
 msgstr "Valitse valuutat..."
 
+msgid "Settings"
+msgstr "Asetukset"
+
 msgid "Shopping Cart"
 msgstr "Ostoskori"
 
-msgid "Test API key"
-msgstr "Testaa API-avain"
+msgid "Swish"
+msgstr "Swish"
 
-msgid "The following payment methods are not available for selected currency:"
-msgstr "Seuraavat maksutavat eivät ole käytettävissä valitulle valuutalle:"
+msgid "Swish - NoPayn"
+msgstr "Swish - NoPayn"
 
-msgid "There was a problem processing your transaction."
-msgstr "Tapahtuman käsittelyssä ilmeni ongelma."
+msgid "Test Mode API Key"
+msgstr ""
+"Testitila API-avain\n"
 
-msgid "This controls the title which the user sees during checkout."
-msgstr "Tämä ohjaa otsikkoa, jonka käyttäjä näkee kassalla."
+msgid "The currency %s is not supported by %s."
+msgstr ""
+"Valuutta %s ei ole tuettu %s:ssä.\n"
+
+msgid "The currency %s is not supported by NoPayn."
+msgstr ""
+"NoPayn ei tue valuuttaa %s.\n"
+
+#| msgid ""
+#| "The following payment methods are not available for selected currency:"
+msgid "These payment methods are not available for the selected currency:"
+msgstr "Nämä maksutavat eivät ole käytettävissä valitulle valuutalle:"
+
+msgid "This is the page where customers are redirected if their payment fails."
+msgstr "Tälle sivulle asiakkaat ohjataan, jos maksu epäonnistuu."
 
 msgid ""
-"This is the general module with settings, during checkout the user will not "
-"see this option."
-msgstr ""
-"Tämä on yleinen asetusmoduuli, eikä käyttäjä näe tätä vaihtoehtoa kassalla."
-
-msgid "Title"
-msgstr "Otsikko"
+"This payment gateway will only be available for the selected currencies."
+msgstr "Tämä maksuportti on käytettävissä vain valituille valuutoille."
 
 msgid ""
-"Unfortunately, we can not currently accept your purchase. Please choose "
-"another payment option to complete your order. We apologize for the "
-"inconvenience."
+"This section contains general settings and is not visible to customers "
+"during checkout."
 msgstr ""
-"Valitettavasti emme voi tällä hetkellä hyväksyä ostoasi. Ole hyvä ja valitse "
-"toinen maksutapa tilauksen loppuunsaattamiseksi. Pahoittelemme häiriötä."
-
-msgid "Use cURL CA bundle"
-msgstr "Käytä cURL CA -pakettia"
-
-msgid "Your order %s at %s"
-msgstr "Tilauksesi %s osoitteessa %s"
+"Tämä osio sisältää yleisiä asetuksia, eivätkä asiakkaat näe sitä kassan "
+"aikana."
 
 msgid ""
-"Your transaction is still being processed. You will be notified when status "
-"is updated."
+"Transaction failed. Please try again or choose a different payment method."
+msgstr "Tapahtuma epäonnistui. Yritä uudelleen tai valitse toinen maksutapa."
+
+msgid "Use cURL Certificate Bundle"
+msgstr "Käytä cURL-varmennepakettia"
+
+msgid ""
+"We’re unable to process your purchase at this time. Please select a "
+"different payment method"
 msgstr ""
-"Maksutapahtumaasi käsitellään edelleen. Sinulle ilmoitetaan, kun tila "
-"päivitetään."
+"Emme pysty käsittelemään ostoasi tällä hetkellä. Ole hyvä ja valitse toinen "
+"maksutapa"
+
+msgid ""
+"Your API key lacks the required permissions for this action: %s. Contact "
+"technical support for assistance."
+msgstr ""
+"API-avaimellasi ei ole tämän toiminnon edellyttämiä oikeuksia: %s. Ota "
+"yhteyttä tekniseen tukeen saadaksesi apua."
+
+msgid "Your NoPayn API key (provided by NoPayn)."
+msgstr "NoPayn API-avaimesi (NoPayn toimittama)."
+
+msgid ""
+"Your transaction is in progress. We'll update you once the status changes."
+msgstr "Maksutapahtumasi on käynnissä. Päivitämme sinut, kun tila muuttuu."

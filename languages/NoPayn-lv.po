@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-02-20 13:42+0000\n"
+"PO-Revision-Date: 2025-03-31 13:22+0000\n"
 "Last-Translator: \n"
 "Language-Team: Latvian\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -20,70 +20,92 @@ msgstr ""
 "(n%10==1 && n%100!=11 ? 1 : 2);\n"
 "X-Loco-Version: 2.7.1; wp-6.7.2"
 
-msgid "Allowed currencies"
-msgstr "Atļautās valūtas"
+msgid "Accept Apple Pay Payments"
+msgstr "Apple Pay maksājumu pieņemšana"
+
+msgid "Accept Credit/Debit Card Payments"
+msgstr "Kredītkaršu/debetkaršu maksājumu pieņemšana"
+
+msgid "Accept Google Pay Payments"
+msgstr "Pieņemt Google Pay maksājumus"
+
+msgid "Accept MobilePay Payments"
+msgstr "Pieņemt MobilePay maksājumus"
+
+msgid "Accept Swish Payments"
+msgstr "Pieņemt Swish maksājumus"
+
+msgid "Accepted Currencies"
+msgstr "Pieņemamās valūtas"
+
+msgid "Activate NoPayn Gateway & Configure Settings"
+msgstr "Aktivizēt NoPayn Gateway un konfigurēt iestatījumus"
 
 msgid "API key"
 msgstr "API atslēga"
 
-msgid ""
-"API Key has not permission for some action: %s Please contact technical "
-"support!"
+msgid "Apple Pay"
+msgstr "Apple Pay"
+
+msgid "Automatically Complete Orders"
+msgstr "Automātiski pabeigt pasūtījumus"
+
+msgid "Automatically mark orders as 'Completed' once payment is received."
 msgstr ""
-"API atslēgai nav atļaujas kādai darbībai: %s Lūdzu, sazinieties ar tehnisko "
-"atbalstu!"
+"Automātiski atzīmējiet pasūtījumus kā “pabeigtus”, tiklīdz ir saņemts "
+"maksājums."
 
-msgid "API key is empty NoPayn payment methods deactivated"
-msgstr "API atslēga ir tukša NoPayn maksājumu metodes ir deaktivizētas"
+msgid "Capture on complete"
+msgstr "Uzņemšana pabeigta"
 
-msgid "API key is empty. Set API key and try again"
-msgstr "API atslēga ir tukša. Iestatiet API atslēgu un mēģiniet vēlreiz"
-
-msgid "API Key is not valid: %s NoPayn payment methods deactivated"
-msgstr "API atslēga nav derīga: %s NoPayn maksājumu metodes deaktivizētas"
-
-msgid "API key provided by NoPayn"
-msgstr "NoPayn sniegtā API atslēga"
-
-msgid "Auto complete orders "
-msgstr "Automātiska pasūtījumu pabeigšana"
+msgid "Captures payment when an order is marked as complete"
+msgstr "Reģistrē maksājumu, kad pasūtījums tiek atzīmēts kā pabeigts."
 
 msgid "Checkout Page"
 msgstr "Izrakstīšanās lapa"
 
-msgid "Credit Card"
-msgstr "Kredītkarte"
+msgid "Credit Card/Debit Card"
+msgstr "Kredītkarte/debetkarte"
 
-msgid "cURL CA bundle"
-msgstr "cURL CA komplekts"
+msgid "Displayed name of the payment method at checkout."
+msgstr "Rāda maksājuma metodes nosaukumu pie kases."
 
-msgid "Current shop currency %s not supported by %s."
-msgstr "Pašreizējā veikala valūta %s netiek atbalstīta %s."
-
-msgid "Current shop currency %s not supported by NoPayn."
-msgstr "Pašreizējā veikala valūta %s netiek atbalstīta NoPayn."
-
-msgid ""
-"Enable automatically change store orders status to Completed after receiving "
-"payment"
-msgstr ""
-"Atļaut automātiski mainīt pasūtījuma statusu uz \"Pabeigts\" pēc maksājuma "
-"saņemšanas"
+msgid "Enable Apple Pay Payments"
+msgstr "Iespējot Apple Pay maksājumus"
 
 msgid "Enable Credit Card Payments"
 msgstr "Kredītkaršu maksājumu iespējošana"
 
-msgid "Enable/Disable"
-msgstr "Ieslēgt/izslēgt"
+#| msgid "Use cURL CA bundle"
+msgid "Enable cURL CA Bundle"
+msgstr "Ieslēgt cURL CA paketi"
 
-msgid "Failed payment page"
-msgstr "Neveiksmīga maksājuma lapa"
+msgid "Enable Google Pay Payments"
+msgstr "Iespējot Google Pay maksājumus"
 
-msgid "Gateway Disabled"
-msgstr "Gateway atspējots"
+msgid "Enable MobilePay Payments"
+msgstr "Iespējot MobilePay maksājumus"
 
-msgid "If set empty - option is ignored."
-msgstr "Ja iestatīts tukšs - opcija tiek ignorēta."
+msgid "Enable NoPayn Payments"
+msgstr "Ieslēgt NoPayn maksājumus"
+
+msgid "Enable Swish Payments"
+msgstr "Iespējot Swish maksājumus"
+
+msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
+msgstr "Novērš problēmas, ja PHP.ini nav norādīts curl.cacert ceļš."
+
+msgid "Google Pay"
+msgstr "Google Pay"
+
+msgid "Google Pay - NoPayn"
+msgstr "Google Pay - NoPayn"
+
+msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
+msgstr "Nederīga API atslēga: %s. NoPayn maksājumu metodes ir atspējotas."
+
+msgid "Leave blank to allow all supported currencies."
+msgstr "Atstājiet tukšu, lai atļautu visas atbalstītās valūtas."
 
 msgid "Library"
 msgstr "Bibliotēka"
@@ -91,74 +113,129 @@ msgstr "Bibliotēka"
 msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
 msgstr "Mastercard, VISA, Maestro vai V PAY - NoPayn"
 
+msgid "MobilePay"
+msgstr "MobilePay"
+
+msgid "MobilePay - NoPayn"
+msgstr "MobilePay - NoPayn"
+
+msgid "No API key detected. Please enter your NoPayn API key and try again."
+msgstr ""
+"API atslēga nav atrasta. Lūdzu, ievadiet savu NoPayn API atslēgu un mēģiniet "
+"vēlreiz."
+
 msgid "NoPayn"
 msgstr "NoPayn"
 
-msgid "NoPayn - Library"
-msgstr "NoPayn - Bibliotēka"
+msgid "NoPayn - Apple Pay Payments"
+msgstr "NoPayn - Apple Pay maksājumi"
 
-msgid "Page where user is redirected after payment has failed."
-msgstr "Lapa, uz kuru lietotājs tiek novirzīts pēc neveiksmīga maksājuma."
+msgid "NoPayn Payment Library"
+msgstr "NoPayn maksājumu bibliotēka"
 
-msgid "Payment gateway will be available ONLY for selected currencies."
-msgstr "Maksājumu vārti būs pieejami TIKAI izvēlētajām valūtām."
+msgid "NoPayn payment methods have been disabled due to a missing API key."
+msgstr "NoPayn maksājumu metodes ir atspējotas trūkstošās API atslēgas dēļ."
 
 msgid ""
-"Please beware that for bank transactions the refunds will process directly "
-"to the gateway!"
+"Note: Refunds for bank transactions are processed directly through the "
+"gateway."
 msgstr ""
-"Lūdzu, ņemiet vērā, ka bankas darījumiem atmaksa tiks apstrādāta tieši uz "
-"vārteju!"
+"Piezīme: Atmaksa par bankas darījumiem tiek apstrādāta tieši caur vārteju."
 
-msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
-msgstr "Atrisina problēmu, kad curl.cacert ceļš nav iestatīts PHP.ini"
+msgid "Only completed orders can be refunded"
+msgstr "Atmaksāt var tikai par pabeigtiem pasūtījumiem"
+
+msgid "Order Confirmation: %s at %s"
+msgstr "Pasūtījuma apstiprinājums: %s pie %s"
+
+msgid "Payment Failed Redirect Page"
+msgstr "Maksājuma neveiksmīga pāradresēšanas lapa"
+
+msgid "Payment Gateway Disabled"
+msgstr "Maksājumu vārteja atspējota"
+
+msgid "Payment Method Title"
+msgstr "Maksājuma metodes nosaukums"
+
+msgid "Refund order is not completed"
+msgstr "Atmaksāšanas rīkojums nav izpildīts"
+
+msgid "Refund order is not completed: %s"
+msgstr "Atmaksas rīkojums nav izpildīts: %s"
+
+msgid "Refunds only possible when captured"
+msgstr "Kompensācijas ir iespējamas tikai tad, ja ir uztverts"
 
 msgid "Select currencies..."
 msgstr "Izvēlieties valūtas..."
 
+msgid "Settings"
+msgstr "Iestatījumi"
+
 msgid "Shopping Cart"
 msgstr "Iepirkumu grozs"
 
-msgid "Test API key"
-msgstr "Testa API atslēga"
+msgid "Swish"
+msgstr "Swish"
 
-msgid "The following payment methods are not available for selected currency:"
-msgstr "Izvēlētajā valūtā nav pieejami šādi maksāšanas veidi:"
+msgid "Swish - NoPayn"
+msgstr "Swish - NoPayn"
 
-msgid "There was a problem processing your transaction."
-msgstr "Jūsu darījuma apstrādei radās problēma."
+msgid "Test Mode API Key"
+msgstr "Testa režīms API atslēga"
 
-msgid "This controls the title which the user sees during checkout."
-msgstr "Tas kontrolē virsrakstu, ko lietotājs redz izrakstīšanās laikā."
+msgid "The currency %s is not supported by %s."
+msgstr "Valūta %s netiek atbalstīta %s."
 
-msgid ""
-"This is the general module with settings, during checkout the user will not "
-"see this option."
-msgstr ""
-"Šis ir vispārīgs moduļa iestatījums, un norēķināšanās laikā lietotājs šo "
-"opciju neredzēs."
+msgid "The currency %s is not supported by NoPayn."
+msgstr "Valūta %s netiek atbalstīta NoPayn."
 
-msgid "Title"
-msgstr "Nosaukums"
+#| msgid ""
+#| "The following payment methods are not available for selected currency:"
+msgid "These payment methods are not available for the selected currency:"
+msgstr "Šīs maksājumu metodes nav pieejamas izvēlētajai valūtai:"
 
-msgid ""
-"Unfortunately, we can not currently accept your purchase. Please choose "
-"another payment option to complete your order. We apologize for the "
-"inconvenience."
-msgstr ""
-"Diemžēl pašlaik mēs nevaram pieņemt jūsu pirkumu. Lūdzu, izvēlieties citu "
-"maksājuma iespēju, lai pabeigtu savu pasūtījumu. Atvainojamies par "
-"sagādātajām neērtībām."
-
-msgid "Use cURL CA bundle"
-msgstr "Izmantojiet cURL CA paketi"
-
-msgid "Your order %s at %s"
-msgstr "Jūsu pasūtījums %s pie %s"
+msgid "This is the page where customers are redirected if their payment fails."
+msgstr "Šī ir lapa, uz kuru klienti tiek novirzīti, ja maksājums neizdodas."
 
 msgid ""
-"Your transaction is still being processed. You will be notified when status "
-"is updated."
+"This payment gateway will only be available for the selected currencies."
+msgstr "Šie maksājumu vārti būs pieejami tikai izvēlētajām valūtām."
+
+msgid ""
+"This section contains general settings and is not visible to customers "
+"during checkout."
 msgstr ""
-"Jūsu darījums joprojām tiek apstrādāts. Jums tiks paziņots, kad statuss tiks "
-"atjaunināts."
+"Šajā sadaļā ir ietverti vispārīgi iestatījumi, un tā nav redzama klientiem "
+"izrakstīšanās laikā."
+
+msgid ""
+"Transaction failed. Please try again or choose a different payment method."
+msgstr ""
+"Darījums neizdevās. Lūdzu, mēģiniet vēlreiz vai izvēlieties citu maksājuma "
+"metodi."
+
+msgid "Use cURL Certificate Bundle"
+msgstr "Izmantot cURL sertifikātu kopumu"
+
+msgid ""
+"We’re unable to process your purchase at this time. Please select a "
+"different payment method"
+msgstr ""
+"Šobrīd mēs nevaram apstrādāt jūsu pirkumu. Lūdzu, izvēlieties citu maksājuma "
+"metodi"
+
+msgid ""
+"Your API key lacks the required permissions for this action: %s. Contact "
+"technical support for assistance."
+msgstr ""
+"Jūsu API atslēgai nav šai darbībai nepieciešamo atļauju: %s. Sazinieties ar "
+"tehnisko atbalstu, lai saņemtu palīdzību."
+
+msgid "Your NoPayn API key (provided by NoPayn)."
+msgstr "Jūsu NoPayn API atslēga (nodrošina NoPayn)."
+
+msgid ""
+"Your transaction is in progress. We'll update you once the status changes."
+msgstr ""
+"Jūsu darījums tiek veikts. Mēs jūs atjaunināsim, tiklīdz statuss mainīsies."

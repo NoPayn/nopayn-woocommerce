@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-02-20 13:40+0000\n"
+"PO-Revision-Date: 2025-03-31 13:19+0000\n"
 "Last-Translator: \n"
 "Language-Team: Hungarian\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -19,70 +19,95 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.7.1; wp-6.7.2"
 
-msgid "Allowed currencies"
-msgstr "Engedélyezett pénznemek"
+msgid "Accept Apple Pay Payments"
+msgstr "Apple Pay fizetések elfogadása"
+
+msgid "Accept Credit/Debit Card Payments"
+msgstr "Hitelkártyás/betéti kártyás fizetések elfogadása"
+
+msgid "Accept Google Pay Payments"
+msgstr "Google Pay fizetés elfogadása"
+
+msgid "Accept MobilePay Payments"
+msgstr "MobilePay fizetés elfogadása"
+
+msgid "Accept Swish Payments"
+msgstr "Swish fizetés elfogadása"
+
+msgid "Accepted Currencies"
+msgstr "Elfogadott valuták"
+
+msgid "Activate NoPayn Gateway & Configure Settings"
+msgstr "NoPayn Gateway aktiválása és beállítások konfigurálása"
 
 msgid "API key"
 msgstr "API kulcs"
 
-msgid ""
-"API Key has not permission for some action: %s Please contact technical "
-"support!"
+msgid "Apple Pay"
+msgstr "Apple Pay"
+
+msgid "Automatically Complete Orders"
+msgstr "Automatikusan befejezni a megrendeléseket"
+
+msgid "Automatically mark orders as 'Completed' once payment is received."
 msgstr ""
-"Az API-kulcsnak nincs engedélye bizonyos műveletekhez: %s Kérjük, forduljon "
-"a technikai támogatáshoz!"
+"A fizetés beérkezése után a megrendeléseket automatikusan „Teljesítve”-ként "
+"jelölje meg."
 
-msgid "API key is empty NoPayn payment methods deactivated"
-msgstr "Az API kulcs üres NoPayn fizetési módok kikapcsolva"
+msgid "Capture on complete"
+msgstr "Capture on complete"
 
-msgid "API key is empty. Set API key and try again"
-msgstr "Az API-kulcs üres. Állítsa be az API-kulcsot, és próbálja újra"
-
-msgid "API Key is not valid: %s NoPayn payment methods deactivated"
-msgstr "Az API kulcs nem érvényes: %s NoPayn fizetési módok deaktiválva"
-
-msgid "API key provided by NoPayn"
-msgstr "NoPayn által biztosított API kulcs"
-
-msgid "Auto complete orders "
-msgstr "Rendelések automatikus befejezése"
+msgid "Captures payment when an order is marked as complete"
+msgstr "Fizetés rögzítése, amikor a megrendelést befejezettnek jelöli."
 
 msgid "Checkout Page"
 msgstr "Pénztár oldal"
 
-msgid "Credit Card"
-msgstr "Hitelkártya"
+msgid "Credit Card/Debit Card"
+msgstr "Hitelkártya/betéti kártya"
 
-msgid "cURL CA bundle"
-msgstr "cURL CA csomag"
+msgid "Displayed name of the payment method at checkout."
+msgstr "A fizetési mód megjelenített neve a pénztárnál."
 
-msgid "Current shop currency %s not supported by %s."
-msgstr "A bolt jelenlegi pénznemét %s nem támogatja %s."
-
-msgid "Current shop currency %s not supported by NoPayn."
-msgstr "A NoPayn nem támogatja a bolt jelenlegi pénznemét %s."
-
-msgid ""
-"Enable automatically change store orders status to Completed after receiving "
-"payment"
-msgstr ""
-"Engedélyezze a rendelés állapotának automatikus „Teljesítve” módosítását a "
-"fizetés beérkezése után"
+msgid "Enable Apple Pay Payments"
+msgstr "Apple Pay fizetések engedélyezése"
 
 msgid "Enable Credit Card Payments"
 msgstr "Hitelkártyás fizetések engedélyezése"
 
-msgid "Enable/Disable"
-msgstr "Engedélyezés/Kikapcsolás"
+#| msgid "Use cURL CA bundle"
+msgid "Enable cURL CA Bundle"
+msgstr "A cURL CA csomag engedélyezése"
 
-msgid "Failed payment page"
-msgstr "Sikertelen fizetési oldal"
+msgid "Enable Google Pay Payments"
+msgstr "Google Pay fizetések engedélyezése"
 
-msgid "Gateway Disabled"
-msgstr "Átjáró letiltva"
+msgid "Enable MobilePay Payments"
+msgstr "MobilePay fizetések engedélyezése"
 
-msgid "If set empty - option is ignored."
-msgstr "Ha üres - az opciót figyelmen kívül hagyja."
+msgid "Enable NoPayn Payments"
+msgstr "NoPayn fizetés engedélyezése"
+
+msgid "Enable Swish Payments"
+msgstr "Swish fizetések engedélyezése"
+
+msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
+msgstr ""
+"Javítja azokat a problémákat, amikor a curl.cacert elérési útvonal hiányzik "
+"a PHP.ini fájlból."
+
+msgid "Google Pay"
+msgstr "Google Pay"
+
+msgid "Google Pay - NoPayn"
+msgstr "Google Pay - NoPayn"
+
+msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
+msgstr ""
+"Érvénytelen API-kulcs: %s. A NoPayn fizetési módok letiltásra kerültek."
+
+msgid "Leave blank to allow all supported currencies."
+msgstr "Hagyja üresen az összes támogatott pénznem engedélyezéséhez."
 
 msgid "Library"
 msgstr "Könyvtár"
@@ -90,80 +115,136 @@ msgstr "Könyvtár"
 msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
 msgstr "Mastercard, VISA, Maestro vagy V PAY - NoPayn"
 
+msgid "MobilePay"
+msgstr "MobilePay"
+
+msgid "MobilePay - NoPayn"
+msgstr "MobilePay - NoPayn"
+
+msgid "No API key detected. Please enter your NoPayn API key and try again."
+msgstr ""
+"Nincs API-kulcs észlelve. Kérjük, adja meg a NoPayn API-kulcsát, és próbálja "
+"meg újra."
+
 msgid "NoPayn"
 msgstr "NoPayn"
 
-msgid "NoPayn - Library"
-msgstr "NoPayn - Könyvtár"
+msgid "NoPayn - Apple Pay Payments"
+msgstr "NoPayn - Apple Pay fizetések"
 
-msgid "Page where user is redirected after payment has failed."
-msgstr ""
-"Oldal, ahová a felhasználót átirányítják, miután a fizetés sikertelen volt."
+msgid "NoPayn Payment Library"
+msgstr "NoPayn fizetési könyvtár"
 
-msgid "Payment gateway will be available ONLY for selected currencies."
+msgid "NoPayn payment methods have been disabled due to a missing API key."
 msgstr ""
-"A fizetési átjáró CSAK a kiválasztott pénznemek esetében lesz elérhető."
+"A NoPayn fizetési módok letiltásra kerültek egy hiányzó API-kulcs miatt."
 
 msgid ""
-"Please beware that for bank transactions the refunds will process directly "
-"to the gateway!"
+"Note: Refunds for bank transactions are processed directly through the "
+"gateway."
 msgstr ""
-"Kérjük, vegye figyelembe, hogy a banki tranzakciók esetében a visszatérítés "
-"közvetlenül az átjáróhoz kerül!"
+"Megjegyzés: A banki tranzakciók visszatérítése közvetlenül az átjárón "
+"keresztül történik."
 
-msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
-msgstr ""
-"Megoldja a problémát, amikor a curl.cacert elérési útja nincs beállítva a "
-"PHP.ini fájlban"
+msgid "Only completed orders can be refunded"
+msgstr "Csak a befejezett megrendeléseket lehet visszatéríteni"
+
+msgid "Order Confirmation: %s at %s"
+msgstr "Megrendelés visszaigazolása: %s a %s-nál"
+
+msgid "Payment Failed Redirect Page"
+msgstr "Sikertelen fizetés átirányítás oldal"
+
+msgid "Payment Gateway Disabled"
+msgstr "A fizetési átjáró letiltva"
+
+msgid "Payment Method Title"
+msgstr "Fizetési mód címe"
+
+msgid "Refund order is not completed"
+msgstr "A visszatérítési megbízás nem teljesült"
+
+msgid "Refund order is not completed: %s"
+msgstr "A visszatérítési megbízás nem teljesült: %s"
+
+msgid "Refunds only possible when captured"
+msgstr "Visszatérítés csak akkor lehetséges, ha rögzítették"
 
 msgid "Select currencies..."
 msgstr "Válasszon valutát..."
 
+msgid "Settings"
+msgstr "Beállítások"
+
 msgid "Shopping Cart"
 msgstr "Bevásárlókosár"
 
-msgid "Test API key"
-msgstr "Teszt API kulcs"
+msgid "Swish"
+msgstr "Swish"
 
-msgid "The following payment methods are not available for selected currency:"
+msgid "Swish - NoPayn"
+msgstr "Swish - NoPayn"
+
+msgid "Test Mode API Key"
+msgstr "Tesztmód API-kulcs"
+
+msgid "The currency %s is not supported by %s."
+msgstr "A %s pénznemet a %s nem támogatja."
+
+msgid "The currency %s is not supported by NoPayn."
+msgstr "A %s pénznemet a NoPayn nem támogatja."
+
+#| msgid ""
+#| "The following payment methods are not available for selected currency:"
+msgid "These payment methods are not available for the selected currency:"
 msgstr ""
-"A következő fizetési módok nem állnak rendelkezésre a kiválasztott "
-"pénznemben:"
+"Ezek a fizetési módok nem állnak rendelkezésre a kiválasztott pénznemhez:"
 
-msgid "There was a problem processing your transaction."
-msgstr "Probléma adódott a tranzakció feldolgozásával."
-
-msgid "This controls the title which the user sees during checkout."
-msgstr "Ez vezérli azt a címet, amelyet a felhasználó a fizetés során lát."
+msgid "This is the page where customers are redirected if their payment fails."
+msgstr ""
+"Ez az az oldal, ahová a vásárlók átirányításra kerülnek, ha a fizetésük "
+"sikertelen."
 
 msgid ""
-"This is the general module with settings, during checkout the user will not "
-"see this option."
+"This payment gateway will only be available for the selected currencies."
 msgstr ""
-"Ez az általános beállítási modul, a fizetés során a felhasználó nem fogja "
-"látni ezt az opciót."
-
-msgid "Title"
-msgstr "Cím"
+"Ez a fizetési átjáró csak a kiválasztott pénznemek esetében lesz elérhető."
 
 msgid ""
-"Unfortunately, we can not currently accept your purchase. Please choose "
-"another payment option to complete your order. We apologize for the "
-"inconvenience."
+"This section contains general settings and is not visible to customers "
+"during checkout."
 msgstr ""
-"Sajnos jelenleg nem tudjuk elfogadni a vásárlását. Kérjük, válasszon más "
-"fizetési módot a megrendelés befejezéséhez. Elnézést kérünk a "
-"kellemetlenségért."
-
-msgid "Use cURL CA bundle"
-msgstr "A cURL CA csomag használata"
-
-msgid "Your order %s at %s"
-msgstr "Az Ön megrendelése %s %s-nál"
+"Ez a szakasz általános beállításokat tartalmaz, és a vásárlók számára nem "
+"látható a fizetés során."
 
 msgid ""
-"Your transaction is still being processed. You will be notified when status "
-"is updated."
+"Transaction failed. Please try again or choose a different payment method."
 msgstr ""
-"A tranzakció feldolgozása még folyamatban van. Értesítjük, ha a státusz "
-"frissül."
+"A tranzakció sikertelen. Kérjük, próbálja meg újra, vagy válasszon másik "
+"fizetési módot."
+
+msgid "Use cURL Certificate Bundle"
+msgstr "A cURL tanúsítványcsomag használata"
+
+msgid ""
+"We’re unable to process your purchase at this time. Please select a "
+"different payment method"
+msgstr ""
+"Jelenleg nem tudjuk feldolgozni a vásárlását. Kérjük, válasszon másik "
+"fizetési módot"
+
+msgid ""
+"Your API key lacks the required permissions for this action: %s. Contact "
+"technical support for assistance."
+msgstr ""
+"Az Ön API-kulcsa nem rendelkezik a művelethez szükséges jogosultságokkal: %s."
+" Forduljon a műszaki támogatáshoz segítségért."
+
+msgid "Your NoPayn API key (provided by NoPayn)."
+msgstr "Az Ön NoPayn API kulcsa (a NoPayn által biztosított)."
+
+msgid ""
+"Your transaction is in progress. We'll update you once the status changes."
+msgstr ""
+"A tranzakciója folyamatban van. Frissíteni fogjuk, amint az állapot "
+"megváltozik."

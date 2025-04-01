@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: NoPayn
+ * Plugin Name: NoPayn Payments
  * Plugin URI: https://nopayn.io/
  * Description: NoPayn WooCommerce plugin
- * Version:
+ * Version: 1.0.1
  * Author: Ginger Payments
  * Author URI: https://www.gingerpayments.com/
  * License: The MIT License (MIT)
@@ -97,7 +97,7 @@ function woocommerce_ginger_init()
     {
         if (strstr($order->data['payment_method'],WC_Ginger_BankConfig::BANK_PREFIX)) //shows only for orders which were paid by bank's payment method
         {
-            echo "<p style='color: red; ' class='description'>" . esc_html__( "Please beware that for bank transactions the refunds will process directly to the gateway!", WC_Ginger_BankConfig::BANK_PREFIX) . "</p>";
+            echo "<p style='color: red; ' class='description'>" . esc_html__( "Note: Refunds for bank transactions are processed directly through the gateway.", WC_Ginger_BankConfig::BANK_PREFIX) . "</p>";
         }
     }
 
@@ -198,8 +198,87 @@ function woocommerce_ginger_init()
         endif;
     }
 
+    function woocommerce_order_status_completed($post_id): void
+    {
+        $order = wc_get_order($post_id);
+
+        //check if capture on complete is enabled
+        if (str_replace(WC_Ginger_BankConfig::BANK_PREFIX.'_', '', $order->get_payment_method()) == 'credit-card'){
+            $settings = get_option('woocommerce_'.WC_Ginger_BankConfig::BANK_PREFIX.'_credit-card_settings');
+
+            $captureManual = $settings['capture_manual'] ?? 'no';
+            if ($captureManual == 'no') {
+                return;
+            }
+        }
+
+        $gingerOrderIDMeta = get_post_meta($post_id, WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', true);
+        $client = WC_Ginger_Clientbuilder::gingerBuildClient($order->get_payment_method());
+
+        $gingerOrder = $client->getOrder($gingerOrderIDMeta);
+
+        //check if order was already captured
+        if (!empty($gingerOrder['flags']) && in_array('has-captures', $gingerOrder['flags'])) {
+            return;
+        }
+
+        try {
+            if (current($gingerOrder['transactions'])['is_capturable'])//check if order can be captured
+            {
+                $transactionID = current($gingerOrder['transactions']) ? current($gingerOrder['transactions'])['id'] : null;
+                $client->captureOrderTransaction($gingerOrder['id'], $transactionID);
+            }
+        } catch (\Exception $exception) {
+            $order->add_order_note( $exception->getMessage() );
+            WC_Admin_Notices::add_custom_notice('ginger-error', $exception->getMessage());
+        }
+    }
+
+    function woocommerce_order_status_cancelled($post_id): void
+    {
+        $order = wc_get_order($post_id);
+
+        //check if capture on complete is enabled
+        if (str_replace(WC_Ginger_BankConfig::BANK_PREFIX.'_', '', $order->get_payment_method()) == 'credit-card'){
+            $settings = get_option('woocommerce_'.WC_Ginger_BankConfig::BANK_PREFIX.'_credit-card_settings');
+
+            $captureManual = $settings['capture_manual'] ?? 'no';
+            if ($captureManual == 'no') {
+                return;
+            }
+        }
+
+        $gingerOrderIDMeta = get_post_meta($post_id, WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', true);
+        $client = WC_Ginger_Clientbuilder::gingerBuildClient($order->get_payment_method());
+
+        $gingerOrder = $client->getOrder($gingerOrderIDMeta);
+
+        //check if order was already captured or voided
+        if (!empty($gingerOrder['flags']) && (in_array('has-captures', $gingerOrder['flags']) || in_array('has-voids', $gingerOrder['flags']))) {
+            return;
+        }
+
+        try {
+            $transactionID = current($gingerOrder['transactions']) ? current($gingerOrder['transactions'])['id'] : null;
+
+            $client->send('POST', sprintf('/orders/%s/transactions/%s/voids/amount', $gingerOrder['id'], $transactionID),
+                ['amount' => $gingerOrder['amount'], 'description' => sprintf(
+                        "Void %s of the full %s on order %s ",
+                    $gingerOrder['amount'], $gingerOrder['amount'], $gingerOrder['merchant_order_id']
+                )]);
+
+        } catch (\Exception $exception) {
+            $order->add_order_note( $exception->getMessage() );
+            WC_Admin_Notices::add_custom_notice('ginger-error', $exception->getMessage());
+        }
+    }
+
+
     add_filter('woocommerce_available_payment_gateways', 'ginger_additional_filter_gateways', 10);
     add_action('woocommerce_thankyou', 'ginger_remove_notices', 20);
     add_action('woocommerce_after_checkout_form', 'applepay_detection',10);
+    add_action( 'woocommerce_order_status_completed', 'woocommerce_order_status_completed', 10 );
+    add_action( 'woocommerce_order_status_cancelled', 'woocommerce_order_status_cancelled', 10 );
+
 
 }

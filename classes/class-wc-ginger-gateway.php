@@ -62,9 +62,9 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
 
         if (!$this->gingerClient)
         {
-            if(!wc_has_notice(__( 'API key is empty. '.WC_Ginger_BankConfig::BANK_LABEL.' payment methods deactivated', WC_Ginger_BankConfig::BANK_PREFIX ), 'notice'))
+            if(!wc_has_notice(__( WC_Ginger_BankConfig::BANK_LABEL . ' payment methods have been disabled due to a missing API key.', WC_Ginger_BankConfig::BANK_PREFIX ), 'notice'))
             {
-                wc_add_notice(__( 'API key is empty. '.WC_Ginger_BankConfig::BANK_LABEL.' payment methods deactivated', WC_Ginger_BankConfig::BANK_PREFIX ), 'notice');
+                wc_add_notice(__( WC_Ginger_BankConfig::BANK_LABEL . ' payment methods have been disabled due to a missing API key.', WC_Ginger_BankConfig::BANK_PREFIX ), 'notice');
             }
             foreach ($gateways as $key => $gateway)
             {
@@ -83,9 +83,9 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
             //Unfortunately $exception->getCode() is empty hence we find error code in $exception->getMessage()
             if (strstr($exception->getMessage(),"Unauthorized(401)"))
             {
-                if(!wc_has_notice(sprintf(__('API Key is not valid: %s '.WC_Ginger_BankConfig::BANK_LABEL.' payment methods deactivated', WC_Ginger_BankConfig::BANK_PREFIX), $exception->getMessage()), 'notice'))
+                if(!wc_has_notice(sprintf(__('Invalid API Key: %s.'. WC_Ginger_BankConfig::BANK_LABEL.' payment methods have been disabled', WC_Ginger_BankConfig::BANK_PREFIX), $exception->getMessage()), 'notice'))
                 {
-                    wc_add_notice(sprintf(__('API Key is not valid: %s '.WC_Ginger_BankConfig::BANK_LABEL.' payment methods deactivated', WC_Ginger_BankConfig::BANK_PREFIX), $exception->getMessage()), 'notice');
+                    wc_add_notice(sprintf(__('Invalid API Key: %s.'. WC_Ginger_BankConfig::BANK_LABEL.' payment methods have been disabled', WC_Ginger_BankConfig::BANK_PREFIX), $exception->getMessage()), 'notice');
                 }
                 foreach ($gateways as $key => $gateway) if (strstr($gateway->id,WC_Ginger_BankConfig::BANK_PREFIX)) unset($gateways[$key]);
 
@@ -112,9 +112,9 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
                 unset($gateways[$key]);
             }
         }
-        if($notAvailableGateways && !wc_has_notice(__('The following payment methods are not available for selected currency: <br>'.$notAvailableGateways, WC_Ginger_BankConfig::BANK_PREFIX), 'notice'))
+        if($notAvailableGateways && !wc_has_notice(__('These payment methods are not available for the selected currency: <br>'.$notAvailableGateways, WC_Ginger_BankConfig::BANK_PREFIX), 'notice'))
         {
-            wc_add_notice(__('The following payment methods are not available for selected currency: <br>'.$notAvailableGateways, WC_Ginger_BankConfig::BANK_PREFIX), 'notice');
+            wc_add_notice(__('These payment methods are not available for the selected currency: <br>'.$notAvailableGateways, WC_Ginger_BankConfig::BANK_PREFIX), 'notice');
         }
         return $gateways;
     }
@@ -278,7 +278,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
             $gingerOrder = $this->gingerClient->createOrder($this->orderBuilder->gingerGetBuiltOrder());
 
         } catch (\Exception $exception) {
-            wc_add_notice(sprintf(__('There was a problem processing your transaction: %s', WC_Ginger_BankConfig::BANK_PREFIX), $exception->getMessage()), 'error');
+            wc_add_notice(sprintf(__('Transaction failed. Please try again or choose a different payment method: %s', WC_Ginger_BankConfig::BANK_PREFIX), $exception->getMessage()), 'error');
             return [
                 'result' => 'failure'
             ];
@@ -296,7 +296,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
         if($gingerOrder['status'] == 'cancelled')
         {
             wc_add_notice(
-                __('Unfortunately, we can not currently accept your purchase. Please choose another payment option to complete your order. We apologize for the inconvenience.'),
+                __('We’re unable to process your purchase at this time. Please select a different payment method.'),
                 'error'
             );
             return [
@@ -383,7 +383,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
             if ($gingerOrder['status'] == 'processing')
             {
                 echo esc_html__(
-                    "Your transaction is still being processed. You will be notified when status is updated.",
+                    "Your transaction is in progress. We'll update you once the status changes.",
                     WC_Ginger_BankConfig::BANK_PREFIX
                 );
             }
@@ -393,7 +393,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
     function admin_options()
     {
         if (!$this->enabled && count($this->errors)) {
-            echo '<div class="inline error"><p><strong>' . __('Gateway Disabled', WC_Ginger_BankConfig::BANK_PREFIX) . '</strong>: '
+            echo '<div class="inline error"><p><strong>' . __('Payment Gateway Disabled', WC_Ginger_BankConfig::BANK_PREFIX) . '</strong>: '
                 . implode('<br/>', $this->errors)
                 . '</p></div>';
         }
@@ -422,7 +422,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
 
         if(!$this->gingerClient)
         {
-            $reason = __( 'API key is empty. Set API key and try again', WC_Ginger_BankConfig::BANK_PREFIX );
+            $reason = __( 'No API key detected. Please enter your '. WC_Ginger_BankConfig::BANK_LABEL .' API key and try again.', WC_Ginger_BankConfig::BANK_PREFIX );
             $this->gingerDisabledPaymentMethod($reason);
             return false;
         }
@@ -437,7 +437,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
         if (!$this->gingerIsGatewayCurrencySupported($payment_methods_currencies))
         {
             $reason = sprintf(
-                __( 'Current shop currency %s not supported by %s.', WC_Ginger_BankConfig::BANK_PREFIX ),
+                __( 'The currency %s is not supported by %s.', WC_Ginger_BankConfig::BANK_PREFIX ),
                 get_woocommerce_currency(),
                 $this->get_option('title')
             );
