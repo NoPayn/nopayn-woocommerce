@@ -20,17 +20,25 @@ class WC_Ginger_BankConfig
     const PLUGIN_NAME = "nopayn-woocommerce";
 
     /**
-     * Xpate supported payment methods
+     * NoPayn supported payment methods
      */
     public static $BANK_PAYMENT_METHODS = [
-        'nopayn_credit-card'
+        'nopayn_credit-card',
+        'nopayn_apple-pay',
+        'nopayn_google-pay',
+        'nopayn_mobilepay',
+        'nopayn_swish',
     ];
 
     /**
-     * Xpate payment methods classnames
+     * NoPayn payment methods classnames
      */
     public static $WC_BANK_PAYMENT_METHODS = [
+        'WC_Ginger_ApplePay',
+        'WC_Ginger_GooglePay',
         'WC_Ginger_Callback',
-        'WC_Ginger_Creditcard'
+        'WC_Ginger_Creditcard',
+        'WC_Ginger_Swish',
+        'WC_Ginger_MobilePay',
     ];
 }

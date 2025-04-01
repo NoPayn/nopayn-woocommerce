@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-02-20 13:31+0000\n"
+"PO-Revision-Date: 2025-03-31 11:55+0000\n"
 "Last-Translator: \n"
 "Language-Team: Bulgarian\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -19,70 +19,92 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.7.1; wp-6.7.2"
 
-msgid "Allowed currencies"
-msgstr "Позволени валути"
+msgid "Accept Apple Pay Payments"
+msgstr "Приемане на плащания с Apple Pay"
+
+msgid "Accept Credit/Debit Card Payments"
+msgstr "Приемане на плащания с кредитни/дебитни карти"
+
+msgid "Accept Google Pay Payments"
+msgstr "Приемане на плащания с Google Pay"
+
+msgid "Accept MobilePay Payments"
+msgstr "Приемане на плащания с MobilePay"
+
+msgid "Accept Swish Payments"
+msgstr "Приемане на плащания с Swish"
+
+msgid "Accepted Currencies"
+msgstr "Приети валути"
+
+msgid "Activate NoPayn Gateway & Configure Settings"
+msgstr "Активиране на NoPayn шлюз и конфигуриране на настройките"
 
 msgid "API key"
-msgstr "Ключ за API"
+msgstr "API ключ"
 
-msgid ""
-"API Key has not permission for some action: %s Please contact technical "
-"support!"
+msgid "Apple Pay"
+msgstr "Apple Pay"
+
+msgid "Automatically Complete Orders"
+msgstr "Автоматично завършване на поръчките"
+
+msgid "Automatically mark orders as 'Completed' once payment is received."
 msgstr ""
-"API ключът няма разрешение за някакво действие: %s Моля, свържете се с "
-"техническата поддръжка!"
+"Автоматично маркиране на поръчките като „Завършени“ след получаване на "
+"плащането"
 
-msgid "API key is empty NoPayn payment methods deactivated"
-msgstr "Ключът на API е празен Методите за плащане на NoPayn са деактивирани"
+msgid "Capture on complete"
+msgstr "Заснемане при завършване"
 
-msgid "API key is empty. Set API key and try again"
-msgstr "API ключът е празен. Задайте API ключ и опитайте отново"
-
-msgid "API Key is not valid: %s NoPayn payment methods deactivated"
-msgstr "API ключът не е валиден: %s Методите за плащане NoPayn са деактивирани"
-
-msgid "API key provided by NoPayn"
-msgstr "API ключ, предоставен от NoPayn"
-
-msgid "Auto complete orders "
-msgstr "Автоматично завършване на поръчки"
+msgid "Captures payment when an order is marked as complete"
+msgstr "Улавяне на плащане, когато поръчката е маркирана като завършена"
 
 msgid "Checkout Page"
 msgstr "Страница за поръчка"
 
-msgid "Credit Card"
-msgstr "Кредитна карта"
+msgid "Credit Card/Debit Card"
+msgstr "Кредитна карта/дебитна карта"
 
-msgid "cURL CA bundle"
-msgstr "Пакет cURL CA"
+msgid "Displayed name of the payment method at checkout."
+msgstr "Показваното име на метода на плащане при поръчка."
 
-msgid "Current shop currency %s not supported by %s."
-msgstr "Текущата валута на магазина %s не се поддържа от %s."
-
-msgid "Current shop currency %s not supported by NoPayn."
-msgstr "Текущата валута на магазина %s не се поддържа от NoPayn."
-
-msgid ""
-"Enable automatically change store orders status to Completed after receiving "
-"payment"
-msgstr ""
-"Разрешаване на автоматична промяна на статуса на поръчките в магазина на "
-"„Завършена“ след получаване на плащане"
+msgid "Enable Apple Pay Payments"
+msgstr "Активиране на плащания с Apple Pay"
 
 msgid "Enable Credit Card Payments"
 msgstr "Разрешаване на плащания с кредитни карти"
 
-msgid "Enable/Disable"
-msgstr "Активиране/деактивиране"
+#| msgid "Use cURL CA bundle"
+msgid "Enable cURL CA Bundle"
+msgstr "Активиране на пакета cURL CA"
 
-msgid "Failed payment page"
-msgstr "Неуспешна страница за плащане"
+msgid "Enable Google Pay Payments"
+msgstr "Активиране на плащания с Google Pay"
 
-msgid "Gateway Disabled"
-msgstr "Шлюзът е изключен"
+msgid "Enable MobilePay Payments"
+msgstr "Активиране на плащания с MobilePay"
 
-msgid "If set empty - option is ignored."
-msgstr "Ако е зададен празен - опцията се игнорира."
+msgid "Enable NoPayn Payments"
+msgstr "Разрешаване на плащанията NoPayn"
+
+msgid "Enable Swish Payments"
+msgstr "Активиране на плащания с Swish"
+
+msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
+msgstr "Отстранява проблеми, когато пътят curl.cacert липсва в PHP.ini."
+
+msgid "Google Pay"
+msgstr "Google Pay"
+
+msgid "Google Pay - NoPayn"
+msgstr "Google Pay - NoPayn"
+
+msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
+msgstr "Невалиден API ключ: %s. Методите за плащане NoPayn са деактивирани."
+
+msgid "Leave blank to allow all supported currencies."
+msgstr "Оставете празно, за да разрешите всички поддържани валути."
 
 msgid "Library"
 msgstr "Библиотека"
@@ -90,76 +112,133 @@ msgstr "Библиотека"
 msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
 msgstr "Mastercard, VISA, Maestro или V PAY - NoPayn"
 
+msgid "MobilePay"
+msgstr "MobilePay"
+
+msgid "MobilePay - NoPayn"
+msgstr "MobilePay - NoPayn"
+
+msgid "No API key detected. Please enter your NoPayn API key and try again."
+msgstr ""
+"Не е открит API ключ. Моля, въведете своя API ключ NoPayn и опитайте отново."
+
 msgid "NoPayn"
 msgstr "NoPayn"
 
-msgid "NoPayn - Library"
-msgstr "NoPayn - Библиотека"
+msgid "NoPayn - Apple Pay Payments"
+msgstr "NoPayn - Плащания с Apple Pay"
 
-msgid "Page where user is redirected after payment has failed."
-msgstr "Страница, към която потребителят се пренасочва след неуспешно плащане."
+msgid "NoPayn Payment Library"
+msgstr "Библиотека за плащания NoPayn"
 
-msgid "Payment gateway will be available ONLY for selected currencies."
-msgstr "Порталът за плащане ще бъде достъпен САМО за избраните валути."
+msgid "NoPayn payment methods have been disabled due to a missing API key."
+msgstr ""
+"Методите за плащане на NoPayn са били деактивирани поради липса на API ключ."
 
 msgid ""
-"Please beware that for bank transactions the refunds will process directly "
-"to the gateway!"
+"Note: Refunds for bank transactions are processed directly through the "
+"gateway."
 msgstr ""
-"Моля, имайте предвид, че при банкови транзакции възстановяванията се "
-"извършват директно към портала!"
+"Забележка: Възстановяванията на суми за банкови транзакции се обработват "
+"директно чрез шлюза."
 
-msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
-msgstr "Решен е проблемът, когато пътят curl.cacert не е зададен в PHP.ini"
+msgid "Only completed orders can be refunded"
+msgstr "Само завършени поръчки могат да бъдат възстановени"
+
+msgid "Order Confirmation: %s at %s"
+msgstr "Потвърждение на поръчката: %s в %s"
+
+msgid "Payment Failed Redirect Page"
+msgstr "Страница за пренасочване на неуспешно плащане"
+
+msgid "Payment Gateway Disabled"
+msgstr "Шлюзът за плащане е деактивиран"
+
+msgid "Payment Method Title"
+msgstr "Заглавие на метода за плащане"
+
+msgid "Refund order is not completed"
+msgstr "Поръчката за възстановяване не е завършена"
+
+msgid "Refund order is not completed: %s"
+msgstr "Поръчката за възстановяване не е завършена: %s"
+
+msgid "Refunds only possible when captured"
+msgstr "Възстановяване на суми е възможно само при заснемане"
 
 msgid "Select currencies..."
 msgstr "Изберете валути..."
 
+msgid "Settings"
+msgstr "Настройки"
+
 msgid "Shopping Cart"
 msgstr "Количка за пазаруване"
 
-msgid "Test API key"
-msgstr "Тестов API ключ"
+msgid "Swish"
+msgstr "Swish"
 
-msgid "The following payment methods are not available for selected currency:"
-msgstr "Следните методи на плащане не са налични за избраната валута:"
+msgid "Swish - NoPayn"
+msgstr "Swish - NoPayn"
 
-msgid "There was a problem processing your transaction."
-msgstr "Имаше проблем при обработката на транзакцията ви."
+msgid "Test Mode API Key"
+msgstr "Ключ за API в тестови режим"
 
-msgid "This controls the title which the user sees during checkout."
+msgid "The currency %s is not supported by %s."
+msgstr "Валутата %s не се поддържа от %s."
+
+msgid "The currency %s is not supported by NoPayn."
+msgstr "Валутата %s не се поддържа от NoPayn."
+
+#| msgid ""
+#| "The following payment methods are not available for selected currency:"
+msgid "These payment methods are not available for the selected currency:"
+msgstr "Тези методи за плащане не са налични за избраната валута:"
+
+msgid "This is the page where customers are redirected if their payment fails."
 msgstr ""
-"По този начин се контролира заглавието, което потребителят вижда по време на "
+"Това е страницата, на която клиентите се пренасочват, ако плащането им е "
+"неуспешно."
+
+msgid ""
+"This payment gateway will only be available for the selected currencies."
+msgstr "Този шлюз за плащане ще бъде наличен само за избраните валути."
+
+msgid ""
+"This section contains general settings and is not visible to customers "
+"during checkout."
+msgstr ""
+"Този раздел съдържа общи настройки и не е видим за клиентите по време на "
 "поръчката."
 
 msgid ""
-"This is the general module with settings, during checkout the user will not "
-"see this option."
+"Transaction failed. Please try again or choose a different payment method."
 msgstr ""
-"Това е общият модул с настройки, по време на плащане потребителят няма да "
-"вижда тази опция."
+"Транзакцията е неуспешна. Моля, опитайте отново или изберете друг метод на "
+"плащане."
 
-msgid "Title"
-msgstr "Заглавие"
+msgid "Use cURL Certificate Bundle"
+msgstr "Използване на пакет от сертификати cURL"
 
 msgid ""
-"Unfortunately, we can not currently accept your purchase. Please choose "
-"another payment option to complete your order. We apologize for the "
-"inconvenience."
+"We’re unable to process your purchase at this time. Please select a "
+"different payment method"
 msgstr ""
-"За съжаление в момента не можем да приемем вашата покупка. Моля, изберете "
-"друга опция за плащане, за да завършите поръчката си. Извиняваме се за "
-"причиненото неудобство."
-
-msgid "Use cURL CA bundle"
-msgstr "Използване на пакета cURL CA"
-
-msgid "Your order %s at %s"
-msgstr "Вашата поръчка %s в %s"
+"Не сме в състояние да обработим покупката ви в този момент. Моля, изберете "
+"друг метод на плащане"
 
 msgid ""
-"Your transaction is still being processed. You will be notified when status "
-"is updated."
+"Your API key lacks the required permissions for this action: %s. Contact "
+"technical support for assistance."
 msgstr ""
-"Вашата транзакция все още се обработва. Ще бъдете уведомени, когато статусът "
-"бъде актуализиран."
+"Вашият API ключ не разполага с необходимите разрешения за това действие: %s. "
+"Свържете се с техническата поддръжка за съдействие."
+
+msgid "Your NoPayn API key (provided by NoPayn)."
+msgstr "Вашият ключ за API на NoPayn (предоставен от NoPayn)."
+
+msgid ""
+"Your transaction is in progress. We'll update you once the status changes."
+msgstr ""
+"Вашата транзакция е в процес на изпълнение. Ще ви информираме, щом статусът "
+"се промени."

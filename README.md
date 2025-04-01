@@ -4,7 +4,7 @@
 This is the offical NoPayn plugin.
 
 ## Version number
-Version 1.0.0
+Version 1.0.1
 
 ## Pre-requisites to install the plug-ins
 * PHP v5.4 and above

@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-02-20 13:48+0000\n"
+"PO-Revision-Date: 2025-03-31 13:28+0000\n"
 "Last-Translator: \n"
 "Language-Team: Slovak\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -20,69 +20,90 @@ msgstr ""
 "2;\n"
 "X-Loco-Version: 2.7.1; wp-6.7.2"
 
-msgid "Allowed currencies"
-msgstr "Povolené meny"
+msgid "Accept Apple Pay Payments"
+msgstr "Prijímanie platieb Apple Pay"
+
+msgid "Accept Credit/Debit Card Payments"
+msgstr "Prijímanie platieb kreditnou/debetnou kartou"
+
+msgid "Accept Google Pay Payments"
+msgstr "Akceptovať platby Google Pay"
+
+msgid "Accept MobilePay Payments"
+msgstr "Prijímanie platieb MobilePay"
+
+msgid "Accept Swish Payments"
+msgstr "Akceptovať platby Swish"
+
+msgid "Accepted Currencies"
+msgstr "Akceptované meny"
+
+msgid "Activate NoPayn Gateway & Configure Settings"
+msgstr "Aktivácia brány NoPayn a konfigurácia nastavení"
 
 msgid "API key"
 msgstr "Kľúč API"
 
-msgid ""
-"API Key has not permission for some action: %s Please contact technical "
-"support!"
-msgstr ""
-"Kľúč API nemá oprávnenie na určitú akciu: %s Prosím, kontaktujte technickú "
-"podporu!"
+msgid "Apple Pay"
+msgstr "Apple Pay"
 
-msgid "API key is empty NoPayn payment methods deactivated"
-msgstr "Kľúč API je prázdny Platobné metódy NoPayn sú deaktivované"
+msgid "Automatically Complete Orders"
+msgstr "Automatické dokončovanie objednávok"
 
-msgid "API key is empty. Set API key and try again"
-msgstr "Kľúč API je prázdny. Nastavte kľúč API a skúste to znova"
+msgid "Automatically mark orders as 'Completed' once payment is received."
+msgstr "Po prijatí platby automaticky označte objednávky ako „dokončené“."
 
-msgid "API Key is not valid: %s NoPayn payment methods deactivated"
-msgstr "Kľúč API nie je platný: %s Platobné metódy NoPayn sú deaktivované"
+msgid "Capture on complete"
+msgstr "Zachytenie na kompletnom"
 
-msgid "API key provided by NoPayn"
-msgstr "Kľúč API poskytnutý spoločnosťou NoPayn"
-
-msgid "Auto complete orders "
-msgstr "Automatické dokončenie objednávok"
+msgid "Captures payment when an order is marked as complete"
+msgstr "Zachytenie platby, keď je objednávka označená ako dokončená"
 
 msgid "Checkout Page"
 msgstr "Stránka Pokladňa"
 
-msgid "Credit Card"
-msgstr "Kreditná karta"
+msgid "Credit Card/Debit Card"
+msgstr "Kreditná karta/debetná karta"
 
-msgid "cURL CA bundle"
-msgstr "zväzok cURL CA"
+msgid "Displayed name of the payment method at checkout."
+msgstr "Zobrazenie názvu spôsobu platby pri pokladni."
 
-msgid "Current shop currency %s not supported by %s."
-msgstr "Aktuálna mena obchodu %s nie je podporovaná %s."
-
-msgid "Current shop currency %s not supported by NoPayn."
-msgstr "Aktuálna mena obchodu %s nie je podporovaná systémom NoPayn."
-
-msgid ""
-"Enable automatically change store orders status to Completed after receiving "
-"payment"
-msgstr ""
-"Povoliť automatickú zmenu stavu objednávok na „Dokončené“ po prijatí platby"
+msgid "Enable Apple Pay Payments"
+msgstr "Povoliť platby cez Apple Pay"
 
 msgid "Enable Credit Card Payments"
 msgstr "Povolenie platieb kreditnou kartou"
 
-msgid "Enable/Disable"
-msgstr "Povolenie/zakázanie"
+#| msgid "Use cURL CA bundle"
+msgid "Enable cURL CA Bundle"
+msgstr "Povolenie balíka cURL CA"
 
-msgid "Failed payment page"
-msgstr "Stránka s neúspešnou platbou"
+msgid "Enable Google Pay Payments"
+msgstr "Povoliť platby cez Google Pay"
 
-msgid "Gateway Disabled"
-msgstr "Brána je vypnutá"
+msgid "Enable MobilePay Payments"
+msgstr "Povoliť platby cez MobilePay"
 
-msgid "If set empty - option is ignored."
-msgstr "Ak je nastavená prázdna - možnosť sa ignoruje."
+msgid "Enable NoPayn Payments"
+msgstr "Povolenie platieb NoPayn"
+
+msgid "Enable Swish Payments"
+msgstr "Povoliť platby cez Swish"
+
+msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
+msgstr "Opravuje problémy, keď v súbore PHP.ini chýba cesta curl.cacert."
+
+msgid "Google Pay"
+msgstr "Google Pay"
+
+msgid "Google Pay - NoPayn"
+msgstr "Google Pay - NoPayn"
+
+msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
+msgstr "Neplatný kľúč API: %s. Platobné metódy NoPayn boli zakázané."
+
+msgid "Leave blank to allow all supported currencies."
+msgstr "Ponechajte prázdne, ak chcete povoliť všetky podporované meny."
 
 msgid "Library"
 msgstr "Knižnica"
@@ -90,73 +111,130 @@ msgstr "Knižnica"
 msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
 msgstr "Mastercard, VISA, Maestro alebo V PAY - NoPayn"
 
+msgid "MobilePay"
+msgstr "MobilePay"
+
+msgid "MobilePay - NoPayn"
+msgstr "MobilePay - NoPayn"
+
+msgid "No API key detected. Please enter your NoPayn API key and try again."
+msgstr ""
+"Nebol zistený žiadny kľúč API. Zadajte svoj kľúč API NoPayn a skúste to "
+"znova."
+
 msgid "NoPayn"
 msgstr "NoPayn"
 
-msgid "NoPayn - Library"
-msgstr "NoPayn - Knižnica"
+msgid "NoPayn - Apple Pay Payments"
+msgstr "NoPayn - Platby cez Apple Pay"
 
-msgid "Page where user is redirected after payment has failed."
-msgstr "Stránka, na ktorú je používateľ presmerovaný po neúspešnej platbe."
+msgid "NoPayn Payment Library"
+msgstr "Knižnica platieb NoPayn"
 
-msgid "Payment gateway will be available ONLY for selected currencies."
-msgstr "Platobná brána bude k dispozícii len pre vybrané meny."
+msgid "NoPayn payment methods have been disabled due to a missing API key."
+msgstr "Platobné metódy NoPayn boli zakázané z dôvodu chýbajúceho kľúča API."
 
 msgid ""
-"Please beware that for bank transactions the refunds will process directly "
-"to the gateway!"
+"Note: Refunds for bank transactions are processed directly through the "
+"gateway."
 msgstr ""
-"Dajte si pozor, že v prípade bankových transakcií sa refundácie spracujú "
-"priamo na bránu!"
+"Poznámka: Náhrady za bankové transakcie sa spracúvajú priamo prostredníctvom "
+"brány."
 
-msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
-msgstr "Rieši problém, keď v súbore PHP.ini nie je nastavená cesta curl.cacert"
+msgid "Only completed orders can be refunded"
+msgstr "Vrátiť možno len dokončené objednávky"
+
+msgid "Order Confirmation: %s at %s"
+msgstr "Potvrdenie objednávky: %s na %s"
+
+msgid "Payment Failed Redirect Page"
+msgstr "Stránka s presmerovaním na neúspešnú platbu"
+
+msgid "Payment Gateway Disabled"
+msgstr "Platobná brána vypnutá"
+
+msgid "Payment Method Title"
+msgstr "Názov platobnej metódy"
+
+msgid "Refund order is not completed"
+msgstr "Príkaz na vrátenie peňazí nie je dokončený"
+
+msgid "Refund order is not completed: %s"
+msgstr "Objednávka vrátenia peňazí nie je dokončená: %s"
+
+msgid "Refunds only possible when captured"
+msgstr "Náhrady sú možné len pri zachytení"
 
 msgid "Select currencies..."
 msgstr "Vyberte meny..."
 
+msgid "Settings"
+msgstr "Nastavenia"
+
 msgid "Shopping Cart"
 msgstr "Nákupný košík"
 
-msgid "Test API key"
-msgstr "Testovací kľúč API"
+msgid "Swish"
+msgstr "Swish"
 
-msgid "The following payment methods are not available for selected currency:"
-msgstr "Nasledujúce spôsoby platby nie sú pre vybranú menu k dispozícii:"
+msgid "Swish - NoPayn"
+msgstr "Swish - NoPayn"
 
-msgid "There was a problem processing your transaction."
-msgstr "Pri spracovaní vašej transakcie došlo k problému."
+msgid "Test Mode API Key"
+msgstr "Testovací režim Kľúč API"
 
-msgid "This controls the title which the user sees during checkout."
-msgstr "Týmto sa riadi názov, ktorý používateľ vidí pri pokladni."
+msgid "The currency %s is not supported by %s."
+msgstr "Mena %s nie je podporovaná systémom %s."
+
+msgid "The currency %s is not supported by NoPayn."
+msgstr "Mena %s nie je podporovaná systémom NoPayn."
+
+#| msgid ""
+#| "The following payment methods are not available for selected currency:"
+msgid "These payment methods are not available for the selected currency:"
+msgstr "Tieto spôsoby platby nie sú pre vybranú menu k dispozícii:"
+
+msgid "This is the page where customers are redirected if their payment fails."
+msgstr ""
+"Toto je stránka, na ktorú sú zákazníci presmerovaní, ak ich platba zlyhá."
 
 msgid ""
-"This is the general module with settings, during checkout the user will not "
-"see this option."
-msgstr ""
-"Toto je všeobecný modul s nastaveniami, počas platby používateľ túto možnosť "
-"neuvidí."
-
-msgid "Title"
-msgstr "Názov"
+"This payment gateway will only be available for the selected currencies."
+msgstr "Táto platobná brána bude k dispozícii len pre vybrané meny."
 
 msgid ""
-"Unfortunately, we can not currently accept your purchase. Please choose "
-"another payment option to complete your order. We apologize for the "
-"inconvenience."
+"This section contains general settings and is not visible to customers "
+"during checkout."
 msgstr ""
-"Žiaľ, v súčasnosti nemôžeme prijať váš nákup. Na dokončenie objednávky si "
-"prosím vyberte inú možnosť platby. Ospravedlňujeme sa za nepríjemnosti."
-
-msgid "Use cURL CA bundle"
-msgstr "Používanie zväzku cURL CA"
-
-msgid "Your order %s at %s"
-msgstr "Vaša objednávka %s na %s"
+"Táto časť obsahuje všeobecné nastavenia a nie je viditeľná pre zákazníkov "
+"počas platby."
 
 msgid ""
-"Your transaction is still being processed. You will be notified when status "
-"is updated."
+"Transaction failed. Please try again or choose a different payment method."
 msgstr ""
-"Vaša transakcia sa stále spracováva. Po aktualizácii stavu budete "
-"informovaní."
+"Transakcia sa nepodarila. Skúste to prosím znova alebo si vyberte iný spôsob "
+"platby."
+
+msgid "Use cURL Certificate Bundle"
+msgstr "Používanie balíka certifikátov cURL"
+
+msgid ""
+"We’re unable to process your purchase at this time. Please select a "
+"different payment method"
+msgstr ""
+"V tomto okamihu nemôžeme spracovať váš nákup. Prosím, vyberte iný spôsob "
+"platby"
+
+msgid ""
+"Your API key lacks the required permissions for this action: %s. Contact "
+"technical support for assistance."
+msgstr ""
+"Váš kľúč API nemá požadované oprávnenia pre túto akciu: %s. Kontaktujte "
+"technickú podporu a požiadajte o pomoc."
+
+msgid "Your NoPayn API key (provided by NoPayn)."
+msgstr "Váš kľúč API NoPayn (poskytnutý spoločnosťou NoPayn)."
+
+msgid ""
+"Your transaction is in progress. We'll update you once the status changes."
+msgstr "Vaša transakcia prebieha. Po zmene stavu vás budeme informovať."

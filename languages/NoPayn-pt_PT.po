@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-02-20 13:44+0000\n"
+"PO-Revision-Date: 2025-03-31 13:26+0000\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese (Portugal)\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -19,69 +19,94 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.7.1; wp-6.7.2"
 
-msgid "Allowed currencies"
-msgstr "Moedas permitidas"
+msgid "Accept Apple Pay Payments"
+msgstr "Aceitar pagamentos Apple Pay"
+
+msgid "Accept Credit/Debit Card Payments"
+msgstr "Aceitar pagamentos com cartão de crédito/débito"
+
+msgid "Accept Google Pay Payments"
+msgstr "Aceitar pagamentos Google Pay"
+
+msgid "Accept MobilePay Payments"
+msgstr "Aceitar pagamentos MobilePay"
+
+msgid "Accept Swish Payments"
+msgstr "Aceitar pagamentos Swish"
+
+msgid "Accepted Currencies"
+msgstr "Moedas aceites"
+
+msgid "Activate NoPayn Gateway & Configure Settings"
+msgstr "Ativar o gateway NoPayn e configurar as definições"
 
 msgid "API key"
 msgstr "Chave API"
 
-msgid ""
-"API Key has not permission for some action: %s Please contact technical "
-"support!"
-msgstr ""
-"A chave API não tem permissão para alguma ação: %s Contacte o apoio técnico!"
+msgid "Apple Pay"
+msgstr "Apple Pay"
 
-msgid "API key is empty NoPayn payment methods deactivated"
-msgstr "A chave API está vazia Métodos de pagamento NoPayn desactivados"
-
-msgid "API key is empty. Set API key and try again"
-msgstr "A chave da API está vazia. Definir a chave da API e tentar novamente"
-
-msgid "API Key is not valid: %s NoPayn payment methods deactivated"
-msgstr "A chave API não é válida: %s Métodos de pagamento NoPayn desactivados"
-
-msgid "API key provided by NoPayn"
-msgstr "Chave API fornecida pela NoPayn"
-
-msgid "Auto complete orders "
+msgid "Automatically Complete Orders"
 msgstr "Concluir pedidos automaticamente"
+
+msgid "Automatically mark orders as 'Completed' once payment is received."
+msgstr ""
+"Marque automaticamente as encomendas como “Concluídas” assim que o pagamento "
+"for recebido."
+
+msgid "Capture on complete"
+msgstr "Captura completa"
+
+msgid "Captures payment when an order is marked as complete"
+msgstr "Captura o pagamento quando uma encomenda é marcada como concluída"
 
 msgid "Checkout Page"
 msgstr "Página de checkout"
 
-msgid "Credit Card"
-msgstr "Cartão de crédito"
+msgid "Credit Card/Debit Card"
+msgstr "Cartão de crédito/Cartão de débito"
 
-msgid "cURL CA bundle"
-msgstr "Pacote cURL CA"
+msgid "Displayed name of the payment method at checkout."
+msgstr "Nome exibido do método de pagamento no checkout."
 
-msgid "Current shop currency %s not supported by %s."
-msgstr "A moeda atual da loja %s não é suportada por %s."
-
-msgid "Current shop currency %s not supported by NoPayn."
-msgstr "A moeda atual da loja %s não é suportada pela NoPayn."
-
-msgid ""
-"Enable automatically change store orders status to Completed after receiving "
-"payment"
-msgstr ""
-"Habilitar a alteração automática do status dos pedidos para \"Concluído\" "
-"após o recebimento do pagamento"
+msgid "Enable Apple Pay Payments"
+msgstr "Ativar pagamentos com Apple Pay"
 
 msgid "Enable Credit Card Payments"
 msgstr "Ativar pagamentos com cartão de crédito"
 
-msgid "Enable/Disable"
-msgstr "Ativar/Desativar"
+#| msgid "Use cURL CA bundle"
+msgid "Enable cURL CA Bundle"
+msgstr "Ativar o pacote cURL CA"
 
-msgid "Failed payment page"
-msgstr "Página de pagamento falhada"
+msgid "Enable Google Pay Payments"
+msgstr "Ativar pagamentos com Google Pay"
 
-msgid "Gateway Disabled"
-msgstr "Gateway desactivada"
+msgid "Enable MobilePay Payments"
+msgstr "Ativar pagamentos com MobilePay"
 
-msgid "If set empty - option is ignored."
-msgstr "Se estiver vazia - a opção é ignorada."
+msgid "Enable NoPayn Payments"
+msgstr "Ativar pagamentos NoPayn"
+
+msgid "Enable Swish Payments"
+msgstr "Ativar pagamentos com Swish"
+
+msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
+msgstr ""
+"Corrige problemas quando o caminho curl.cacert está ausente no PHP.ini."
+
+msgid "Google Pay"
+msgstr "Google Pay"
+
+msgid "Google Pay - NoPayn"
+msgstr "Google Pay - NoPayn"
+
+msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
+msgstr ""
+"Chave de API inválida: %s. Os métodos de pagamento NoPayn foram desactivados."
+
+msgid "Leave blank to allow all supported currencies."
+msgstr "Deixe em branco para permitir todas as moedas suportadas."
 
 msgid "Library"
 msgstr "Biblioteca"
@@ -89,80 +114,136 @@ msgstr "Biblioteca"
 msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
 msgstr "Mastercard, VISA, Maestro ou V PAY - NoPayn"
 
+msgid "MobilePay"
+msgstr "MobilePay"
+
+msgid "MobilePay - NoPayn"
+msgstr "MobilePay - NoPayn"
+
+msgid "No API key detected. Please enter your NoPayn API key and try again."
+msgstr ""
+"Não foi detectada nenhuma chave de API. Introduza a sua chave de API da "
+"NoPayn e tente novamente."
+
 msgid "NoPayn"
 msgstr "NoPayn"
 
-msgid "NoPayn - Library"
-msgstr "NoPayn - Biblioteca"
+msgid "NoPayn - Apple Pay Payments"
+msgstr "NoPayn - Pagamentos com Apple Pay"
 
-msgid "Page where user is redirected after payment has failed."
-msgstr ""
-"Página para onde o utilizador é redireccionado após o pagamento ter falhado."
+msgid "NoPayn Payment Library"
+msgstr "Biblioteca de pagamentos da NoPayn"
 
-msgid "Payment gateway will be available ONLY for selected currencies."
+msgid "NoPayn payment methods have been disabled due to a missing API key."
 msgstr ""
-"O gateway de pagamento estará disponível APENAS para as moedas selecionadas."
+"Os métodos de pagamento da NoPayn foram desactivados devido à falta de uma "
+"chave de API."
 
 msgid ""
-"Please beware that for bank transactions the refunds will process directly "
-"to the gateway!"
+"Note: Refunds for bank transactions are processed directly through the "
+"gateway."
 msgstr ""
-"Tenha em atenção que, no caso de transacções bancárias, os reembolsos serão "
-"processados diretamente para a porta de entrada!"
+"Nota: Os reembolsos de transacções bancárias são processados diretamente "
+"através do gateway."
 
-msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
-msgstr ""
-"Resolve o problema quando o caminho do curl.cacert não está definido no PHP."
-"ini"
+msgid "Only completed orders can be refunded"
+msgstr "Apenas as encomendas concluídas podem ser reembolsadas"
+
+msgid "Order Confirmation: %s at %s"
+msgstr "Confirmação da encomenda: %s em %s"
+
+msgid "Payment Failed Redirect Page"
+msgstr "Página de redireccionamento de pagamento falhado"
+
+msgid "Payment Gateway Disabled"
+msgstr "Gateway de pagamento desativado"
+
+msgid "Payment Method Title"
+msgstr "Título do método de pagamento"
+
+msgid "Refund order is not completed"
+msgstr "O pedido de reembolso não está concluído"
+
+msgid "Refund order is not completed: %s"
+msgstr "O pedido de reembolso não está concluído: %s"
+
+msgid "Refunds only possible when captured"
+msgstr "Os reembolsos só são possíveis quando capturados"
 
 msgid "Select currencies..."
 msgstr "Selecionar moedas..."
 
+msgid "Settings"
+msgstr "Definições"
+
 msgid "Shopping Cart"
 msgstr "Carrinho de compras"
 
-msgid "Test API key"
-msgstr "Testar chave API"
+msgid "Swish"
+msgstr "Swish"
 
-msgid "The following payment methods are not available for selected currency:"
+msgid "Swish - NoPayn"
+msgstr "Swish - NoPayn"
+
+msgid "Test Mode API Key"
+msgstr "Modo de teste Chave API"
+
+msgid "The currency %s is not supported by %s."
+msgstr "A moeda %s não é suportada por %s."
+
+msgid "The currency %s is not supported by NoPayn."
+msgstr "A moeda %s não é suportada pela NoPayn."
+
+#| msgid ""
+#| "The following payment methods are not available for selected currency:"
+msgid "These payment methods are not available for the selected currency:"
 msgstr ""
-"Os seguintes métodos de pagamento não estão disponíveis para a moeda "
-"selecionada:"
+"Estes métodos de pagamento não estão disponíveis para a moeda selecionada:"
 
-msgid "There was a problem processing your transaction."
-msgstr "There was a problem processing your transaction."
-
-msgid "This controls the title which the user sees during checkout."
-msgstr "Isto controla o título que o utilizador vê durante o checkout."
+msgid "This is the page where customers are redirected if their payment fails."
+msgstr ""
+"Esta é a página para onde os clientes são redireccionados se o pagamento "
+"falhar."
 
 msgid ""
-"This is the general module with settings, during checkout the user will not "
-"see this option."
+"This payment gateway will only be available for the selected currencies."
 msgstr ""
-"Este é o módulo geral com configurações, durante o checkout o usuário não "
-"verá esta opção."
-
-msgid "Title"
-msgstr "Título"
+"Este gateway de pagamento só estará disponível para as moedas selecionadas."
 
 msgid ""
-"Unfortunately, we can not currently accept your purchase. Please choose "
-"another payment option to complete your order. We apologize for the "
-"inconvenience."
+"This section contains general settings and is not visible to customers "
+"during checkout."
 msgstr ""
-"Infelizmente, de momento não podemos aceitar a sua compra. Por favor, "
-"escolha outra opção de pagamento para concluir a sua encomenda. Pedimos "
-"desculpa pelo incómodo."
-
-msgid "Use cURL CA bundle"
-msgstr "Utilizar o pacote cURL CA"
-
-msgid "Your order %s at %s"
-msgstr "A sua encomenda %s em %s"
+"Esta secção contém definições gerais e não é visível para os clientes "
+"durante o checkout."
 
 msgid ""
-"Your transaction is still being processed. You will be notified when status "
-"is updated."
+"Transaction failed. Please try again or choose a different payment method."
 msgstr ""
-"A sua transação ainda está a ser processada. Será notificado quando o estado "
-"for atualizado."
+"A transação falhou. Tente novamente ou escolha um método de pagamento "
+"diferente."
+
+msgid "Use cURL Certificate Bundle"
+msgstr "Usar o pacote de certificados cURL"
+
+msgid ""
+"We’re unable to process your purchase at this time. Please select a "
+"different payment method"
+msgstr ""
+"Não é possível processar a sua compra neste momento. Selecione um método de "
+"pagamento diferente"
+
+msgid ""
+"Your API key lacks the required permissions for this action: %s. Contact "
+"technical support for assistance."
+msgstr ""
+"A sua chave de API não tem as permissões necessárias para esta ação: %s. "
+"Contacte o apoio técnico para obter assistência."
+
+msgid "Your NoPayn API key (provided by NoPayn)."
+msgstr "Sua chave de API da NoPayn (fornecida pela NoPayn)."
+
+msgid ""
+"Your transaction is in progress. We'll update you once the status changes."
+msgstr ""
+"A sua transação está em curso. Iremos actualizá-lo assim que o estado mudar."

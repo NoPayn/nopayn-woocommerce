@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-02-20 13:34+0000\n"
+"PO-Revision-Date: 2025-03-31 12:02+0000\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -19,70 +19,107 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.7.1; wp-6.7.2"
 
-msgid "Allowed currencies"
-msgstr "Toegestane valuta"
+msgid "Accept Apple Pay Payments"
+msgstr ""
+"Accepteer Apple betalingen\n"
+
+msgid "Accept Credit/Debit Card Payments"
+msgstr ""
+"Creditcardbetalingen accepteren\n"
+
+msgid "Accept Google Pay Payments"
+msgstr ""
+"Accepteer Google-betalingen\n"
+
+msgid "Accept MobilePay Payments"
+msgstr ""
+"Accepteer MobilePay betalingen\n"
+
+msgid "Accept Swish Payments"
+msgstr ""
+"Accepteer Swish betalingen\n"
+
+msgid "Accepted Currencies"
+msgstr ""
+"Geaccepteerde valuta\n"
+
+msgid "Activate NoPayn Gateway & Configure Settings"
+msgstr ""
+"Activeer NoPayn Gateway & Configureer instellingen\n"
 
 msgid "API key"
 msgstr "API-sleutel"
 
-msgid ""
-"API Key has not permission for some action: %s Please contact technical "
-"support!"
+msgid "Apple Pay"
+msgstr "Apple Pay"
+
+msgid "Automatically Complete Orders"
 msgstr ""
-"API Key heeft geen toestemming voor bepaalde actie: %s Neem contact op met "
-"de technische ondersteuning!"
+"Bestellingen automatisch voltooien\n"
 
-msgid "API key is empty NoPayn payment methods deactivated"
-msgstr "API sleutel is leeg NoPayn betaalmethoden gedeactiveerd"
+msgid "Automatically mark orders as 'Completed' once payment is received."
+msgstr ""
+"Bestellingen automatisch markeren als 'Voltooid' zodra de betaling is "
+"ontvangen.\n"
 
-msgid "API key is empty. Set API key and try again"
-msgstr "API-sleutel is leeg. Stel de API-sleutel in en probeer het opnieuw"
+msgid "Capture on complete"
+msgstr "Vastleggen op volledig"
 
-msgid "API Key is not valid: %s NoPayn payment methods deactivated"
-msgstr "API sleutel is niet geldig: %s NoPayn betaalmethoden gedeactiveerd"
-
-msgid "API key provided by NoPayn"
-msgstr "API-sleutel geleverd door NoPayn"
-
-msgid "Auto complete orders "
-msgstr "Automatisch voltooien van bestellingen"
+msgid "Captures payment when an order is marked as complete"
+msgstr ""
+"Legt de betaling vast wanneer een bestelling als voltooid is gemarkeerd"
 
 msgid "Checkout Page"
 msgstr "Afrekenpagina"
 
-msgid "Credit Card"
-msgstr "Creditcard"
+msgid "Credit Card/Debit Card"
+msgstr "Creditcard/Debetaalpas"
 
-msgid "cURL CA bundle"
-msgstr "cURL CA bundel"
-
-msgid "Current shop currency %s not supported by %s."
-msgstr "Huidige winkelvaluta %s wordt niet ondersteund door %s."
-
-msgid "Current shop currency %s not supported by NoPayn."
-msgstr "Huidige winkelvaluta %s wordt niet ondersteund door NoPayn."
-
-msgid ""
-"Enable automatically change store orders status to Completed after receiving "
-"payment"
+msgid "Displayed name of the payment method at checkout."
 msgstr ""
-"Sta toe dat de bestelstatus van de winkel automatisch wordt gewijzigd naar "
-"\"Voltooid\" na ontvangst van betaling"
+"Weergegeven naam van de betaalmethode bij het afrekenen.\n"
+
+msgid "Enable Apple Pay Payments"
+msgstr "Apple Pay-betalingen inschakelen"
 
 msgid "Enable Credit Card Payments"
 msgstr "Creditcardbetalingen inschakelen"
 
-msgid "Enable/Disable"
-msgstr "Inschakelen/uitschakelen"
+#| msgid "Use cURL CA bundle"
+msgid "Enable cURL CA Bundle"
+msgstr ""
+"Schakel cURL CA-bundel in\n"
 
-msgid "Failed payment page"
-msgstr "Pagina voor mislukte betaling"
+msgid "Enable Google Pay Payments"
+msgstr "Google Pay-betalingen inschakelen"
 
-msgid "Gateway Disabled"
-msgstr "Gateway uitgeschakeld"
+msgid "Enable MobilePay Payments"
+msgstr "MobilePay-betalingen inschakelen"
 
-msgid "If set empty - option is ignored."
-msgstr "Indien leeg ingesteld - optie wordt genegeerd."
+msgid "Enable NoPayn Payments"
+msgstr ""
+"NoPayn-betalingen inschakelen\n"
+
+msgid "Enable Swish Payments"
+msgstr "Swish-betalingen inschakelen"
+
+msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
+msgstr ""
+"Lost problemen op wanneer het curl.cacert pad ontbreekt in PHP.ini.\n"
+
+msgid "Google Pay"
+msgstr "Google Pay"
+
+msgid "Google Pay - NoPayn"
+msgstr "Google Pay - NoPayn"
+
+msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
+msgstr ""
+"Ongeldige API-sleutel: %s. NoPayn betalingsmethoden zijn uitgeschakeld.\n"
+
+msgid "Leave blank to allow all supported currencies."
+msgstr ""
+"Laat leeg om alle ondersteunde valuta's toe te staan.\n"
 
 msgid "Library"
 msgstr "Bibliotheek"
@@ -90,76 +127,147 @@ msgstr "Bibliotheek"
 msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
 msgstr "Mastercard, VISA, Maestro of V PAY - NoPayn"
 
+msgid "MobilePay"
+msgstr "MobilePay"
+
+msgid "MobilePay - NoPayn"
+msgstr "MobilePay - NoPayn"
+
+msgid "No API key detected. Please enter your NoPayn API key and try again."
+msgstr ""
+"Geen API sleutel gedetecteerd. Voer uw NoPayn API-sleutel in en probeer het "
+"opnieuw.\n"
+
 msgid "NoPayn"
 msgstr "NoPayn"
 
-msgid "NoPayn - Library"
-msgstr "NoPayn - Bibliotheek"
-
-msgid "Page where user is redirected after payment has failed."
+msgid "NoPayn - Apple Pay Payments"
 msgstr ""
-"Pagina waar de gebruiker naartoe wordt geleid nadat de betaling is mislukt."
+"NoPayn - Apple betalingen\n"
 
-msgid "Payment gateway will be available ONLY for selected currencies."
-msgstr "De betalingsgateway is ALLEEN beschikbaar voor geselecteerde valuta."
+msgid "NoPayn Payment Library"
+msgstr ""
+"NoPayn betalingsbibliotheek\n"
+
+msgid "NoPayn payment methods have been disabled due to a missing API key."
+msgstr ""
+"NoPayn betaalmethoden zijn uitgeschakeld vanwege een ontbrekende API-sleutel."
+"\n"
 
 msgid ""
-"Please beware that for bank transactions the refunds will process directly "
-"to the gateway!"
+"Note: Refunds for bank transactions are processed directly through the "
+"gateway."
 msgstr ""
-"Houd er rekening mee dat voor banktransacties de terugbetalingen direct naar "
-"de gateway gaan!"
+"Opmerking: Restituties voor banktransacties worden direct via de gateway "
+"verwerkt.\n"
 
-msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
-msgstr "Lost probleem op wanneer curl.cacert path niet is ingesteld in PHP.ini"
+msgid "Only completed orders can be refunded"
+msgstr "Alleen voltooide bestellingen kunnen worden terugbetaald"
+
+msgid "Order Confirmation: %s at %s"
+msgstr ""
+"Orderbevestiging: %s bij %s\n"
+
+msgid "Payment Failed Redirect Page"
+msgstr ""
+"Doorverwijspagina betaling mislukt\n"
+
+msgid "Payment Gateway Disabled"
+msgstr ""
+"Betaalgateway uitgeschakeld\n"
+
+msgid "Payment Method Title"
+msgstr ""
+"Titel betaalmethode\n"
+
+msgid "Refund order is not completed"
+msgstr "Restitutieopdracht is niet voltooid"
+
+msgid "Refund order is not completed: %s"
+msgstr "Restitutieopdracht is niet voltooid: %s"
+
+msgid "Refunds only possible when captured"
+msgstr "Restitutie alleen mogelijk wanneer vastgelegd"
 
 msgid "Select currencies..."
 msgstr "Selecteer valuta..."
 
+msgid "Settings"
+msgstr "Instellingen"
+
 msgid "Shopping Cart"
 msgstr "Winkelwagen"
 
-msgid "Test API key"
-msgstr "Test API-sleutel"
+msgid "Swish"
+msgstr "Swish"
 
-msgid "The following payment methods are not available for selected currency:"
+msgid "Swish - NoPayn"
+msgstr "Swish - NoPayn"
+
+msgid "Test Mode API Key"
 msgstr ""
-"De volgende betalingsmethoden zijn niet beschikbaar voor de geselecteerde "
-"valuta:"
+"Testmodus API-sleutel\n"
 
-msgid "There was a problem processing your transaction."
-msgstr "Er is een probleem opgetreden bij het verwerken van uw transactie."
+msgid "The currency %s is not supported by %s."
+msgstr ""
+"De valuta %s wordt niet ondersteund door %s.\n"
 
-msgid "This controls the title which the user sees during checkout."
-msgstr "Dit bepaalt de titel die de gebruiker ziet tijdens het afrekenen."
+msgid "The currency %s is not supported by NoPayn."
+msgstr ""
+"De valuta %s wordt niet ondersteund door NoPayn.\n"
+
+#| msgid ""
+#| "The following payment methods are not available for selected currency:"
+msgid "These payment methods are not available for the selected currency:"
+msgstr ""
+"Deze betaalmethoden zijn niet beschikbaar voor de geselecteerde valuta:\n"
+
+msgid "This is the page where customers are redirected if their payment fails."
+msgstr ""
+"Dit is de pagina waar klanten naartoe worden geleid als hun betaling mislukt."
+"\n"
 
 msgid ""
-"This is the general module with settings, during checkout the user will not "
-"see this option."
+"This payment gateway will only be available for the selected currencies."
 msgstr ""
-"Dit is de algemene module met instellingen, tijdens het afrekenen zal de "
-"gebruiker deze optie niet zien."
-
-msgid "Title"
-msgstr "Titel"
+"Deze betalingsgateway is alleen beschikbaar voor de geselecteerde valuta.\n"
 
 msgid ""
-"Unfortunately, we can not currently accept your purchase. Please choose "
-"another payment option to complete your order. We apologize for the "
-"inconvenience."
+"This section contains general settings and is not visible to customers "
+"during checkout."
 msgstr ""
-"Helaas kunnen we je aankoop op dit moment niet accepteren. Kies een andere "
-"betalingsoptie om je bestelling af te ronden. Onze excuses voor het ongemak."
-
-msgid "Use cURL CA bundle"
-msgstr "Gebruik cURL CA-bundel"
-
-msgid "Your order %s at %s"
-msgstr "Uw bestelling %s bij %s"
+"Dit gedeelte bevat algemene instellingen en is niet zichtbaar voor klanten "
+"tijdens het afrekenen.\n"
 
 msgid ""
-"Your transaction is still being processed. You will be notified when status "
-"is updated."
+"Transaction failed. Please try again or choose a different payment method."
 msgstr ""
-"Je transactie wordt nog verwerkt. Je ontvangt een bericht wanneer de status "
-"wordt bijgewerkt."
+"Transactie mislukt. Probeer het opnieuw of kies een andere betaalmethode.\n"
+
+msgid "Use cURL Certificate Bundle"
+msgstr ""
+"Gebruik cURL Certificaat Bundel\n"
+
+msgid ""
+"We’re unable to process your purchase at this time. Please select a "
+"different payment method"
+msgstr ""
+"We zijn niet in staat om uw aankoop te verwerken op dit moment. Selecteer "
+"een andere betaalmethode\n"
+
+msgid ""
+"Your API key lacks the required permissions for this action: %s. Contact "
+"technical support for assistance."
+msgstr ""
+"Uw API-sleutel heeft niet de vereiste machtigingen voor deze actie: %s. Neem "
+"contact op met de technische ondersteuning voor assistentie.\n"
+
+msgid "Your NoPayn API key (provided by NoPayn)."
+msgstr ""
+"Uw NoPayn API-sleutel (geleverd door NoPayn).\n"
+
+msgid ""
+"Your transaction is in progress. We'll update you once the status changes."
+msgstr ""
+"Uw transactie wordt uitgevoerd. We houden je op de hoogte zodra de status "
+"verandert."

@@ -49,15 +49,6 @@ class WC_Ginger_Orderbuilder
     }
 
     /**
-     * Function returns selected ideal issuer
-     * @return string|null
-     */
-    public function gingerGetSelectedIssuer(): ?string
-    {
-        return WC_Ginger_Helper::gingerGetCustomPaymentField("ginger_ideal_issuer_id");
-    }
-
-    /**
      * Function returns transaction array
      * @return array
      * @throws Exception
@@ -66,8 +57,23 @@ class WC_Ginger_Orderbuilder
     {
         return array_filter([
             'payment_method' => $this->gingerGetPaymentMethod(),
-            'payment_method_details' => $this->gingerGetPaymentMethodDetails()
+            'payment_method_details' => $this->gingerGetPaymentMethodDetails(),
+            'capture_mode' => $this->gingerGetCaptureMode()
         ]);
+    }
+
+    public function gingerGetCaptureMode(): string
+    {
+        if (str_replace(WC_Ginger_BankConfig::BANK_PREFIX.'_', '', $this->id) == 'credit-card'){
+            $settings = get_option('woocommerce_'.WC_Ginger_BankConfig::BANK_PREFIX.'_credit-card_settings');
+
+            $captureManual = $settings['capture_manual'] ?? 'no';
+            if ($captureManual == 'yes') {
+                return 'manual';
+            }
+        }
+
+        return '';
     }
 
     /**
@@ -535,7 +541,7 @@ class WC_Ginger_Orderbuilder
      */
     public function gingerGetOrderDescription()
     {
-        return sprintf(__('Your order %s at %s', WC_Ginger_BankConfig::BANK_PREFIX), $this->merchant_order_id, get_bloginfo('name'));
+        return sprintf(__('Order Confirmation: %s at %s', WC_Ginger_BankConfig::BANK_PREFIX), $this->merchant_order_id, get_bloginfo('name'));
     }
 
     /**

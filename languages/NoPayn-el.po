@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-02-20 13:39+0000\n"
+"PO-Revision-Date: 2025-03-31 13:18+0000\n"
 "Last-Translator: \n"
 "Language-Team: Greek\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -19,72 +19,94 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.7.1; wp-6.7.2"
 
-msgid "Allowed currencies"
-msgstr "Επιτρεπόμενα νομίσματα"
+msgid "Accept Apple Pay Payments"
+msgstr "Αποδοχή πληρωμών Apple Pay"
+
+msgid "Accept Credit/Debit Card Payments"
+msgstr "Αποδοχή πληρωμών με πιστωτική/χρεωστική κάρτα"
+
+msgid "Accept Google Pay Payments"
+msgstr "Αποδοχή πληρωμών Google Pay"
+
+msgid "Accept MobilePay Payments"
+msgstr "Αποδοχή πληρωμών MobilePay"
+
+msgid "Accept Swish Payments"
+msgstr "Αποδοχή πληρωμών Swish"
+
+msgid "Accepted Currencies"
+msgstr "Αποδεκτά νομίσματα"
+
+msgid "Activate NoPayn Gateway & Configure Settings"
+msgstr "Ενεργοποίηση της πύλης NoPayn & διαμόρφωση ρυθμίσεων"
 
 msgid "API key"
 msgstr "Κλειδί API"
 
-msgid ""
-"API Key has not permission for some action: %s Please contact technical "
-"support!"
-msgstr ""
-"Το κλειδί API δεν έχει άδεια για κάποια ενέργεια: %s Επικοινωνήστε με την "
-"τεχνική υποστήριξη!"
+msgid "Apple Pay"
+msgstr "Apple Pay"
 
-msgid "API key is empty NoPayn payment methods deactivated"
-msgstr "Το κλειδί API είναι κενό Οι μέθοδοι πληρωμής NoPayn απενεργοποιήθηκαν"
-
-msgid "API key is empty. Set API key and try again"
-msgstr "Το κλειδί API είναι κενό. Ορίστε το κλειδί API και δοκιμάστε ξανά"
-
-msgid "API Key is not valid: %s NoPayn payment methods deactivated"
-msgstr ""
-"Το κλειδί API δεν είναι έγκυρο: %s Οι μέθοδοι πληρωμής NoPayn "
-"απενεργοποιήθηκαν"
-
-msgid "API key provided by NoPayn"
-msgstr "Κλειδί API που παρέχεται από την NoPayn"
-
-msgid "Auto complete orders "
+msgid "Automatically Complete Orders"
 msgstr "Αυτόματη ολοκλήρωση παραγγελιών"
+
+msgid "Automatically mark orders as 'Completed' once payment is received."
+msgstr ""
+"Σημειώστε αυτόματα τις παραγγελίες ως «Ολοκληρωμένες» μόλις λάβετε την "
+"πληρωμή."
+
+msgid "Capture on complete"
+msgstr "Σύλληψη σε πλήρη"
+
+msgid "Captures payment when an order is marked as complete"
+msgstr ""
+"Καταγράφει την πληρωμή όταν μια παραγγελία χαρακτηρίζεται ως ολοκληρωμένη"
 
 msgid "Checkout Page"
 msgstr "Σελίδα πληρωμής"
 
-msgid "Credit Card"
-msgstr "Πιστωτική κάρτα"
+msgid "Credit Card/Debit Card"
+msgstr "Πιστωτική κάρτα/χρεωστική κάρτα"
 
-msgid "cURL CA bundle"
-msgstr "δέσμη cURL CA"
+msgid "Displayed name of the payment method at checkout."
+msgstr "Εμφανίζεται το όνομα της μεθόδου πληρωμής στο ταμείο."
 
-msgid "Current shop currency %s not supported by %s."
-msgstr "Το τρέχον νόμισμα του καταστήματος %s δεν υποστηρίζεται από το %s."
-
-msgid "Current shop currency %s not supported by NoPayn."
-msgstr "Το τρέχον νόμισμα του καταστήματος %s δεν υποστηρίζεται από το NoPayn."
-
-msgid ""
-"Enable automatically change store orders status to Completed after receiving "
-"payment"
-msgstr ""
-"Ενεργοποιήστε την αυτόματη αλλαγή της κατάστασης των παραγγελιών σε "
-"\"Ολοκληρώθηκε\" μετά την παραλαβή της πληρωμής"
+msgid "Enable Apple Pay Payments"
+msgstr "Ενεργοποίηση πληρωμών μέσω Apple Pay"
 
 msgid "Enable Credit Card Payments"
 msgstr "Ενεργοποίηση πληρωμών με πιστωτική κάρτα"
 
-msgid "Enable/Disable"
-msgstr "Ενεργοποίηση/Απενεργοποίηση"
+#| msgid "Use cURL CA bundle"
+msgid "Enable cURL CA Bundle"
+msgstr "Ενεργοποίηση του πακέτου cURL CA"
 
-msgid "Failed payment page"
-msgstr "Αποτυχημένη σελίδα πληρωμής"
+msgid "Enable Google Pay Payments"
+msgstr "Ενεργοποίηση πληρωμών μέσω Google Pay"
 
-msgid "Gateway Disabled"
-msgstr "Πύλη απενεργοποιημένη"
+msgid "Enable MobilePay Payments"
+msgstr "Ενεργοποίηση πληρωμών μέσω MobilePay"
 
-msgid "If set empty - option is ignored."
-msgstr "Αν οριστεί κενή - η επιλογή αγνοείται."
+msgid "Enable NoPayn Payments"
+msgstr "Ενεργοποίηση πληρωμών NoPayn"
+
+msgid "Enable Swish Payments"
+msgstr "Ενεργοποίηση πληρωμών μέσω Swish"
+
+msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
+msgstr "Διορθώνει προβλήματα όταν λείπει η διαδρομή curl.cacert στο PHP.ini."
+
+msgid "Google Pay"
+msgstr "Google Pay"
+
+msgid "Google Pay - NoPayn"
+msgstr "Google Pay - NoPayn"
+
+msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
+msgstr ""
+"Μη έγκυρο κλειδί API: %s. Οι μέθοδοι πληρωμής NoPayn έχουν απενεργοποιηθεί."
+
+msgid "Leave blank to allow all supported currencies."
+msgstr "Αφήστε το κενό για να επιτρέψετε όλα τα υποστηριζόμενα νομίσματα."
 
 msgid "Library"
 msgstr "Βιβλιοθήκη"
@@ -92,78 +114,136 @@ msgstr "Βιβλιοθήκη"
 msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
 msgstr "Mastercard, VISA, Maestro ή V PAY - NoPayn"
 
+msgid "MobilePay"
+msgstr "MobilePay"
+
+msgid "MobilePay - NoPayn"
+msgstr "MobilePay - NoPayn"
+
+msgid "No API key detected. Please enter your NoPayn API key and try again."
+msgstr ""
+"Δεν εντοπίστηκε κανένα κλειδί API. Παρακαλούμε εισάγετε το κλειδί API του "
+"NoPayn και προσπαθήστε ξανά."
+
 msgid "NoPayn"
 msgstr "NoPayn"
 
-msgid "NoPayn - Library"
-msgstr "NoPayn - Βιβλιοθήκη"
+msgid "NoPayn - Apple Pay Payments"
+msgstr "NoPayn - Πληρωμές Apple Pay"
 
-msgid "Page where user is redirected after payment has failed."
+msgid "NoPayn Payment Library"
+msgstr "Βιβλιοθήκη πληρωμών NoPayn"
+
+msgid "NoPayn payment methods have been disabled due to a missing API key."
 msgstr ""
-"Σελίδα στην οποία ανακατευθύνεται ο χρήστης μετά την αποτυχία πληρωμής."
-
-msgid "Payment gateway will be available ONLY for selected currencies."
-msgstr "Η πύλη πληρωμής θα είναι διαθέσιμη ΜΟΝΟ για επιλεγμένα νομίσματα."
+"Οι μέθοδοι πληρωμής NoPayn έχουν απενεργοποιηθεί λόγω έλλειψης κλειδιού API."
 
 msgid ""
-"Please beware that for bank transactions the refunds will process directly "
-"to the gateway!"
+"Note: Refunds for bank transactions are processed directly through the "
+"gateway."
 msgstr ""
-"Λάβετε υπόψη σας ότι για τις τραπεζικές συναλλαγές οι επιστροφές θα γίνονται "
-"απευθείας στην πύλη!"
+"Σημείωση: Οι επιστροφές χρημάτων για τραπεζικές συναλλαγές διεκπεραιώνονται "
+"απευθείας μέσω της πύλης."
 
-msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
-msgstr ""
-"Επιλύει πρόβλημα όταν η διαδρομή curl.cacert δεν έχει οριστεί στο PHP.ini"
+msgid "Only completed orders can be refunded"
+msgstr "Μόνο ολοκληρωμένες παραγγελίες μπορούν να επιστραφούν"
+
+msgid "Order Confirmation: %s at %s"
+msgstr "Επιβεβαίωση παραγγελίας: %s στο %s"
+
+msgid "Payment Failed Redirect Page"
+msgstr "Σελίδα ανακατεύθυνσης για αποτυχημένη πληρωμή"
+
+msgid "Payment Gateway Disabled"
+msgstr "Η πύλη πληρωμών είναι απενεργοποιημένη"
+
+msgid "Payment Method Title"
+msgstr "Τίτλος μεθόδου πληρωμής"
+
+msgid "Refund order is not completed"
+msgstr "Η παραγγελία επιστροφής δεν έχει ολοκληρωθεί"
+
+msgid "Refund order is not completed: %s"
+msgstr "Η εντολή επιστροφής χρημάτων δεν έχει ολοκληρωθεί: %s"
+
+msgid "Refunds only possible when captured"
+msgstr "Επιστροφές χρημάτων είναι δυνατές μόνο όταν συλλαμβάνονται"
 
 msgid "Select currencies..."
 msgstr "Επιλέξτε νομίσματα..."
 
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
 msgid "Shopping Cart"
 msgstr "Καλάθι αγορών"
 
-msgid "Test API key"
-msgstr "Κλειδί API δοκιμής"
+msgid "Swish"
+msgstr "Swish"
 
-msgid "The following payment methods are not available for selected currency:"
+msgid "Swish - NoPayn"
+msgstr "Swish - NoPayn"
+
+msgid "Test Mode API Key"
+msgstr "Δοκιμαστική λειτουργία Κλειδί API"
+
+msgid "The currency %s is not supported by %s."
+msgstr "Το νόμισμα %s δεν υποστηρίζεται από το %s."
+
+msgid "The currency %s is not supported by NoPayn."
+msgstr "Το νόμισμα %s δεν υποστηρίζεται από το NoPayn."
+
+#| msgid ""
+#| "The following payment methods are not available for selected currency:"
+msgid "These payment methods are not available for the selected currency:"
 msgstr ""
-"Οι ακόλουθες μέθοδοι πληρωμής δεν είναι διαθέσιμες για το επιλεγμένο νόμισμα:"
+"Αυτές οι μέθοδοι πληρωμής δεν είναι διαθέσιμες για το επιλεγμένο νόμισμα:"
 
-msgid "There was a problem processing your transaction."
-msgstr "Υπήρξε πρόβλημα στην επεξεργασία της συναλλαγής σας."
-
-msgid "This controls the title which the user sees during checkout."
+msgid "This is the page where customers are redirected if their payment fails."
 msgstr ""
-"Αυτό ελέγχει τον τίτλο που βλέπει ο χρήστης κατά τη διάρκεια της πληρωμής."
+"Αυτή είναι η σελίδα στην οποία ανακατευθύνονται οι πελάτες εάν η πληρωμή "
+"τους αποτύχει."
 
 msgid ""
-"This is the general module with settings, during checkout the user will not "
-"see this option."
+"This payment gateway will only be available for the selected currencies."
 msgstr ""
-"Αυτό είναι το γενικό μοντέλο με ρυθμίσεις, κατά τη διαδικασία πληρωμής ο "
-"χρήστης δεν θα δει αυτήν την επιλογή."
-
-msgid "Title"
-msgstr "Τίτλος"
+"Αυτή η πύλη πληρωμής θα είναι διαθέσιμη μόνο για τα επιλεγμένα νομίσματα."
 
 msgid ""
-"Unfortunately, we can not currently accept your purchase. Please choose "
-"another payment option to complete your order. We apologize for the "
-"inconvenience."
+"This section contains general settings and is not visible to customers "
+"during checkout."
 msgstr ""
-"Δυστυχώς, προς το παρόν δεν μπορούμε να δεχτούμε την αγορά σας. Παρακαλούμε "
-"επιλέξτε άλλη επιλογή πληρωμής για να ολοκληρώσετε την παραγγελία σας. "
-"Ζητούμε συγγνώμη για την ταλαιπωρία."
-
-msgid "Use cURL CA bundle"
-msgstr "Χρήση δέσμης cURL CA"
-
-msgid "Your order %s at %s"
-msgstr "Η παραγγελία σας %s σε %s"
+"Αυτή η ενότητα περιέχει γενικές ρυθμίσεις και δεν είναι ορατή στους πελάτες "
+"κατά τη διάρκεια της πληρωμής."
 
 msgid ""
-"Your transaction is still being processed. You will be notified when status "
-"is updated."
+"Transaction failed. Please try again or choose a different payment method."
 msgstr ""
-"Η συναλλαγή σας βρίσκεται ακόμα σε επεξεργασία. Θα ειδοποιηθείτε όταν "
-"ενημερωθεί η κατάσταση."
+"Η συναλλαγή απέτυχε. Παρακαλούμε προσπαθήστε ξανά ή επιλέξτε διαφορετική "
+"μέθοδο πληρωμής."
+
+msgid "Use cURL Certificate Bundle"
+msgstr "Χρήση δέσμης πιστοποιητικών cURL"
+
+msgid ""
+"We’re unable to process your purchase at this time. Please select a "
+"different payment method"
+msgstr ""
+"Δεν μπορούμε να επεξεργαστούμε την αγορά σας αυτή τη στιγμή. Παρακαλούμε "
+"επιλέξτε μια διαφορετική μέθοδο πληρωμής"
+
+msgid ""
+"Your API key lacks the required permissions for this action: %s. Contact "
+"technical support for assistance."
+msgstr ""
+"Το κλειδί API σας δεν διαθέτει τα απαιτούμενα δικαιώματα για αυτή την "
+"ενέργεια: %s. Επικοινωνήστε με την τεχνική υποστήριξη για βοήθεια."
+
+msgid "Your NoPayn API key (provided by NoPayn)."
+msgstr "Το κλειδί σας API της NoPayn (παρέχεται από την NoPayn)."
+
+msgid ""
+"Your transaction is in progress. We'll update you once the status changes."
+msgstr ""
+"Η συναλλαγή σας βρίσκεται σε εξέλιξη. Θα σας ενημερώσουμε μόλις αλλάξει η "
+"κατάσταση."
