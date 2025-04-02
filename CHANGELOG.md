@@ -9,3 +9,7 @@
 * Implemented Capture on Complete feature
 * Implemented Void on Cancelled feature
 * Updated translations
+
+** 1.0.2 **
+
+* Updated Description
