@@ -3,7 +3,7 @@
  * Plugin Name: NoPayn Payments
  * Plugin URI: https://nopayn.io/
  * Description: NoPayn WooCommerce plugin
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Ginger Payments
  * Author URI: https://www.gingerpayments.com/
  * License: The MIT License (MIT)
@@ -97,7 +97,7 @@ function woocommerce_ginger_init()
     {
         if (strstr($order->data['payment_method'],WC_Ginger_BankConfig::BANK_PREFIX)) //shows only for orders which were paid by bank's payment method
         {
-            echo "<p style='color: red; ' class='description'>" . esc_html__( "Note: Refunds for bank transactions are processed directly through the gateway.", WC_Ginger_BankConfig::BANK_PREFIX) . "</p>";
+            echo "<p style='color: red; ' class='description'>" . esc_html__( "Please beware that for bank transactions the refunds will process directly to the gateway!", WC_Ginger_BankConfig::BANK_PREFIX) . "</p>";
         }
     }
 
@@ -263,7 +263,7 @@ function woocommerce_ginger_init()
 
             $client->send('POST', sprintf('/orders/%s/transactions/%s/voids/amount', $gingerOrder['id'], $transactionID),
                 ['amount' => $gingerOrder['amount'], 'description' => sprintf(
-                        "Void %s of the full %s on order %s ",
+                    "Void %s of the full %s on order %s ",
                     $gingerOrder['amount'], $gingerOrder['amount'], $gingerOrder['merchant_order_id']
                 )]);
 
@@ -273,12 +273,10 @@ function woocommerce_ginger_init()
         }
     }
 
-
     add_filter('woocommerce_available_payment_gateways', 'ginger_additional_filter_gateways', 10);
     add_action('woocommerce_thankyou', 'ginger_remove_notices', 20);
     add_action('woocommerce_after_checkout_form', 'applepay_detection',10);
     add_action( 'woocommerce_order_status_completed', 'woocommerce_order_status_completed', 10 );
     add_action( 'woocommerce_order_status_cancelled', 'woocommerce_order_status_cancelled', 10 );
-
 
 }

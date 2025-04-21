@@ -12,7 +12,7 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
         $this->icon = false;
         $this->has_fields = false;
         $this->method_title = __(WC_Ginger_BankConfig::BANK_LABEL, WC_Ginger_BankConfig::BANK_PREFIX);
-        $this->method_description = __('Activate NoPayn Gateway & Configure Settings', WC_Ginger_BankConfig::BANK_PREFIX);
+        $this->method_description = __(WC_Ginger_BankConfig::BANK_LABEL ." - Library", WC_Ginger_BankConfig::BANK_PREFIX);
 
         parent::__construct();
     }
@@ -37,8 +37,8 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
                 } else {
                     $order->payment_complete();
                 }
-
                 $settings = get_option('woocommerce_ginger_settings');
+
                 $autocomplete = $settings['auto_complete'] ?? 'no';
                 if ($autocomplete == 'yes') {
                     $order->update_status($this->ginger_get_store_status($gingerOrder['status']));
@@ -68,8 +68,9 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
             exit;
         }
 
-        wc_add_notice(__('Transaction failed. Please try again or choose a different payment method. ' .current($gingerOrder['transactions'])['customer_message'], WC_Ginger_BankConfig::BANK_PREFIX), 'error');
-        if ($this->get_option('failed_redirect') == 'cart') {
+        $base_msg = __('There was a problem processing your transaction.', WC_Ginger_BankConfig::BANK_PREFIX);
+        $full_msg = $base_msg . ' ' . current($gingerOrder['transactions'])['customer_message'];
+        wc_add_notice($full_msg, 'error');        if ($this->get_option('failed_redirect') == 'cart') {
             $url = $order->get_cancel_order_url();
         } else {
             $url = $order->get_checkout_payment_url();

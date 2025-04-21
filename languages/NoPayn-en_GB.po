@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-03-31 12:03+0000\n"
+"PO-Revision-Date: 2025-04-14 14:37+0000\n"
 "Last-Translator: \n"
 "Language-Team: English (UK)\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.7.1; wp-6.8-RC3"
 
 msgid "Accept Apple Pay Payments"
 msgstr "Accept Apple Pay Payments"
@@ -37,20 +37,26 @@ msgstr "Accept Swish Payments"
 msgid "Accepted Currencies"
 msgstr "Accepted Currencies"
 
-msgid "Activate NoPayn Gateway & Configure Settings"
-msgstr "Activate NoPayn Gateway & Configure Settings"
-
 msgid "API key"
 msgstr "API key"
+
+msgid "API key is empty. NoPayn payment methods deactivated"
+msgstr "NoPayn payment methods have been disabled due to a missing API key"
+
+msgid "API key is empty. Set API key and try again"
+msgstr "No API key detected. Please enter your NoPayn API key and try again"
+
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
+msgstr "Invalid API Key: %s. NoPayn payment methods have been disabled"
+
+msgid "API key provided by NoPayn"
+msgstr "Your NoPayn API key (provided by NoPayn)"
 
 msgid "Apple Pay"
 msgstr "Apple Pay"
 
-msgid "Automatically Complete Orders"
+msgid "Auto complete orders"
 msgstr "Automatically Complete Orders"
-
-msgid "Automatically mark orders as 'Completed' once payment is received."
-msgstr "Automatically mark orders as 'Completed' once payment is received."
 
 msgid "Capture on complete"
 msgstr "Capture on complete"
@@ -64,18 +70,22 @@ msgstr "Checkout Page"
 msgid "Credit Card/Debit Card"
 msgstr "Credit Card/Debit Card"
 
-msgid "Displayed name of the payment method at checkout."
-msgstr "Displayed name of the payment method at checkout."
+msgid "cURL CA bundle"
+msgstr "Use cURL Certificate Bundle"
+
+msgid "Current shop currency %s not supported by %s."
+msgstr "The currency %s is not supported by %s."
 
 msgid "Enable Apple Pay Payments"
 msgstr "Enable Apple Pay Payments"
 
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
+msgstr "Automatically mark orders as 'Completed' once payment is received"
+
 msgid "Enable Credit Card Payments"
 msgstr "Enable Credit Card Payments"
-
-#| msgid "Use cURL CA bundle"
-msgid "Enable cURL CA Bundle"
-msgstr "Enable cURL CA Bundle"
 
 msgid "Enable Google Pay Payments"
 msgstr "Enable Google Pay Payments"
@@ -83,23 +93,23 @@ msgstr "Enable Google Pay Payments"
 msgid "Enable MobilePay Payments"
 msgstr "Enable MobilePay Payments"
 
-msgid "Enable NoPayn Payments"
-msgstr "Enable NoPayn Payments"
-
 msgid "Enable Swish Payments"
 msgstr "Enable Swish Payments"
 
-msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
-msgstr "Fixes issues when the curl.cacert path is missing in PHP.ini."
+msgid "Enable/Disable"
+msgstr "Enable NoPayn Payments"
+
+msgid "Failed payment page"
+msgstr "Payment Failed Redirect Page"
+
+msgid "Gateway Disabled"
+msgstr "Payment Gateway Disabled"
 
 msgid "Google Pay"
 msgstr "Google Pay"
 
 msgid "Google Pay - NoPayn"
 msgstr "Google Pay - NoPayn"
-
-msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
-msgstr "Invalid API Key: %s. NoPayn payment methods have been disabled."
 
 msgid "Leave blank to allow all supported currencies."
 msgstr "Leave blank to allow all supported currencies."
@@ -117,42 +127,34 @@ msgstr "MobilePay"
 msgid "MobilePay - NoPayn"
 msgstr "MobilePay - NoPayn"
 
-msgid "No API key detected. Please enter your NoPayn API key and try again."
-msgstr "No API key detected. Please enter your NoPayn API key and try again."
-
 msgid "NoPayn"
 msgstr "NoPayn"
 
 msgid "NoPayn - Apple Pay Payments"
 msgstr "NoPayn - Apple Pay Payments"
 
+msgid "NoPayn - Library"
+msgstr "Activate NoPayn Gateway & Configure Settings"
+
 msgid "NoPayn Payment Library"
 msgstr "NoPayn Payment Library"
-
-msgid "NoPayn payment methods have been disabled due to a missing API key."
-msgstr "NoPayn payment methods have been disabled due to a missing API key."
-
-msgid ""
-"Note: Refunds for bank transactions are processed directly through the "
-"gateway."
-msgstr ""
-"Note: Refunds for bank transactions are processed directly through the "
-"gateway."
 
 msgid "Only completed orders can be refunded"
 msgstr "Only completed orders can be refunded"
 
-msgid "Order Confirmation: %s at %s"
-msgstr "Order Confirmation: %s at %s"
+msgid "Page where user is redirected after payment has failed."
+msgstr ""
+"This is the page where customers are redirected if their payment fails."
 
-msgid "Payment Failed Redirect Page"
-msgstr "Payment Failed Redirect Page"
+msgid ""
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
+msgstr ""
+"Note: Refunds for bank transactions are processed directly through the "
+"gateway."
 
-msgid "Payment Gateway Disabled"
-msgstr "Payment Gateway Disabled"
-
-msgid "Payment Method Title"
-msgstr "Payment Method Title"
+msgid "Plugin"
+msgstr "Settings"
 
 msgid "Refund order is not completed"
 msgstr "Refund order is not completed"
@@ -163,11 +165,11 @@ msgstr "Refund order is not completed: %s"
 msgid "Refunds only possible when captured"
 msgstr "Refunds only possible when captured"
 
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgstr "Fixes issues when the curl.cacert path is missing in PHP.ini."
+
 msgid "Select currencies..."
 msgstr "Select currencies..."
-
-msgid "Settings"
-msgstr "Settings"
 
 msgid "Shopping Cart"
 msgstr "Shopping Cart"
@@ -178,50 +180,49 @@ msgstr "Swish"
 msgid "Swish - NoPayn"
 msgstr "Swish - NoPayn"
 
-msgid "Test Mode API Key"
+msgid "Test API key"
 msgstr "Test Mode API Key"
-
-msgid "The currency %s is not supported by %s."
-msgstr "The currency %s is not supported by %s."
 
 msgid "The currency %s is not supported by NoPayn."
 msgstr "The currency %s is not supported by NoPayn."
 
-#| msgid ""
-#| "The following payment methods are not available for selected currency:"
-msgid "These payment methods are not available for the selected currency:"
+#| msgid "These payment methods are not available for the selected currency:"
+msgid "The following payment methods are not available for selected currency:"
 msgstr "These payment methods are not available for the selected currency:"
 
-msgid "This is the page where customers are redirected if their payment fails."
+msgid "There was a problem processing your transaction."
 msgstr ""
-"This is the page where customers are redirected if their payment fails."
+"Transaction failed. Please try again or choose a different payment method."
+
+msgid "This controls the title which the user sees during checkout."
+msgstr "Displayed name of the payment method at checkout."
+
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
+msgstr ""
+"This section contains general settings and is not visible to customers "
+"during checkout."
 
 msgid ""
 "This payment gateway will only be available for the selected currencies."
 msgstr ""
 "This payment gateway will only be available for the selected currencies."
 
-msgid ""
-"This section contains general settings and is not visible to customers "
-"during checkout."
-msgstr ""
-"This section contains general settings and is not visible to customers "
-"during checkout."
+msgid "Title"
+msgstr "Payment Method Title"
 
 msgid ""
-"Transaction failed. Please try again or choose a different payment method."
-msgstr ""
-"Transaction failed. Please try again or choose a different payment method."
-
-msgid "Use cURL Certificate Bundle"
-msgstr "Use cURL Certificate Bundle"
-
-msgid ""
-"We’re unable to process your purchase at this time. Please select a "
-"different payment method"
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
 msgstr ""
 "We’re unable to process your purchase at this time. Please select a "
-"different payment method"
+"different payment method."
+
+#| msgid "Enable cURL CA Bundle"
+msgid "Use cURL CA bundle"
+msgstr "Enable cURL CA Bundle"
 
 msgid ""
 "Your API key lacks the required permissions for this action: %s. Contact "
@@ -230,10 +231,11 @@ msgstr ""
 "Your API key lacks the required permissions for this action: %s. Contact "
 "technical support for assistance."
 
-msgid "Your NoPayn API key (provided by NoPayn)."
-msgstr "Your NoPayn API key (provided by NoPayn)."
+msgid "Your order %s at %s"
+msgstr "Order Confirmation: %s at %s"
 
 msgid ""
-"Your transaction is in progress. We'll update you once the status changes."
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
 msgstr ""
 "Your transaction is in progress. We'll update you once the status changes."

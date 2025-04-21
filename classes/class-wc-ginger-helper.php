@@ -57,9 +57,9 @@ class WC_Ginger_Helper
                         'default' => 'no'
                     ],
                     'title' => [
-                        'title' => __('Payment Method Title', WC_Ginger_BankConfig::BANK_PREFIX),
+                        'title' => __('Title', WC_Ginger_BankConfig::BANK_PREFIX),
                         'type' => 'text',
-                        'description' => __('Displayed name of the payment method at checkout.', WC_Ginger_BankConfig::BANK_PREFIX),
+                        'description' => __('This controls the title which the user sees during checkout.', WC_Ginger_BankConfig::BANK_PREFIX),
                         'default' => $default,
                         'desc_tip' => true
                     ],
@@ -137,13 +137,17 @@ class WC_Ginger_Helper
                 $default = __('MobilePay', WC_Ginger_BankConfig::BANK_PREFIX);
                 $label = __('Enable MobilePay Payments', WC_Ginger_BankConfig::BANK_PREFIX);
                 break;
+            case 'viacash':
+                $default = __('Viacash', WC_Ginger_BankConfig::BANK_PREFIX);
+                $label = __('Enable Viacash Payments', WC_Ginger_BankConfig::BANK_PREFIX);
+                break;
             case 'ginger':
                 return [
                     'lib_title' => [
-                        'title' => __( 'Payment Method Title', WC_Ginger_BankConfig::BANK_PREFIX ),
+                        'title' => __( 'Title', WC_Ginger_BankConfig::BANK_PREFIX ),
                         'type' => 'text',
-                        'description' => __( 'This section contains general settings and is not visible to customers during checkout.', WC_Ginger_BankConfig::BANK_PREFIX ),
-                        'default' =>  __( 'Settings', WC_Ginger_BankConfig::BANK_PREFIX ),
+                        'description' => __( 'This is the general module with settings, during checkout the user will not see this option.', WC_Ginger_BankConfig::BANK_PREFIX ),
+                        'default' => __( 'Plugin', WC_Ginger_BankConfig::BANK_PREFIX )
                     ],
                     'api_key' => [
                         'title' => __('API key', WC_Ginger_BankConfig::BANK_PREFIX),
@@ -151,9 +155,9 @@ class WC_Ginger_Helper
                         'description' => __('API key provided by '.WC_Ginger_BankConfig::BANK_LABEL, WC_Ginger_BankConfig::BANK_PREFIX),
                     ],
                     'failed_redirect' => [
-                        'title' => __('Payment Failed Redirect Page', WC_Ginger_BankConfig::BANK_PREFIX),
+                        'title' => __('Failed payment page', WC_Ginger_BankConfig::BANK_PREFIX),
                         'description' => __(
-                            'This is the page where customers are redirected if their payment fails.',
+                            'Page where user is redirected after payment has failed.',
                             WC_Ginger_BankConfig::BANK_PREFIX
                         ),
                         'type' => 'select',
@@ -165,18 +169,18 @@ class WC_Ginger_Helper
                         'desc_tip' => true
                     ],
                     'bundle_cacert' => [
-                        'title' => __('Use cURL Certificate Bundle', WC_Ginger_BankConfig::BANK_PREFIX),
-                        'label' => __('Enable cURL CA Bundle', WC_Ginger_BankConfig::BANK_PREFIX),
+                        'title' => __('cURL CA bundle', WC_Ginger_BankConfig::BANK_PREFIX),
+                        'label' => __('Use cURL CA bundle', WC_Ginger_BankConfig::BANK_PREFIX),
                         'description' => __(
-                            'Fixes issues when the curl.cacert path is missing in PHP.ini.',
+                            'Resolves issue when curl.cacert path is not set in PHP.ini',
                             WC_Ginger_BankConfig::BANK_PREFIX
                         ),
                         'type' => 'checkbox',
                         'desc_tip' => true
                     ],
                     'auto_complete' => [
-                        'title' => __('Automatically Complete Orders', WC_Ginger_BankConfig::BANK_PREFIX),
-                        'label' => __("Automatically mark orders as 'Completed' once payment is received.", WC_Ginger_BankConfig::BANK_PREFIX),
+                        'title' => __('Auto complete orders', WC_Ginger_BankConfig::BANK_PREFIX),
+                        'label' => __('Enable automatically change store orders status to Completed after receiving payment', WC_Ginger_BankConfig::BANK_PREFIX),
                         'type' => 'checkbox'
                     ]
                 ];
@@ -188,15 +192,15 @@ class WC_Ginger_Helper
 
         $formFields = [
             'enabled' => [
-                'title' => __('Enable NoPayn Payments', WC_Ginger_BankConfig::BANK_PREFIX),
+                'title' => __('Enable/Disable', WC_Ginger_BankConfig::BANK_PREFIX),
                 'type' => 'checkbox',
                 'label' => $label,
                 'default' => 'no'
             ],
             'title' => [
-                'title' => __('Payment Method Title', WC_Ginger_BankConfig::BANK_PREFIX),
+                'title' => __('Title', WC_Ginger_BankConfig::BANK_PREFIX),
                 'type' => 'text',
-                'description' => __('Displayed name of the payment method at checkout.', WC_Ginger_BankConfig::BANK_PREFIX),
+                'description' => __('This controls the title which the user sees during checkout.', WC_Ginger_BankConfig::BANK_PREFIX),
                 'default' => $default,
                 'desc_tip' => true
             ],

@@ -1,7 +1,5 @@
 <?php
 
-use Ginger\Ginger;
-
 if (!defined('ABSPATH')) {
     exit;
 }
@@ -24,7 +22,7 @@ class WC_Ginger_Clientbuilder
         if (!$apiKey) return false;
 
         try {
-            $client = Ginger::createClient(
+            $client = \Ginger\Ginger::createClient(
                 WC_Ginger_BankConfig::GINGER_BANK_ENDPOINT,
                 $apiKey,
                 ($settings['bundle_cacert'] == 'yes') ?

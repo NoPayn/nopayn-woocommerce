@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NoPayn 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nopayn\n"
-"POT-Creation-Date: 2025-03-31 11:53+0000\n"
+"POT-Creation-Date: 2025-04-11 09:26+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,8 +19,7 @@ msgstr ""
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
 
-msgid ""
-"Transaction failed. Please try again or choose a different payment method."
+msgid "There was a problem processing your transaction."
 msgstr ""
 
 msgid "NoPayn"
@@ -29,16 +28,16 @@ msgstr ""
 msgid "API key"
 msgstr ""
 
-msgid "Your NoPayn API key (provided by NoPayn)."
+msgid "API key provided by NoPayn"
 msgstr ""
 
-msgid "Test Mode API Key"
+msgid "Test API key"
 msgstr ""
 
-msgid "Payment Failed Redirect Page"
+msgid "Failed payment page"
 msgstr ""
 
-msgid "This is the page where customers are redirected if their payment fails."
+msgid "Page where user is redirected after payment has failed."
 msgstr ""
 
 msgid "Checkout Page"
@@ -47,29 +46,30 @@ msgstr ""
 msgid "Shopping Cart"
 msgstr ""
 
-msgid "Use cURL Certificate Bundle"
+msgid "cURL CA bundle"
 msgstr ""
 
-msgid "Enable cURL CA Bundle"
+msgid "Use cURL CA bundle"
 msgstr ""
 
-msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
 msgstr ""
 
 msgid "Mastercard, VISA, Maestro or V PAY - NoPayn"
 msgstr ""
 
 msgid ""
-"Your transaction is in progress. We'll update you once the status changes."
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
 msgstr ""
 
-msgid "Payment Gateway Disabled"
+msgid "Gateway Disabled"
 msgstr ""
 
 msgid "The currency %s is not supported by NoPayn."
 msgstr ""
 
-msgid "The currency %s is not supported by %s."
+msgid "Current shop currency %s not supported by %s."
 msgstr ""
 
 msgid "Credit Card/Debit Card"
@@ -78,13 +78,13 @@ msgstr ""
 msgid "Enable Credit Card Payments"
 msgstr ""
 
-msgid "Enable NoPayn Payments"
+msgid "Enable/Disable"
 msgstr ""
 
-msgid "Payment Method Title"
+msgid "Title"
 msgstr ""
 
-msgid "Displayed name of the payment method at checkout."
+msgid "This controls the title which the user sees during checkout."
 msgstr ""
 
 msgid "Accepted Currencies"
@@ -100,7 +100,7 @@ msgstr ""
 msgid "Select currencies..."
 msgstr ""
 
-msgid "Order Confirmation: %s at %s"
+msgid "Your order %s at %s"
 msgstr ""
 
 msgid "NoPayn Payment Library"
@@ -109,10 +109,10 @@ msgstr ""
 msgid "Library"
 msgstr ""
 
-msgid "NoPayn payment methods have been disabled due to a missing API key."
+msgid "API key is empty. NoPayn payment methods deactivated"
 msgstr ""
 
-msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
 msgstr ""
 
 msgid ""
@@ -120,31 +120,34 @@ msgid ""
 "technical support for assistance."
 msgstr ""
 
-msgid "These payment methods are not available for the selected currency:"
+msgid "The following payment methods are not available for selected currency:"
 msgstr ""
 
 msgid ""
-"We’re unable to process your purchase at this time. Please select a "
-"different payment method"
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
 msgstr ""
 
-msgid "No API key detected. Please enter your NoPayn API key and try again."
-msgstr ""
-
-msgid ""
-"Note: Refunds for bank transactions are processed directly through the "
-"gateway."
+msgid "API key is empty. Set API key and try again"
 msgstr ""
 
 msgid ""
-"This section contains general settings and is not visible to customers "
-"during checkout."
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
 msgstr ""
 
-msgid "Automatically Complete Orders"
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
 msgstr ""
 
-msgid "Automatically mark orders as 'Completed' once payment is received."
+msgid "Auto complete orders"
+msgstr ""
+
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
 msgstr ""
 
 msgid "Accept Apple Pay Payments"
@@ -189,7 +192,7 @@ msgstr ""
 msgid "Accept Google Pay Payments"
 msgstr ""
 
-msgid "Activate NoPayn Gateway & Configure Settings"
+msgid "NoPayn - Library"
 msgstr ""
 
 msgid "Accept Credit/Debit Card Payments"
@@ -201,7 +204,7 @@ msgstr ""
 msgid "Accept MobilePay Payments"
 msgstr ""
 
-msgid "Settings"
+msgid "Plugin"
 msgstr ""
 
 msgid "Only completed orders can be refunded"

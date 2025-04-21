@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-03-31 13:30+0000\n"
+"PO-Revision-Date: 2025-04-14 14:46+0000\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "Language: sv_SE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.7.1; wp-6.8-RC3"
 
 msgid "Accept Apple Pay Payments"
 msgstr "Acceptera Apple Pay-betalningar"
@@ -37,21 +37,29 @@ msgstr "Acceptera Swish-betalningar"
 msgid "Accepted Currencies"
 msgstr "Accepterade valutor"
 
-msgid "Activate NoPayn Gateway & Configure Settings"
-msgstr "Aktivera NoPayn Gateway och konfigurera inställningar"
-
 msgid "API key"
 msgstr "API-nyckel"
+
+msgid "API key is empty. NoPayn payment methods deactivated"
+msgstr ""
+"NoPayn-betalningsmetoder har inaktiverats på grund av att en API-nyckel "
+"saknas"
+
+msgid "API key is empty. Set API key and try again"
+msgstr ""
+"Ingen API-nyckel upptäcktes. Ange din NoPayn API-nyckel och försök igen"
+
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
+msgstr "Ogiltig API-nyckel: %s. NoPayn-betalningsmetoder har inaktiverats"
+
+msgid "API key provided by NoPayn"
+msgstr "Din NoPayn API-nyckel (tillhandahålls av NoPayn)"
 
 msgid "Apple Pay"
 msgstr "Apple Pay"
 
-msgid "Automatically Complete Orders"
+msgid "Auto complete orders"
 msgstr "Slutför beställningar automatiskt"
-
-msgid "Automatically mark orders as 'Completed' once payment is received."
-msgstr ""
-"Markera automatiskt ordrar som ”slutförda” när betalningen har mottagits."
 
 msgid "Capture on complete"
 msgstr "Fånga på komplett"
@@ -65,18 +73,24 @@ msgstr "Utcheckningssida"
 msgid "Credit Card/Debit Card"
 msgstr "Kreditkort/Debitkort"
 
-msgid "Displayed name of the payment method at checkout."
-msgstr "Visade namnet på betalningsmetoden i kassan."
+msgid "cURL CA bundle"
+msgstr "Använd cURL-certifikatpaket"
+
+msgid "Current shop currency %s not supported by %s."
+msgstr "Valutan %s stöds inte av %s."
 
 msgid "Enable Apple Pay Payments"
 msgstr "Aktivera Apple Pay-betalningar"
 
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
+msgstr ""
+"Markera automatiskt beställningar som ”slutförda” när betalningen har "
+"mottagits"
+
 msgid "Enable Credit Card Payments"
 msgstr "Aktivera kreditkortsbetalningar"
-
-#| msgid "Use cURL CA bundle"
-msgid "Enable cURL CA Bundle"
-msgstr "Aktivera cURL CA-paket"
 
 msgid "Enable Google Pay Payments"
 msgstr "Aktivera Google Pay-betalningar"
@@ -84,23 +98,23 @@ msgstr "Aktivera Google Pay-betalningar"
 msgid "Enable MobilePay Payments"
 msgstr "Aktivera MobilePay-betalningar"
 
-msgid "Enable NoPayn Payments"
-msgstr "Aktivera NoPayn-betalningar"
-
 msgid "Enable Swish Payments"
 msgstr "Aktivera Swish-betalningar"
 
-msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
-msgstr "Åtgärdar problem när curl.cacert-sökvägen saknas i PHP.ini."
+msgid "Enable/Disable"
+msgstr "Aktivera NoPayn-betalningar"
+
+msgid "Failed payment page"
+msgstr "Omdirigeringssida för misslyckad betalning"
+
+msgid "Gateway Disabled"
+msgstr "Betalningsgateway inaktiverad"
 
 msgid "Google Pay"
 msgstr "Google Pay"
 
 msgid "Google Pay - NoPayn"
 msgstr "Google Pay - NoPayn"
-
-msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
-msgstr "Ogiltig API-nyckel: %s. NoPayn-betalningsmetoder har inaktiverats."
 
 msgid "Leave blank to allow all supported currencies."
 msgstr "Lämna tomt för att tillåta alla valutor som stöds."
@@ -117,45 +131,33 @@ msgstr "MobilePay"
 msgid "MobilePay - NoPayn"
 msgstr "MobilePay - NoPayn"
 
-msgid "No API key detected. Please enter your NoPayn API key and try again."
-msgstr ""
-"Ingen API-nyckel upptäckt. Vänligen ange din NoPayn API-nyckel och försök "
-"igen."
-
 msgid "NoPayn"
 msgstr "NoPayn"
 
 msgid "NoPayn - Apple Pay Payments"
 msgstr "NoPayn - Apple Pay-betalningar"
 
+msgid "NoPayn - Library"
+msgstr "Aktivera NoPayn Gateway och konfigurera inställningar"
+
 msgid "NoPayn Payment Library"
 msgstr "NoPayn Betalningsbibliotek"
-
-msgid "NoPayn payment methods have been disabled due to a missing API key."
-msgstr ""
-"NoPayn-betalningsmetoder har inaktiverats på grund av att en API-nyckel "
-"saknas."
-
-msgid ""
-"Note: Refunds for bank transactions are processed directly through the "
-"gateway."
-msgstr ""
-"Obs: Återbetalningar för banktransaktioner behandlas direkt via gatewayen."
 
 msgid "Only completed orders can be refunded"
 msgstr "Endast slutförda beställningar kan återbetalas"
 
-msgid "Order Confirmation: %s at %s"
-msgstr "Orderbekräftelse: %s vid %s"
+msgid "Page where user is redirected after payment has failed."
+msgstr ""
+"Det här är den sida där kunderna omdirigeras om deras betalning misslyckas."
 
-msgid "Payment Failed Redirect Page"
-msgstr "Omdirigeringssida för misslyckad betalning"
+msgid ""
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
+msgstr ""
+"Obs: Återbetalningar för banktransaktioner behandlas direkt via gatewayen."
 
-msgid "Payment Gateway Disabled"
-msgstr "Betalningsgateway inaktiverad"
-
-msgid "Payment Method Title"
-msgstr "Betalningsmetodens titel"
+msgid "Plugin"
+msgstr "Inställningar"
 
 msgid "Refund order is not completed"
 msgstr "Återbetalningsordern är inte slutförd"
@@ -166,11 +168,11 @@ msgstr "Återbetalningsordern är inte slutförd: %s"
 msgid "Refunds only possible when captured"
 msgstr "Återbetalningar endast möjliga när de fångats"
 
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgstr "Åtgärdar problem när curl.cacert-sökvägen saknas i PHP.ini."
+
 msgid "Select currencies..."
 msgstr "Välj valutor..."
-
-msgid "Settings"
-msgstr "Inställningar"
 
 msgid "Shopping Cart"
 msgstr "Kundvagn"
@@ -181,24 +183,30 @@ msgstr "Swish"
 msgid "Swish - NoPayn"
 msgstr "Swish - NoPayn"
 
-msgid "Test Mode API Key"
+msgid "Test API key"
 msgstr "API-nyckel för testläge"
-
-msgid "The currency %s is not supported by %s."
-msgstr "Valutan %s stöds inte av %s."
 
 msgid "The currency %s is not supported by NoPayn."
 msgstr "Valutan %s stöds inte av NoPayn."
 
-#| msgid ""
-#| "The following payment methods are not available for selected currency:"
-msgid "These payment methods are not available for the selected currency:"
-msgstr "Dessa betalningsmetoder är inte tillgängliga för den valda valutan:"
-
-msgid "This is the page where customers are redirected if their payment fails."
+#| msgid "These payment methods are not available for the selected currency:"
+msgid "The following payment methods are not available for selected currency:"
 msgstr ""
-"Det här är den sida som kunderna omdirigeras till om deras betalning "
-"misslyckas."
+"Dessa betalningsmetoder är inte tillgängliga för den valda valutan:\n"
+
+msgid "There was a problem processing your transaction."
+msgstr ""
+"Transaktionen misslyckades. Försök igen eller välj en annan betalningsmetod."
+
+msgid "This controls the title which the user sees during checkout."
+msgstr "Visat namn på betalningsmetoden i kassan."
+
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
+msgstr ""
+"Det här avsnittet innehåller allmänna inställningar och är inte synligt för "
+"kunder i kassan."
 
 msgid ""
 "This payment gateway will only be available for the selected currencies."
@@ -206,26 +214,20 @@ msgstr ""
 "Denna betalningsgateway kommer endast att vara tillgänglig för de valda "
 "valutorna."
 
-msgid ""
-"This section contains general settings and is not visible to customers "
-"during checkout."
-msgstr ""
-"Det här avsnittet innehåller allmänna inställningar och är inte synligt för "
-"kunderna i kassan."
+msgid "Title"
+msgstr "Betalningsmetodens titel"
 
 msgid ""
-"Transaction failed. Please try again or choose a different payment method."
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
 msgstr ""
-"Transaktionen misslyckades. Försök igen eller välj en annan betalningsmetod."
+"Vi kan inte behandla ditt köp just nu. Vänligen välj en annan "
+"betalningsmetod."
 
-msgid "Use cURL Certificate Bundle"
-msgstr "Använd cURL-certifikatpaket"
-
-msgid ""
-"We’re unable to process your purchase at this time. Please select a "
-"different payment method"
-msgstr ""
-"Vi kan inte behandla ditt köp just nu. Vänligen välj en annan betalningsmetod"
+#| msgid "Enable cURL CA Bundle"
+msgid "Use cURL CA bundle"
+msgstr "Aktivera cURL CA-paket"
 
 msgid ""
 "Your API key lacks the required permissions for this action: %s. Contact "
@@ -234,9 +236,10 @@ msgstr ""
 "Din API-nyckel saknar de behörigheter som krävs för den här åtgärden: %s. "
 "Kontakta teknisk support för hjälp."
 
-msgid "Your NoPayn API key (provided by NoPayn)."
-msgstr "Din NoPayn API-nyckel (tillhandahålls av NoPayn)."
+msgid "Your order %s at %s"
+msgstr "Orderbekräftelse: %s vid %s"
 
 msgid ""
-"Your transaction is in progress. We'll update you once the status changes."
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
 msgstr "Din transaktion pågår. Vi uppdaterar dig när statusen ändras."

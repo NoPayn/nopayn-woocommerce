@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-03-31 13:23+0000\n"
+"PO-Revision-Date: 2025-04-14 14:44+0000\n"
 "Last-Translator: \n"
 "Language-Team: Lithuanian\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Language: lt_LT\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 "
 "&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.7.1; wp-6.8-RC3"
 
 msgid "Accept Apple Pay Payments"
 msgstr "Priimti „Apple Pay“ mokėjimus"
@@ -38,21 +38,28 @@ msgstr "Priimti Swish mokėjimus"
 msgid "Accepted Currencies"
 msgstr "Priimamos valiutos"
 
-msgid "Activate NoPayn Gateway & Configure Settings"
-msgstr "Aktyvinti NoPayn vartus ir konfigūruoti nustatymus"
-
 msgid "API key"
 msgstr "API raktas"
+
+msgid "API key is empty. NoPayn payment methods deactivated"
+msgstr "„NoPayn“ mokėjimo metodai buvo išjungti dėl trūkstamo API rakto"
+
+msgid "API key is empty. Set API key and try again"
+msgstr ""
+"Neaptiktas API raktas. Įveskite NoPayn API raktą ir bandykite dar kartą"
+
+msgid "API Key is not valid: %s NoPayn payment methods deactivated"
+msgstr ""
+"Netinkamas API raktas: %s. NoPayn mokėjimo metodai buvo išjungti\n"
+
+msgid "API key provided by NoPayn"
+msgstr "Jūsų „NoPayn“ API raktas (pateikia „NoPayn“)"
 
 msgid "Apple Pay"
 msgstr "Apple Pay"
 
-msgid "Automatically Complete Orders"
+msgid "Auto complete orders"
 msgstr "Automatiškai užbaigti užsakymus"
-
-msgid "Automatically mark orders as 'Completed' once payment is received."
-msgstr ""
-"Automatiškai pažymėkite užsakymus kaip „Užbaigti“, kai gaunamas mokėjimas."
 
 msgid "Capture on complete"
 msgstr "Užfiksuoti užbaigtą"
@@ -66,18 +73,23 @@ msgstr "Atsiskaitymo puslapis"
 msgid "Credit Card/Debit Card"
 msgstr "Kredito kortelė / debeto kortelė"
 
-msgid "Displayed name of the payment method at checkout."
-msgstr "Kasoje rodomas mokėjimo būdo pavadinimas."
+msgid "cURL CA bundle"
+msgstr "Naudokite cURL sertifikatų rinkinį"
+
+msgid "Current shop currency %s not supported by %s."
+msgstr "Valiuta %s nepalaikoma %s."
 
 msgid "Enable Apple Pay Payments"
 msgstr "Įjungti Apple Pay mokėjimus"
 
+msgid ""
+"Enable automatically change store orders status to Completed after receiving "
+"payment"
+msgstr ""
+"Automatiškai pažymėti užsakymus kaip „Užbaigti“, kai gaunamas mokėjimas"
+
 msgid "Enable Credit Card Payments"
 msgstr "Įgalinti mokėjimus kredito kortelėmis"
-
-#| msgid "Use cURL CA bundle"
-msgid "Enable cURL CA Bundle"
-msgstr "Įjungti cURL CA paketą"
 
 msgid "Enable Google Pay Payments"
 msgstr "Įjungti Google Pay mokėjimus"
@@ -85,23 +97,23 @@ msgstr "Įjungti Google Pay mokėjimus"
 msgid "Enable MobilePay Payments"
 msgstr "Įjungti MobilePay mokėjimus"
 
-msgid "Enable NoPayn Payments"
-msgstr "Įjungti NoPayn mokėjimus"
-
 msgid "Enable Swish Payments"
 msgstr "Įjungti Swish mokėjimus"
 
-msgid "Fixes issues when the curl.cacert path is missing in PHP.ini."
-msgstr "Ištaisomos problemos, kai PHP.ini nėra curl.cacert kelio."
+msgid "Enable/Disable"
+msgstr "Įjunkite „NoPayn“ mokėjimus"
+
+msgid "Failed payment page"
+msgstr "Mokėjimo nesėkmės nukreipimo puslapis"
+
+msgid "Gateway Disabled"
+msgstr "Mokėjimo vartai išjungti"
 
 msgid "Google Pay"
 msgstr "Google Pay"
 
 msgid "Google Pay - NoPayn"
 msgstr "Google Pay - NoPayn"
-
-msgid "Invalid API Key: %s. NoPayn payment methods have been disabled."
-msgstr "Netinkamas API raktas: %s. NoPayn mokėjimo metodai buvo išjungti."
 
 msgid "Leave blank to allow all supported currencies."
 msgstr "Palikite tuščią langelį, jei norite leisti visas palaikomas valiutas."
@@ -118,41 +130,32 @@ msgstr "MobilePay"
 msgid "MobilePay - NoPayn"
 msgstr "MobilePay - NoPayn"
 
-msgid "No API key detected. Please enter your NoPayn API key and try again."
-msgstr ""
-"Neaptiktas joks API raktas. Įveskite NoPayn API raktą ir bandykite dar kartą."
-
 msgid "NoPayn"
 msgstr "NoPayn"
 
 msgid "NoPayn - Apple Pay Payments"
 msgstr "NoPayn - „Apple Pay“ mokėjimai"
 
+msgid "NoPayn - Library"
+msgstr "Suaktyvinti „NoPayn Gateway“ ir sukonfigūruoti nustatymus"
+
 msgid "NoPayn Payment Library"
 msgstr "NoPayn mokėjimų biblioteka"
-
-msgid "NoPayn payment methods have been disabled due to a missing API key."
-msgstr "NoPayn mokėjimo metodai buvo išjungti dėl trūkstamo API rakto."
-
-msgid ""
-"Note: Refunds for bank transactions are processed directly through the "
-"gateway."
-msgstr "Pastaba: bankinių operacijų grąžinimai tvarkomi tiesiogiai per vartus."
 
 msgid "Only completed orders can be refunded"
 msgstr "Grąžinti pinigus galima tik už įvykdytus užsakymus"
 
-msgid "Order Confirmation: %s at %s"
-msgstr "Užsakymo patvirtinimas: %s at %s"
+msgid "Page where user is redirected after payment has failed."
+msgstr ""
+"Tai yra puslapis, į kurį klientai nukreipiami, jei jų mokėjimas nepavyksta."
 
-msgid "Payment Failed Redirect Page"
-msgstr "Mokėjimo nesėkmės nukreipimo puslapis"
+msgid ""
+"Please beware that for bank transactions the refunds will process directly "
+"to the gateway!"
+msgstr "Pastaba: bankinių operacijų grąžinimai tvarkomi tiesiogiai per vartus."
 
-msgid "Payment Gateway Disabled"
-msgstr "Mokėjimo vartai išjungti"
-
-msgid "Payment Method Title"
-msgstr "Mokėjimo metodo pavadinimas"
+msgid "Plugin"
+msgstr "Nustatymai"
 
 msgid "Refund order is not completed"
 msgstr "Grąžinimo užsakymas neužpildytas"
@@ -163,11 +166,11 @@ msgstr "Grąžinimo užsakymas neužbaigtas: %s"
 msgid "Refunds only possible when captured"
 msgstr "Grąžinimai galimi tik užfiksavus"
 
+msgid "Resolves issue when curl.cacert path is not set in PHP.ini"
+msgstr "Ištaisytos problemos, kai PHP.ini trūksta curl.cacert kelio."
+
 msgid "Select currencies..."
 msgstr "Pasirinkite valiutas..."
-
-msgid "Settings"
-msgstr "Nustatymai"
 
 msgid "Shopping Cart"
 msgstr "Pirkinių krepšelis"
@@ -178,50 +181,48 @@ msgstr "Swish"
 msgid "Swish - NoPayn"
 msgstr "Swish - NoPayn"
 
-msgid "Test Mode API Key"
-msgstr "Bandomasis režimas API raktas"
-
-msgid "The currency %s is not supported by %s."
-msgstr "Valiuta %s nepalaikoma %s."
+msgid "Test API key"
+msgstr "Bandomojo režimo API raktas"
 
 msgid "The currency %s is not supported by NoPayn."
 msgstr "NoPayn nepalaiko valiutos %s."
 
-#| msgid ""
-#| "The following payment methods are not available for selected currency:"
-msgid "These payment methods are not available for the selected currency:"
-msgstr ""
-"Šie mokėjimo būdai nėra prieinami pasirinktai valiutai:\n"
+#| msgid "These payment methods are not available for the selected currency:"
+msgid "The following payment methods are not available for selected currency:"
+msgstr "Šie mokėjimo būdai nėra galimi pasirinkta valiuta:"
 
-msgid "This is the page where customers are redirected if their payment fails."
+msgid "There was a problem processing your transaction."
 msgstr ""
-"Tai yra puslapis, į kurį klientai nukreipiami, jei mokėjimas nepavyksta."
+"Operacija nepavyko. Bandykite dar kartą arba pasirinkite kitą mokėjimo būdą."
+
+msgid "This controls the title which the user sees during checkout."
+msgstr "Kasoje rodomas mokėjimo būdo pavadinimas."
+
+msgid ""
+"This is the general module with settings, during checkout the user will not "
+"see this option."
+msgstr ""
+"Šiame skirsnyje pateikiami bendrieji nustatymai ir nėra matomi klientams "
+"kasos metu."
 
 msgid ""
 "This payment gateway will only be available for the selected currencies."
 msgstr "Šie mokėjimo vartai bus prieinami tik pasirinktoms valiutoms."
 
-msgid ""
-"This section contains general settings and is not visible to customers "
-"during checkout."
-msgstr ""
-"Šiame skirsnyje pateikiami bendrieji nustatymai ir nėra matomi klientams "
-"kasos operacijų metu."
+msgid "Title"
+msgstr "Mokėjimo būdo pavadinimas"
 
 msgid ""
-"Transaction failed. Please try again or choose a different payment method."
-msgstr ""
-"Operacija nepavyko. Bandykite dar kartą arba pasirinkite kitą mokėjimo būdą."
-
-msgid "Use cURL Certificate Bundle"
-msgstr "Naudoti cURL sertifikatų rinkinį"
-
-msgid ""
-"We’re unable to process your purchase at this time. Please select a "
-"different payment method"
+"Unfortunately, we can not currently accept your purchase. Please choose "
+"another payment option to complete your order. We apologize for the "
+"inconvenience."
 msgstr ""
 "Šiuo metu negalime apdoroti jūsų pirkimo. Prašome pasirinkti kitą mokėjimo "
-"būdą"
+"būdą."
+
+#| msgid "Enable cURL CA Bundle"
+msgid "Use cURL CA bundle"
+msgstr "Įjungti cURL CA paketą"
 
 msgid ""
 "Your API key lacks the required permissions for this action: %s. Contact "
@@ -230,11 +231,10 @@ msgstr ""
 "Jūsų API raktas neturi šiam veiksmui reikalingų leidimų: %s. Dėl pagalbos "
 "kreipkitės į techninę pagalbą."
 
-msgid "Your NoPayn API key (provided by NoPayn)."
-msgstr "Jūsų „NoPayn“ API raktas (jį pateikė „NoPayn“)."
+msgid "Your order %s at %s"
+msgstr "Užsakymo patvirtinimas: %s at %s"
 
 msgid ""
-"Your transaction is in progress. We'll update you once the status changes."
-msgstr ""
-"Jūsų sandoris yra vykdomas. Atnaujinsime jums informaciją, kai tik būsena "
-"pasikeis."
+"Your transaction is still being processed. You will be notified when status "
+"is updated."
+msgstr "Jūsų sandoris yra vykdomas. Kai tik būsena pasikeis, jus informuosime."

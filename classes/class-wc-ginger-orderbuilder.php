@@ -61,7 +61,6 @@ class WC_Ginger_Orderbuilder
             'capture_mode' => $this->gingerGetCaptureMode()
         ]);
     }
-
     public function gingerGetCaptureMode(): string
     {
         if (str_replace(WC_Ginger_BankConfig::BANK_PREFIX.'_', '', $this->id) == 'credit-card'){
@@ -101,7 +100,6 @@ class WC_Ginger_Orderbuilder
         return $paymentMethodDetails;
 
     }
-
 
 
     /**
@@ -541,7 +539,7 @@ class WC_Ginger_Orderbuilder
      */
     public function gingerGetOrderDescription()
     {
-        return sprintf(__('Order Confirmation: %s at %s', WC_Ginger_BankConfig::BANK_PREFIX), $this->merchant_order_id, get_bloginfo('name'));
+        return sprintf(__('Your order %s at %s', WC_Ginger_BankConfig::BANK_PREFIX), $this->merchant_order_id, get_bloginfo('name'));
     }
 
     /**
