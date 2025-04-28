@@ -3,7 +3,7 @@
  * Plugin Name: NoPayn Payments
  * Plugin URI: https://nopayn.io/
  * Description: NoPayn WooCommerce plugin
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Ginger Payments
  * Author URI: https://www.gingerpayments.com/
  * License: The MIT License (MIT)
@@ -252,6 +252,15 @@ function woocommerce_ginger_init()
         $client = WC_Ginger_Clientbuilder::gingerBuildClient($order->get_payment_method());
 
         $gingerOrder = $client->getOrder($gingerOrderIDMeta);
+
+        if (!$gingerOrder['status'] == 'completed') {
+            return;
+        }
+
+        $transaction = current($gingerOrder['transactions']);
+        if (isset($transaction['transaction_type']) && $transaction['transaction_type'] == 'authorization') {
+            return;
+        }
 
         //check if order was already captured or voided
         if (!empty($gingerOrder['flags']) && (in_array('has-captures', $gingerOrder['flags']) || in_array('has-voids', $gingerOrder['flags']))) {

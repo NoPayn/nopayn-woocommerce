@@ -32,6 +32,12 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
 
             if ($gingerOrder['status'] == 'completed')
             {
+                $transaction = current($gingerOrder['transactions']);
+                if (isset($transaction['transaction_type']) && $transaction['transaction_type'] == 'authorization') {
+                    $order->update_status('pending');
+                    exit();
+                }
+
                 if (version_compare(get_option('woocommerce_version', 'Unknown'), '2.2.0', '>=')) {
                     $order->payment_complete($gingerOrderID);
                 } else {

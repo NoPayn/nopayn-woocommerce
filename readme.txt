@@ -3,7 +3,7 @@ Tags: NoPayn, WooCommerce, payment
 Contributors: nopayn, gingerpayments
 Requires at least: 5.6
 Tested up to: 6.8
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: The MIT License (MIT)
 License URI: https://opensource.org/licenses/MIT
 
@@ -30,3 +30,7 @@ NoPayn is built on a foundation of transparency and simplicity. With clear, fixe
 ** 1.0.3 **
 
 * Updated Tested up version
+
+** 1.0.4 **
+
+* Improved void on Cancelled func

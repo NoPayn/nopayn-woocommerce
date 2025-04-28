@@ -17,3 +17,7 @@
 ** 1.0.3 **
 
 * Updated Tested up version
+
+** 1.0.4 **
+
+* Improved void on Cancelled func
