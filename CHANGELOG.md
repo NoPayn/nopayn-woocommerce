@@ -21,3 +21,7 @@
 ** 1.0.4 **
 
 * Improved void on Cancelled func
+
+** 1.0.5 **
+
+* Fixed bug: Void transaction was created incorrectly
