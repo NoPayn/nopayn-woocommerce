@@ -25,3 +25,8 @@
 ** 1.0.5 **
 
 * Fixed bug: Void transaction was created incorrectly
+
+** 1.0.6 **
+
+* Fixed bug with Void functionality
+* Fixed bug with order status mapping

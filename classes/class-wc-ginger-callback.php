@@ -34,7 +34,7 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
             {
                 $transaction = current($gingerOrder['transactions']);
                 if (isset($transaction['transaction_type']) && $transaction['transaction_type'] == 'authorization') {
-                    $order->update_status('pending');
+                    $order->update_status('pending', "NoPayn Payments:");
                     exit();
                 }
 
@@ -47,21 +47,12 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
 
                 $autocomplete = $settings['auto_complete'] ?? 'no';
                 if ($autocomplete == 'yes') {
-                    $order->update_status($this->ginger_get_store_status($gingerOrder['status']));
+                    $order->update_status($this->ginger_get_store_status($gingerOrder['status']), "NoPayn Payments:");
                 }
                 exit;
             }
 
-            if (isset($gingerOrder['transactions']['flags']['has-captures']))
-            {
-                if ($order->get_status() == 'processing')
-                {
-                    $order->update_status('shipped', 'Order updated to shipped, transactions was captured', false);
-                }
-                exit;
-            }
-
-            $order->update_status($this->ginger_get_store_status($gingerOrder['status']));
+            $order->update_status($this->ginger_get_store_status($gingerOrder['status']), "NoPayn Payments:");
             exit;
         }
 
@@ -125,12 +116,11 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
     {
         $maps_statuses = [
             'new' => 'pending',
-            'processing' => 'processing',
+            'processing' => 'pending',
             'error' => 'failed',
-            'expired' => 'cancelled',
-            'cancelled' => 'cancelled',
-            'see-transactions' => 'on-hold',
-            'completed' => 'completed'
+            'expired' => 'failed',
+            'cancelled' => 'failed',
+            'completed' => 'processing'
         ];
         return $maps_statuses[$gingerOrderStatus];
     }
