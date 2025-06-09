@@ -3,7 +3,7 @@ Tags: NoPayn, WooCommerce, payment
 Contributors: nopayn, gingerpayments
 Requires at least: 5.6
 Tested up to: 6.8
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: The MIT License (MIT)
 License URI: https://opensource.org/licenses/MIT
 
@@ -43,3 +43,7 @@ NoPayn is built on a foundation of transparency and simplicity. With clear, fixe
 
 * Fixed bug with Void functionality
 * Fixed bug with order status mapping
+
+** 1.0.7 **
+
+* Set default expiration time to 5 minutes for orders and transactions

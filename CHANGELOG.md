@@ -30,3 +30,7 @@
 
 * Fixed bug with Void functionality
 * Fixed bug with order status mapping
+
+** 1.0.7 **
+
+* Set default expiration time to 5 minutes for orders and transactions

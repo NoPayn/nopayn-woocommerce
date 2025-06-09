@@ -38,10 +38,11 @@ class WC_Ginger_Orderbuilder
         $order['return_url'] = $this->gingergetReturnUrl();
         $order['webhook_url'] = $this->gingerGetWebhookUrl();
         $order['order_lines'] = $this->gingerGetOrderLines($this->woocommerceOrder);
+        $order['expiration_period'] = 'PT5M';
 
         if (!$this instanceof GingerHostedPaymentPage) //HPP order must not contains transaction field
         {
-            $order['transactions'][] = $this->gingerGetTransactions();;
+            $order['transactions'][] = $this->gingerGetTransactions();
         }
 
         return $order;
@@ -58,7 +59,8 @@ class WC_Ginger_Orderbuilder
         return array_filter([
             'payment_method' => $this->gingerGetPaymentMethod(),
             'payment_method_details' => $this->gingerGetPaymentMethodDetails(),
-            'capture_mode' => $this->gingerGetCaptureMode()
+            'capture_mode' => $this->gingerGetCaptureMode(),
+            'expiration_period' => "PT5M",
         ]);
     }
     public function gingerGetCaptureMode(): string
