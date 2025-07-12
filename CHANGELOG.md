@@ -34,3 +34,7 @@
 ** 1.0.7 **
 
 * Set default expiration time to 5 minutes for orders and transactions
+
+** 1.0.8 **
+
+* Provided possibility to customize the expiration period in main module settings

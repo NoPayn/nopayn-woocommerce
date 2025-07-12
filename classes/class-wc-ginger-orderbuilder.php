@@ -38,7 +38,7 @@ class WC_Ginger_Orderbuilder
         $order['return_url'] = $this->gingergetReturnUrl();
         $order['webhook_url'] = $this->gingerGetWebhookUrl();
         $order['order_lines'] = $this->gingerGetOrderLines($this->woocommerceOrder);
-        $order['expiration_period'] = 'PT5M';
+        $order['expiration_period'] = $this->gingerGetExpirationPeriod();
 
         if (!$this instanceof GingerHostedPaymentPage) //HPP order must not contains transaction field
         {
@@ -60,9 +60,24 @@ class WC_Ginger_Orderbuilder
             'payment_method' => $this->gingerGetPaymentMethod(),
             'payment_method_details' => $this->gingerGetPaymentMethodDetails(),
             'capture_mode' => $this->gingerGetCaptureMode(),
-            'expiration_period' => "PT5M",
+            'expiration_period' => $this->gingerGetExpirationPeriod(),
         ]);
     }
+
+    public function gingerGetExpirationPeriod(): string
+    {
+        $settings = get_option('woocommerce_ginger_settings');
+        if (!is_array($settings)) return "PT5M";
+
+        $expirationPeriod = $settings['expiration_period'] ?? null;
+
+        if (isset($expirationPeriod) && ctype_digit($expirationPeriod) && (int)$expirationPeriod > 0) {
+            return 'PT' . (int)$expirationPeriod . 'M';
+        }
+
+        return 'PT5M';
+    }
+
     public function gingerGetCaptureMode(): string
     {
         if (str_replace(WC_Ginger_BankConfig::BANK_PREFIX.'_', '', $this->id) == 'credit-card'){
