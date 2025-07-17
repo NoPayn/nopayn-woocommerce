@@ -154,6 +154,11 @@ class WC_Ginger_Helper
                         'type' => 'text',
                         'description' => __('API key provided by '.WC_Ginger_BankConfig::BANK_LABEL, WC_Ginger_BankConfig::BANK_PREFIX),
                     ],
+                    'expiration_period' => [
+                        'title' => __('Transaction Expiration Period (minutes)', WC_Ginger_BankConfig::BANK_PREFIX),
+                        'type' => 'number',
+                        'description' => __('Set the number of minutes after which the order and transaction will automatically expire. By default order and transaction will be expired after 5 minutes', WC_Ginger_BankConfig::BANK_PREFIX),
+                    ],
                     'failed_redirect' => [
                         'title' => __('Failed payment page', WC_Ginger_BankConfig::BANK_PREFIX),
                         'description' => __(
