@@ -34,3 +34,8 @@
 ** 1.0.7 **
 
 * Set default expiration time to 5 minutes for orders and transactions
+
+** 1.0.8 **
+
+* Provided possibility to customize the expiration period in main module settings
+* Fixed bug: plugin was updating the order status even when it was already set to a final state in the store.

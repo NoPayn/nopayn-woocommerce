@@ -29,6 +29,7 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
             $gingerOrderIDMeta = get_post_meta($gingerOrder['merchant_order_id'], WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', true);
 
             if($gingerOrder['id'] !== $gingerOrderIDMeta) exit;
+            if(in_array($order->get_status(), ['processing', 'shipped', 'completed', 'cancelled', 'failed', 'refunded'])) exit; //status is already final
 
             if ($gingerOrder['status'] == 'completed')
             {
