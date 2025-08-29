@@ -39,3 +39,7 @@
 
 * Provided possibility to customize the expiration period in main module settings
 * Fixed bug: plugin was updating the order status even when it was already set to a final state in the store.
+  
+** 1.0.9 **
+
+* Fixed Bug: Where completing an order triggered an error in case order is not related to our plugin.

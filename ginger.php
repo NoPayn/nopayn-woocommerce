@@ -3,7 +3,7 @@
  * Plugin Name: NoPayn Payments
  * Plugin URI: https://nopayn.io/
  * Description: NoPayn WooCommerce plugin
- * Version: 1.0.8
+ * Version: 1.0.9
  * Author: Ginger Payments
  * Author URI: https://www.gingerpayments.com/
  * License: The MIT License (MIT)
@@ -213,6 +213,11 @@ function woocommerce_ginger_init()
         }
 
         $gingerOrderIDMeta = get_post_meta($post_id, WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', true);
+
+        if(!$gingerOrderIDMeta){
+            return;
+        }
+
         $client = WC_Ginger_Clientbuilder::gingerBuildClient($order->get_payment_method());
 
         $gingerOrder = $client->getOrder($gingerOrderIDMeta);
@@ -249,6 +254,11 @@ function woocommerce_ginger_init()
         }
 
         $gingerOrderIDMeta = get_post_meta($post_id, WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', true);
+
+        if(!$gingerOrderIDMeta){
+            return;
+        }
+
         $client = WC_Ginger_Clientbuilder::gingerBuildClient($order->get_payment_method());
 
         $gingerOrder = $client->getOrder($gingerOrderIDMeta);
