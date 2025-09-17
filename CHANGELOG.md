@@ -43,3 +43,7 @@
 ** 1.0.9 **
 
 * Fixed Bug: Where completing an order triggered an error in case order is not related to our plugin.
+
+** 1.0.10 **
+
+* Fixed Bug: Where the order status did not update after a successful retry following a failed payment.
