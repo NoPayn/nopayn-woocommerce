@@ -22,6 +22,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
         $this->enabled = $this->get_option('enabled');
         $this->ginger_settings = get_option('woocommerce_ginger_settings');
 
+        $this->supports = array('products', 'refunds');
         $paymentMethod = $this instanceof GingerAdditionalTestingEnvironment ?  $this->id : "";
         $this->gingerClient = WC_Ginger_Clientbuilder::gingerBuildClient($paymentMethod);
 
@@ -33,7 +34,6 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
         add_action('woocommerce_api_'.strtolower(get_class($this)), array($this, 'ginger_handle_callback'));
         add_filter('woocommerce_valid_order_statuses_for_payment_complete', array($this, 'ginger_append_processing_order_post_status'));
         add_filter('woocommerce_available_payment_gateways', array($this,'ginger_filter_gateway_by_currency'), 10);
-        add_action('woocommerce_refund_created', array($this, 'ginger_refund_an_order'), 10, 2);
         add_filter('woocommerce_thankyou_order_received_text', array($this,'ginger_order_received_text'), 10, 2);
 
         if($this instanceof GingerIdentificationPay)
@@ -518,17 +518,11 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
             . "<br/><br/>";
     }
 
-    /**
-     * Function ginger_refund_an_order - refund Ginger order
-     *
-     * @param $refund_id
-     * @param $args
-     */
-    function ginger_refund_an_order($refund_id, $args)
+    public function process_refund($order_id, $amount = null, $reason = '')
     {
-        $gingerOrderID = get_post_meta($args['order_id'], WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', true);
-        $order = wc_get_order($args['order_id']);
-        if (!strstr($order->data['payment_method'],WC_Ginger_BankConfig::BANK_PREFIX)) return true; //order was not paid by bank's payment method
+        $gingerOrderID = get_post_meta($order_id, WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', true);
+        $order = wc_get_order($order_id);
+        if (!strstr($order->get_payment_method(),WC_Ginger_BankConfig::BANK_PREFIX)) return true; //order was not paid by bank's payment method
         $client = WC_Ginger_Clientbuilder::gingerBuildClient($order->get_payment_method());
         $gingerOrder = $client->getOrder($gingerOrderID);
 
@@ -537,10 +531,10 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
             throw new Exception( __( 'Only completed orders can be refunded', WC_Ginger_BankConfig::BANK_PREFIX ));
         }
 
-        $orderBuilder = new WC_Ginger_Orderbuilder($this,$this->id,$this->woocommerceOrder,$this->merchant_order_id);
+        $orderBuilder = new WC_Ginger_Orderbuilder($this,$this->id,$order,$order_id);
         $refundData = [
-            'amount' => $orderBuilder->gingerGetAmountInCents($args['amount']),
-            'description' => 'OrderID: #' . $args['order_id'] . ', Reason: ' . $args['reason']
+                'amount' => $orderBuilder->gingerGetAmountInCents($amount),
+                'description' => 'OrderID: #' . $order_id . ', Reason: ' . $reason
         ];
 
         if(in_array($order->get_payment_method(),WC_Ginger_Helper::GATEWAYS_SUPPORT_CAPTURING))
@@ -551,8 +545,6 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
             };
             $refundData['order_lines'] = $orderBuilder->gingerGetOrderLines($order);
         }
-
-        update_post_meta($args['order_id'], 'refund_id', $refund_id);
 
         $gingerRefundOrder = $client->refundOrder(
             $gingerOrderID,
@@ -570,6 +562,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
                 throw new Exception(__( 'Refund order is not completed', WC_Ginger_BankConfig::BANK_PREFIX));
             }
         }
+        return true;
     }
     /**
      * Custom text on the receipt page.

@@ -47,3 +47,7 @@
 ** 1.0.10 **
 
 * Fixed Bug: Where the order status did not update after a successful retry following a failed payment.
+
+** 1.0.11 **
+
+* Added refund button.

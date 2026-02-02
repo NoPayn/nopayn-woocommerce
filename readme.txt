@@ -3,7 +3,7 @@ Tags: NoPayn, WooCommerce, payment
 Contributors: nopayn, gingerpayments
 Requires at least: 5.6
 Tested up to: 6.8
-Stable tag: 1.0.10
+Stable tag: 1.0.11
 License: The MIT License (MIT)
 License URI: https://opensource.org/licenses/MIT
 
@@ -60,3 +60,7 @@ NoPayn is built on a foundation of transparency and simplicity. With clear, fixe
 ** 1.0.10 **
 
 * Fixed Bug: Where the order status did not update after a successful retry following a failed payment.
+
+** 1.0.11 **
+
+* Added refund button.
