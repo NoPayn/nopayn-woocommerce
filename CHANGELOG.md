@@ -51,3 +51,7 @@
 ** 1.0.11 **
 
 * Added refund button.
+
+** 1.0.12 **
+
+* Added support for WooCommerce Checkout Blocks.

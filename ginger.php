@@ -3,7 +3,7 @@
  * Plugin Name: NoPayn Payments
  * Plugin URI: https://nopayn.io/
  * Description: NoPayn WooCommerce plugin
- * Version: 1.0.11
+ * Version: 1.0.12
  * Author: Ginger Payments
  * Author URI: https://www.gingerpayments.com/
  * License: The MIT License (MIT)
@@ -19,6 +19,7 @@ if (!defined('ABSPATH')) {
  */
 define('GINGER_PLUGIN_VERSION', get_file_data(__FILE__, array('Version'), 'plugin')[0]);
 define('GINGER_PLUGIN_URL', plugin_dir_url(__FILE__));
+define('GINGER_PLUGIN_PATH', plugin_dir_path(__FILE__));
 
 add_action('plugins_loaded', 'woocommerce_ginger_init', 0);
 
@@ -26,6 +27,7 @@ spl_autoload_register(function ($class)
 {
     $file = str_replace('_', '-', strtolower($class));
     $filepath = untrailingslashit(plugin_dir_path(__FILE__)).'/classes/class-'.$file.'.php';
+    if(!is_file($filepath)) $filepath = untrailingslashit(plugin_dir_path(__FILE__)).'/classes/Blocks/class-'.$file.'.php'; //trying to find file in Blocks subdir
     if(!is_file($filepath)) $filepath = untrailingslashit(plugin_dir_path(__FILE__)).'/interfaces/'.$class.'.php'; //trying to find file in interfaces dir
     if(!is_file($filepath)) $filepath = untrailingslashit(plugin_dir_path(__FILE__)).'/strategies/'.$class.'.php'; //trying to find file in strategies dir
     if (is_readable($filepath) && is_file($filepath)) require_once($filepath);
@@ -297,5 +299,41 @@ function woocommerce_ginger_init()
     add_action('woocommerce_after_checkout_form', 'applepay_detection',10);
     add_action( 'woocommerce_order_status_completed', 'woocommerce_order_status_completed', 10 );
     add_action( 'woocommerce_order_status_cancelled', 'woocommerce_order_status_cancelled', 10 );
+    // WooCommerce Blocks support
+    add_action('woocommerce_blocks_loaded', 'ginger_register_blocks_support');
 
+}
+
+/**
+ * Register WooCommerce Blocks support for NoPayn payment methods
+ */
+function ginger_register_blocks_support()
+{
+    if (!class_exists('Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType')) {
+        return;
+    }
+
+    // Ensure abstract class is loaded before child classes (autoloader handles the rest)
+    require_once plugin_dir_path(__FILE__) . 'classes/Blocks/class-wc-ginger-abstract-block-payment.php';
+
+    add_action(
+            'woocommerce_blocks_payment_method_type_registration',
+            function(Automattic\WooCommerce\Blocks\Payments\PaymentMethodRegistry $payment_method_registry) {
+                $methods = [
+                        'WC_Ginger_Creditcard_Block',
+                        'WC_Ginger_Applepay_Block',
+                        'WC_Ginger_Googlepay_Block',
+                        'WC_Ginger_Mobilepay_Block',
+                        'WC_Ginger_Swish_Block',
+                ];
+
+                foreach ($methods as $method_class) {
+                    try {
+                        $payment_method_registry->register(new $method_class());
+                    } catch (Exception $e) {
+                        error_log('Payment Blocks: Failed to register ' . $method_class . ': ' . $e->getMessage());
+                    }
+                }
+            }
+    );
 }
