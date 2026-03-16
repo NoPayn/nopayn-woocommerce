@@ -55,3 +55,7 @@
 ** 1.0.12 **
 
 * Added support for WooCommerce Checkout Blocks.
+
+** 1.0.13 **
+
+* Added Vipps/MobilePay payment method.

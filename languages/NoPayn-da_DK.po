@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-04-14 14:40+0000\n"
+"PO-Revision-Date: 2026-03-11 11:01+0000\n"
 "Last-Translator: \n"
 "Language-Team: Danish\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -38,6 +38,9 @@ msgstr ""
 msgid "Accept Swish Payments"
 msgstr ""
 "Accepter Swish-betalinger\n"
+
+msgid "Accept Vipps/MobilePay Payments"
+msgstr "Accepter Vipps/MobilePay-betalinger"
 
 msgid "Accepted Currencies"
 msgstr ""
@@ -105,6 +108,9 @@ msgstr "Aktiver MobilePay-betalinger"
 
 msgid "Enable Swish Payments"
 msgstr "Aktiver Swish-betalinger"
+
+msgid "Enable Vipps/MobilePay Payments"
+msgstr "Aktiver Vipps/MobilePay-betalinger"
 
 msgid "Enable/Disable"
 msgstr "Aktivér NoPayn-betalinger"
@@ -238,6 +244,12 @@ msgstr ""
 #| msgid "Enable cURL CA Bundle"
 msgid "Use cURL CA bundle"
 msgstr "Aktiver cURL CA Bundle"
+
+msgid "Vipps/MobilePay"
+msgstr "Vipps/MobilePay"
+
+msgid "Vipps/MobilePay - NoPayn"
+msgstr "Vipps/MobilePay - NoPayn"
 
 msgid ""
 "Your API key lacks the required permissions for this action: %s. Contact "

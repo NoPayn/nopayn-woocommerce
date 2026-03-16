@@ -113,6 +113,7 @@ abstract class WC_Ginger_Abstract_Block_Payment extends AbstractPaymentMethodTyp
                         'google-pay',
                         'mobilepay',
                         'swish',
+                        'vipps-mobilepay',
                     ],
                 ]
             );

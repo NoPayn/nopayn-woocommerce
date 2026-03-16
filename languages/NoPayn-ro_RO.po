@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-04-14 14:45+0000\n"
+"PO-Revision-Date: 2026-03-11 11:37+0000\n"
 "Last-Translator: \n"
 "Language-Team: Romanian\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -34,6 +34,9 @@ msgstr "Acceptarea plăților MobilePay"
 
 msgid "Accept Swish Payments"
 msgstr "Acceptați plăți Swish"
+
+msgid "Accept Vipps/MobilePay Payments"
+msgstr "Acceptarea plăților Vipps/MobilePay"
 
 msgid "Accepted Currencies"
 msgstr "Valute acceptate"
@@ -100,6 +103,9 @@ msgstr "Activează plățile MobilePay"
 
 msgid "Enable Swish Payments"
 msgstr "Activează plățile Swish"
+
+msgid "Enable Vipps/MobilePay Payments"
+msgstr "Activează plățile Vipps/MobilePay"
 
 msgid "Enable/Disable"
 msgstr "Activați plățile NoPayn"
@@ -231,6 +237,12 @@ msgstr ""
 msgid "Use cURL CA bundle"
 msgstr ""
 "Activare cURL CA Bundle\n"
+
+msgid "Vipps/MobilePay"
+msgstr "Vipps/MobilePay"
+
+msgid "Vipps/MobilePay - NoPayn"
+msgstr "Vipps/MobilePay - NoPayn"
 
 msgid ""
 "Your API key lacks the required permissions for this action: %s. Contact "

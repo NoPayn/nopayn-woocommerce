@@ -3,7 +3,7 @@
  * Plugin Name: NoPayn Payments
  * Plugin URI: https://nopayn.io/
  * Description: NoPayn WooCommerce plugin
- * Version: 1.0.12
+ * Version: 1.0.13
  * Author: Ginger Payments
  * Author URI: https://www.gingerpayments.com/
  * License: The MIT License (MIT)
@@ -325,6 +325,7 @@ function ginger_register_blocks_support()
                         'WC_Ginger_Googlepay_Block',
                         'WC_Ginger_Mobilepay_Block',
                         'WC_Ginger_Swish_Block',
+                        'WC_Ginger_Vipps_Mobilepay_Block',
                 ];
 
                 foreach ($methods as $method_class) {

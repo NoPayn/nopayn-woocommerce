@@ -137,6 +137,10 @@ class WC_Ginger_Helper
                 $default = __('MobilePay', WC_Ginger_BankConfig::BANK_PREFIX);
                 $label = __('Enable MobilePay Payments', WC_Ginger_BankConfig::BANK_PREFIX);
                 break;
+            case 'vipps-mobilepay':
+                $default = __('Vipps/MobilePay', WC_Ginger_BankConfig::BANK_PREFIX);
+                $label = __('Enable Vipps/MobilePay Payments', WC_Ginger_BankConfig::BANK_PREFIX);
+                break;
             case 'viacash':
                 $default = __('Viacash', WC_Ginger_BankConfig::BANK_PREFIX);
                 $label = __('Enable Viacash Payments', WC_Ginger_BankConfig::BANK_PREFIX);

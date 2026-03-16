@@ -28,6 +28,7 @@ class WC_Ginger_BankConfig
         'nopayn_google-pay',
         'nopayn_mobilepay',
         'nopayn_swish',
+        'nopayn_vipps-mobilepay'
     ];
 
     /**
@@ -40,5 +41,6 @@ class WC_Ginger_BankConfig
         'WC_Ginger_Creditcard',
         'WC_Ginger_Swish',
         'WC_Ginger_MobilePay',
+        'WC_Ginger_Vipps_Mobilepay',
     ];
 }
