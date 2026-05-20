@@ -3,7 +3,7 @@ Tags: NoPayn, WooCommerce, payment
 Contributors: nopayn, gingerpayments
 Requires at least: 5.6
 Tested up to: 6.8
-Stable tag: 1.0.13
+Stable tag: 1.0.14
 License: The MIT License (MIT)
 License URI: https://opensource.org/licenses/MIT
 
@@ -72,3 +72,7 @@ NoPayn is built on a foundation of transparency and simplicity. With clear, fixe
 ** 1.0.13 **
 
 * Added Vipps/MobilePay payment method.
+
+** 1.0.14 **
+
+* Updated icons for Vipps/MobilePay.

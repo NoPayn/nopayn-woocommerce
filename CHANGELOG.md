@@ -59,3 +59,7 @@
 ** 1.0.13 **
 
 * Added Vipps/MobilePay payment method.
+
+** 1.0.14 **
+
+* Updated icons for Vipps/MobilePay.
