@@ -63,3 +63,7 @@
 ** 1.0.14 **
 
 * Updated icons for Vipps/MobilePay.
+
+** 1.0.15 **
+
+* Fixed bug: authorized payments set to "Pending" were voided by WooCommerce's auto-cancel cron before capture.

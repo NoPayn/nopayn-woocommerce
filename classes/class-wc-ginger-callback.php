@@ -35,7 +35,7 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
             {
                 $transaction = current($gingerOrder['transactions']);
                 if (isset($transaction['transaction_type']) && $transaction['transaction_type'] == 'authorization') {
-                    $order->update_status('pending', "NoPayn Payments:");
+                    $order->update_status('on-hold', "NoPayn Payments: payment authorized, awaiting capture");
                     exit();
                 }
 
