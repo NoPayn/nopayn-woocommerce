@@ -3,7 +3,7 @@ Tags: NoPayn, WooCommerce, payment
 Contributors: nopayn, gingerpayments
 Requires at least: 5.6
 Tested up to: 6.8
-Stable tag: 1.0.15
+Stable tag: 1.0.16
 License: The MIT License (MIT)
 License URI: https://opensource.org/licenses/MIT
 
@@ -80,3 +80,8 @@ NoPayn is built on a foundation of transparency and simplicity. With clear, fixe
 ** 1.0.15 **
 
 * Fixed bug: authorized payments set to "Pending" were voided by WooCommerce's auto-cancel cron before capture.
+
+** 1.0.16 **
+
+* Fixed bug: webhook status updates after payment method change.
+* Updated icons

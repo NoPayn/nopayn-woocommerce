@@ -67,3 +67,8 @@
 ** 1.0.15 **
 
 * Fixed bug: authorized payments set to "Pending" were voided by WooCommerce's auto-cancel cron before capture.
+
+** 1.0.16 **
+
+* Fixed bug: webhook status updates after payment method change.
+* Updated icons
