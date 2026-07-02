@@ -3,7 +3,7 @@ Tags: NoPayn, WooCommerce, payment
 Contributors: nopayn, gingerpayments
 Requires at least: 5.6
 Tested up to: 6.8
-Stable tag: 1.0.16
+Stable tag: 1.0.17
 License: The MIT License (MIT)
 License URI: https://opensource.org/licenses/MIT
 
@@ -85,3 +85,7 @@ NoPayn is built on a foundation of transparency and simplicity. With clear, fixe
 
 * Fixed bug: webhook status updates after payment method change.
 * Updated icons
+
+** 1.0.17 **
+
+* Fixed bug: use order number instead of post ID as merchant_order_id.

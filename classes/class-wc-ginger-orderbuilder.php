@@ -398,7 +398,7 @@ class WC_Ginger_Orderbuilder
      */
     public function gingerGetMerchantOrderID():string
     {
-        return $this->merchant_order_id;
+        return (string) $this->woocommerceOrder->get_order_number();
     }
 
     /**
@@ -556,7 +556,7 @@ class WC_Ginger_Orderbuilder
      */
     public function gingerGetOrderDescription()
     {
-        return sprintf(__('Your order %s at %s', WC_Ginger_BankConfig::BANK_PREFIX), $this->merchant_order_id, get_bloginfo('name'));
+        return sprintf(__('Your order %s at %s', WC_Ginger_BankConfig::BANK_PREFIX), $this->woocommerceOrder->get_order_number(), get_bloginfo('name'));
     }
 
     /**
@@ -567,15 +567,6 @@ class WC_Ginger_Orderbuilder
     public function gingerGetWebhookUrl()
     {
         return $this->gingerGetReturnUrl();
-    }
-
-    /**
-     * Function set the merchant order ID
-     * @param $merchantOrderID
-     */
-    public function gingerSetMerchantOrderID($merchantOrderID)
-    {
-        $this->merchant_order_id = $merchantOrderID;
     }
 
 }

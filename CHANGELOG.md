@@ -72,3 +72,7 @@
 
 * Fixed bug: webhook status updates after payment method change.
 * Updated icons
+
+** 1.0.17 **
+
+* Fixed bug: use order number instead of post ID as merchant_order_id.

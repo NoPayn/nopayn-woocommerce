@@ -3,7 +3,7 @@
  * Plugin Name: NoPayn Payments
  * Plugin URI: https://nopayn.io/
  * Description: NoPayn WooCommerce plugin
- * Version: 1.0.16
+ * Version: 1.0.17
  * Author: Ginger Payments
  * Author URI: https://www.gingerpayments.com/
  * License: The MIT License (MIT)

@@ -573,8 +573,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
      */
     function ginger_order_received_text($text, $order)
     {
-        $orderBuilder = new WC_Ginger_Orderbuilder($this,$this->id,$this->woocommerceOrder,$this->merchant_order_id);
-        $orderBuilder->gingerSetMerchantOrderID($order->get_id());
+        $orderBuilder = new WC_Ginger_Orderbuilder($this, $this->id, $order, $order->get_id());
 
         return $orderBuilder->gingerGetOrderDescription();
     }
