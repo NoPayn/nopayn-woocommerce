@@ -76,3 +76,7 @@
 ** 1.0.17 **
 
 * Fixed bug: use order number instead of post ID as merchant_order_id.
+
+** 1.0.18 **
+
+* Fixed bug: callback failed to match order when order number differs from post ID.

@@ -25,10 +25,10 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
             if (!in_array($input['event'], array("status_changed"))) die("Only work to do if the status changed");
             $gingerOrderID = $input['order_id'];
             $gingerOrder = $this->ginger_handle_get_order($gingerOrderID);
-            $order = new WC_Order($gingerOrder['merchant_order_id']);
-            $gingerOrderIDMeta = get_post_meta($gingerOrder['merchant_order_id'], WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', true);
+            $order_ids = wc_get_orders(array('meta_key' => WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', 'meta_value' => $gingerOrder['id'], 'limit' => 1, 'return' => 'ids'));
+            if (!$order_ids) exit; // no WC order links back to this PSP order
+            $order = new WC_Order($order_ids[0]);
 
-            if($gingerOrder['id'] !== $gingerOrderIDMeta) exit;
             if(strpos($order->get_payment_method(), WC_Ginger_BankConfig::BANK_PREFIX.'_') !== 0) exit;
             if(in_array($order->get_status(), ['processing', 'shipped', 'completed', 'cancelled', 'refunded'])) exit; //status is already final
 
@@ -59,9 +59,10 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
         }
 
         $gingerOrder = $this->ginger_handle_get_order(sanitize_text_field(filter_input(INPUT_GET,'order_id',FILTER_SANITIZE_STRING)));
-        $order = new WC_Order($gingerOrder['merchant_order_id']);
+        $order_ids = wc_get_orders(array('meta_key' => WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', 'meta_value' => $gingerOrder['id'], 'limit' => 1, 'return' => 'ids'));
+        $order = $order_ids ? new WC_Order($order_ids[0]) : null;
 
-        if ($gingerOrder['status'] == 'completed' || $gingerOrder['status'] == 'processing')
+        if ($order && ($gingerOrder['status'] == 'completed' || $gingerOrder['status'] == 'processing'))
         {
             header("Location: ".$this->get_return_url($order));
             exit;
@@ -69,7 +70,10 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
 
         $base_msg = __('There was a problem processing your transaction.', WC_Ginger_BankConfig::BANK_PREFIX);
         $full_msg = $base_msg . ' ' . current($gingerOrder['transactions'])['customer_message'];
-        wc_add_notice($full_msg, 'error');        if ($this->get_option('failed_redirect') == 'cart') {
+        wc_add_notice($full_msg, 'error');
+        if (!$order) {
+            $url = wc_get_page_permalink('shop');
+        } elseif ($this->get_option('failed_redirect') == 'cart') {
             $url = $order->get_cancel_order_url();
         } else {
             $url = $order->get_checkout_payment_url();
