@@ -20,6 +20,197 @@ class WC_Ginger_Helper
     ];
 
     /**
+     * Get the metadata key used to link a WooCommerce order to a Ginger order.
+     *
+     * @return string
+     */
+    public static function gingerGetOrderIdMetaKey()
+    {
+        return WC_Ginger_BankConfig::BANK_PREFIX.'_order_id';
+    }
+
+    /**
+     * Persist the Ginger order ID through the WooCommerce CRUD layer.
+     *
+     * @param WC_Order $order
+     * @param string $gingerOrderId
+     * @return bool
+     */
+    public static function gingerSetOrderId($order, $gingerOrderId)
+    {
+        if (!$order || !is_callable([$order, 'update_meta_data']) || !is_callable([$order, 'save_meta_data'])) {
+            self::gingerLogOrderLookup('error', 'Could not save the Ginger order ID because the WooCommerce order is unavailable.');
+            return false;
+        }
+
+        $order->update_meta_data(self::gingerGetOrderIdMetaKey(), (string) $gingerOrderId);
+        $order->save_meta_data();
+
+        return true;
+    }
+
+    /**
+     * Read the linked Ginger order ID through the WooCommerce CRUD layer.
+     *
+     * @param WC_Order $order
+     * @return string
+     */
+    public static function gingerGetOrderId($order)
+    {
+        if (!$order || !is_callable([$order, 'get_meta'])) {
+            return '';
+        }
+
+        return (string) $order->get_meta(self::gingerGetOrderIdMetaKey(), true);
+    }
+
+    /**
+     * Find the WooCommerce order linked to a Ginger order ID.
+     *
+     * The legacy postmeta lookup recovers orders created by plugin versions that
+     * wrote metadata outside the WooCommerce CRUD layer while HPOS was active.
+     *
+     * @param string $gingerOrderId
+     * @return WC_Order|null
+     */
+    public static function gingerGetWooCommerceOrderByGingerOrderId($gingerOrderId)
+    {
+        $gingerOrderId = (string) $gingerOrderId;
+
+        if ('' === $gingerOrderId) {
+            self::gingerLogOrderLookup('error', 'Could not find a WooCommerce order because the Ginger order ID is empty.');
+            return null;
+        }
+
+        $orderIds = wc_get_orders([
+            'meta_key' => self::gingerGetOrderIdMetaKey(),
+            'meta_value' => $gingerOrderId,
+            'limit' => 2,
+            'return' => 'ids',
+        ]);
+
+        if (!is_array($orderIds)) {
+            $orderIds = [];
+        }
+
+        if (count($orderIds) > 1) {
+            self::gingerLogOrderLookup(
+                'error',
+                'Multiple WooCommerce orders are linked to the same Ginger order ID.',
+                ['ginger_order_id' => $gingerOrderId]
+            );
+            return null;
+        }
+
+        if (count($orderIds) === 1) {
+            return self::gingerLoadLinkedOrder($orderIds[0], $gingerOrderId, false);
+        }
+
+        global $wpdb;
+
+        if (!isset($wpdb->postmeta) || !is_callable([$wpdb, 'prepare']) || !is_callable([$wpdb, 'get_col'])) {
+            self::gingerLogOrderLookup(
+                'error',
+                'Could not run the legacy Ginger order lookup.',
+                ['ginger_order_id' => $gingerOrderId]
+            );
+            return null;
+        }
+
+        $legacyOrderIds = $wpdb->get_col(
+            $wpdb->prepare(
+                "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = %s AND meta_value = %s ORDER BY meta_id DESC LIMIT 2",
+                self::gingerGetOrderIdMetaKey(),
+                $gingerOrderId
+            )
+        );
+
+        if (!is_array($legacyOrderIds)) {
+            $legacyOrderIds = [];
+        }
+
+        if (count($legacyOrderIds) !== 1) {
+            self::gingerLogOrderLookup(
+                'error',
+                count($legacyOrderIds) > 1
+                    ? 'Multiple legacy WooCommerce orders are linked to the same Ginger order ID.'
+                    : 'No WooCommerce order is linked to the Ginger order ID.',
+                ['ginger_order_id' => $gingerOrderId]
+            );
+            return null;
+        }
+
+        return self::gingerLoadLinkedOrder($legacyOrderIds[0], $gingerOrderId, true);
+    }
+
+    /**
+     * Load and validate a linked WooCommerce order.
+     *
+     * @param int|string $orderId
+     * @param string $gingerOrderId
+     * @param bool $recoverLegacyMetadata
+     * @return WC_Order|null
+     */
+    private static function gingerLoadLinkedOrder($orderId, $gingerOrderId, $recoverLegacyMetadata)
+    {
+        $order = wc_get_order($orderId);
+
+        if (!$order || !is_callable([$order, 'get_payment_method'])) {
+            self::gingerLogOrderLookup(
+                'error',
+                'The linked WooCommerce order could not be loaded.',
+                ['ginger_order_id' => $gingerOrderId, 'order_id' => (int) $orderId]
+            );
+            return null;
+        }
+
+        if (strpos((string) $order->get_payment_method(), WC_Ginger_BankConfig::BANK_PREFIX.'_') !== 0) {
+            self::gingerLogOrderLookup(
+                'error',
+                'The linked WooCommerce order belongs to another payment method.',
+                ['ginger_order_id' => $gingerOrderId, 'order_id' => (int) $orderId]
+            );
+            return null;
+        }
+
+        if ($recoverLegacyMetadata) {
+            if (!self::gingerSetOrderId($order, $gingerOrderId)) {
+                return null;
+            }
+
+            self::gingerLogOrderLookup(
+                'warning',
+                'Recovered a legacy Ginger order link through the WooCommerce CRUD layer.',
+                ['ginger_order_id' => $gingerOrderId, 'order_id' => (int) $orderId]
+            );
+        }
+
+        return $order;
+    }
+
+    /**
+     * Write order lookup diagnostics to the WooCommerce logger.
+     *
+     * @param string $level
+     * @param string $message
+     * @param array $context
+     */
+    private static function gingerLogOrderLookup($level, $message, array $context = [])
+    {
+        if (!function_exists('wc_get_logger')) {
+            return;
+        }
+
+        $logger = wc_get_logger();
+        if (!$logger || !is_callable([$logger, 'log'])) {
+            return;
+        }
+
+        $context['source'] = WC_Ginger_BankConfig::PLUGIN_NAME;
+        $logger->log($level, $message, $context);
+    }
+
+    /**
      * Method retrieves custom field from POST array.
      *
      * @param string $field

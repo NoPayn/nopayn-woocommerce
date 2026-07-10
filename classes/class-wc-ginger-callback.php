@@ -25,11 +25,9 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
             if (!in_array($input['event'], array("status_changed"))) die("Only work to do if the status changed");
             $gingerOrderID = $input['order_id'];
             $gingerOrder = $this->ginger_handle_get_order($gingerOrderID);
-            $order_ids = wc_get_orders(array('meta_key' => WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', 'meta_value' => $gingerOrder['id'], 'limit' => 1, 'return' => 'ids'));
-            if (!$order_ids) exit; // no WC order links back to this PSP order
-            $order = new WC_Order($order_ids[0]);
+            $order = WC_Ginger_Helper::gingerGetWooCommerceOrderByGingerOrderId($gingerOrder['id']);
+            if (!$order) exit; // no WC order links back to this PSP order
 
-            if(strpos($order->get_payment_method(), WC_Ginger_BankConfig::BANK_PREFIX.'_') !== 0) exit;
             if(in_array($order->get_status(), ['processing', 'shipped', 'completed', 'cancelled', 'refunded'])) exit; //status is already final
 
             if ($gingerOrder['status'] == 'completed')
@@ -59,8 +57,7 @@ class WC_Ginger_Callback extends WC_Ginger_Gateway
         }
 
         $gingerOrder = $this->ginger_handle_get_order(sanitize_text_field(filter_input(INPUT_GET,'order_id',FILTER_SANITIZE_STRING)));
-        $order_ids = wc_get_orders(array('meta_key' => WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', 'meta_value' => $gingerOrder['id'], 'limit' => 1, 'return' => 'ids'));
-        $order = $order_ids ? new WC_Order($order_ids[0]) : null;
+        $order = WC_Ginger_Helper::gingerGetWooCommerceOrderByGingerOrderId($gingerOrder['id']);
 
         if ($order && ($gingerOrder['status'] == 'completed' || $gingerOrder['status'] == 'processing'))
         {
