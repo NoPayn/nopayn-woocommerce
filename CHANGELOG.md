@@ -84,3 +84,7 @@
 ** 1.0.19 **
 
 * Fixed WooCommerce order status updates for stores using HPOS.
+
+** 1.0.20 **
+
+* Rollback plugin to 1.0.16 version.

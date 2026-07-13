@@ -284,7 +284,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
             ];
         }
 
-        WC_Ginger_Helper::gingerSetOrderId($this->woocommerceOrder, $gingerOrder['id']);
+        update_post_meta($this->merchant_order_id, WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', $gingerOrder['id']);
 
         if ($gingerOrder['status'] == 'error')
         {
@@ -375,12 +375,11 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
             return true;
         }
 
-        $order = wc_get_order($order_id);
-        $gingerOrderID = WC_Ginger_Helper::gingerGetOrderId($order);
+        $gingerOrderIDArray = get_post_custom_values(WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', $order_id);
 
-        if ($gingerOrderID)
+        if (is_array($gingerOrderIDArray) && $gingerOrderIDArray[0])
         {
-            $gingerOrder = $this->gingerClient->getOrder($gingerOrderID);
+            $gingerOrder = $this->gingerClient->getOrder($gingerOrderIDArray[0]);
             if ($gingerOrder['status'] == 'processing')
             {
                 echo esc_html__(
@@ -497,10 +496,7 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
     public function gingerIdentificationProcess($order_id): string
     {
         if (!$this->gingerClient) return true;
-        $order = wc_get_order($order_id);
-        $gingerOrderID = WC_Ginger_Helper::gingerGetOrderId($order);
-        if (!$gingerOrderID) return '';
-        $gingerOrder = $this->gingerClient->getOrder($gingerOrderID);
+        $gingerOrder = $this->gingerClient->getOrder(get_post_custom_values(WC_Ginger_BankConfig::BANK_PREFIX.'_order_id',$order_id)[0]);
 
         $gingerOrderIBAN = current($gingerOrder['transactions'])['payment_method_details']['creditor_iban'];
         $gingerOrderReference = current($gingerOrder['transactions'])['payment_method_details']['reference'];
@@ -524,8 +520,8 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
 
     public function process_refund($order_id, $amount = null, $reason = '')
     {
+        $gingerOrderID = get_post_meta($order_id, WC_Ginger_BankConfig::BANK_PREFIX.'_order_id', true);
         $order = wc_get_order($order_id);
-        $gingerOrderID = WC_Ginger_Helper::gingerGetOrderId($order);
         if (!strstr($order->get_payment_method(),WC_Ginger_BankConfig::BANK_PREFIX)) return true; //order was not paid by bank's payment method
         $client = WC_Ginger_Clientbuilder::gingerBuildClient($order->get_payment_method());
         $gingerOrder = $client->getOrder($gingerOrderID);
@@ -577,7 +573,8 @@ class WC_Ginger_Gateway extends WC_Payment_Gateway
      */
     function ginger_order_received_text($text, $order)
     {
-        $orderBuilder = new WC_Ginger_Orderbuilder($this, $this->id, $order, $order->get_id());
+        $orderBuilder = new WC_Ginger_Orderbuilder($this,$this->id,$this->woocommerceOrder,$this->merchant_order_id);
+        $orderBuilder->gingerSetMerchantOrderID($order->get_id());
 
         return $orderBuilder->gingerGetOrderDescription();
     }

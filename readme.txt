@@ -3,7 +3,7 @@ Tags: NoPayn, WooCommerce, payment
 Contributors: nopayn, gingerpayments
 Requires at least: 5.6
 Tested up to: 6.8
-Stable tag: 1.0.19
+Stable tag: 1.0.20
 License: The MIT License (MIT)
 License URI: https://opensource.org/licenses/MIT
 
@@ -97,3 +97,7 @@ NoPayn is built on a foundation of transparency and simplicity. With clear, fixe
 ** 1.0.19 **
 
 * Fixed WooCommerce order status updates for stores using HPOS.
+
+** 1.0.20 **
+
+* Rollback plugin to 1.0.16 version.
